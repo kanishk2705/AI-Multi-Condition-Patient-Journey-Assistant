@@ -1,0 +1,40 @@
+chunk_id,condition,title,source_id,chunk_index,stage_scope,word_count,source_url
+649652521154984c4019c4e2,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,0,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/asthma.html
+74660f318ebf1a99a6566c5d,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,1,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/asthma.html
+c5829850c68656390bf71aa0,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,2,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/asthma.html
+b354ddce38519ddd4ba79ab6,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,3,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/asthma.html
+5e82477bd4197ebf3d524536,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,4,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/asthma.html
+0fd73805ef5b1266c92dbc78,asthma,Asthma,MEDLINEPLUS-ASTHMA-SUMMARY,5,understanding_condition|ongoing_care_information,70,https://medlineplus.gov/asthma.html
+78734a8ae8a848c0a2d1ecb2,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,0,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+76304e214d8b16bb4d1602a8,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,1,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+14673bf09db436a46347362c,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,2,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+020403f7d5946995b4926af6,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,3,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+927946f627bf8cb645997e49,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,4,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+2696047a6767e66e3dacb783,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,5,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+5315129d39b1935c2f802a6e,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,6,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+9fa74ac34d0bd2ec19ca8c7d,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,7,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+b3a6355ae85113f6fc1e7d4f,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,8,appointment_preparation,180,https://medlineplus.gov/lab-tests/lung-function-tests/
+a422b3795acbf08432568276,asthma,Lung Function Tests,MEDLINEPLUS-LUNG-FUNCTION-TESTS,9,appointment_preparation,150,https://medlineplus.gov/lab-tests/lung-function-tests/
+8e3dcf97cfa5ac8e3e77bee8,type_2_diabetes,Type 2 Diabetes,MEDLINEPLUS-T2D-SUMMARY,0,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/diabetestype2.html
+958fd18da7b503eecb5e9d92,type_2_diabetes,Type 2 Diabetes,MEDLINEPLUS-T2D-SUMMARY,1,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/diabetestype2.html
+800e0e33a1921459eb758b7f,type_2_diabetes,Type 2 Diabetes,MEDLINEPLUS-T2D-SUMMARY,2,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/diabetestype2.html
+5efdde9a8f81f15920dd31b7,type_2_diabetes,Type 2 Diabetes,MEDLINEPLUS-T2D-SUMMARY,3,understanding_condition|ongoing_care_information,180,https://medlineplus.gov/diabetestype2.html
+75aeea86b757f01e4713f15d,type_2_diabetes,Type 2 Diabetes,MEDLINEPLUS-T2D-SUMMARY,4,understanding_condition|ongoing_care_information,146,https://medlineplus.gov/diabetestype2.html
+5a4851d15ccbb50f5f619f76,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,0,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+986dcce2ca884072844278bd,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,1,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+b9dda360f31369a1793570f0,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,2,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+2c94d5dcc7068c4b8a8b8f33,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,3,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+310914d936f715b7a2c837b7,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,4,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+8fda985fdf04208c6d1d5797,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,5,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+6e0ff8a378131b83f60a1f40,type_2_diabetes,Hemoglobin A1C (HbA1c) Test,MEDLINEPLUS-A1C-TEST,6,appointment_preparation|ongoing_care_information,158,https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+a1e84aae0fee27328358b5ed,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,0,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+3f19d62c2813b8ad2b7e97b1,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,1,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+340350f49b124719fba6f604,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,2,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+0d924e0a15ad6cbd558dd1fd,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,3,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+e8c7c35a9e7989a5aef52482,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,4,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+c911f34560c0ac7a1919e620,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,5,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+37c8b3b2b0a8cd1cf33674c8,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,6,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+c6f0364f6b5fed2954efb41a,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,7,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+4fc4b5ccb3252b4905d63497,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,8,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+4826da9aabf74fe10cb00254,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,9,appointment_preparation|ongoing_care_information,180,https://medlineplus.gov/lab-tests/blood-glucose-test/
+bd793ca61ec816376921ddc1,type_2_diabetes,Blood Glucose Test,MEDLINEPLUS-BLOOD-GLUCOSE-TEST,10,appointment_preparation|ongoing_care_information,43,https://medlineplus.gov/lab-tests/blood-glucose-test/
