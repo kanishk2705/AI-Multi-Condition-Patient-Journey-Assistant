@@ -42,3 +42,16 @@ def test_duplicate_ids_are_rejected(tmp_path):
     )
     with pytest.raises(ManifestValidationError, match="duplicate source_id"):
         load_source_manifest(manifest)
+
+
+def test_copyrighted_medical_encyclopedia_path_cannot_use_medical_test_extractor(tmp_path):
+    manifest = tmp_path / "manifest.csv"
+    manifest.write_text(
+        "source_id,condition,stage_scope,title,publisher,url,source_type,checked_date,status,extraction_mode,reuse_basis,notes\\n"
+        "TEST-SOURCE,asthma,understanding_condition,Test,MedlinePlus,"
+        "https://medlineplus.gov/ency/article/000000.htm,medical_test,2026-10-10,approved,"
+        "medlineplus_medical_test,Public domain,Test row\\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(ManifestValidationError, match="approved host/path policy"):
+        load_source_manifest(manifest)
