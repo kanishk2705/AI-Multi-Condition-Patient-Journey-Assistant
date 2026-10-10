@@ -13,8 +13,8 @@ def test_topic_summary_extractor_stops_at_next_major_section():
     <html><body><main>
       <h1>Asthma</h1>
       <h2>Summary</h2>
-      <h3>What is asthma?</h3><p>Asthma affects the airways and can cause wheezing.</p>
-      <h3>Why does it matter?</h3><p>Symptoms can vary over time.</p>
+      <h3>What is asthma?</h3><p>Asthma affects the airways and can cause wheezing, coughing, chest tightness, and shortness of breath. Symptoms and triggers may vary between people and over time.</p>
+      <h3>Why does it matter?</h3><p>People may have different experiences. A healthcare professional can answer questions about an individual's circumstances and help explain the information.</p>
       <h2>Start Here</h2><p>This section must not be included.</p>
     </main></body></html>
     """
