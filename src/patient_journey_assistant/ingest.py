@@ -79,7 +79,7 @@ def fetch_and_extract(source: SourceRecord, session: requests.Session | None = N
             source.url,
             headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
             timeout=REQUEST_TIMEOUT_SECONDS,
-            allow_redirects=True,
+            allow_redirects=False,
         )
     except requests.RequestException as exc:
         raise IngestionError(f"Fetch failed for {source.source_id}: {exc}") from exc
