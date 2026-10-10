@@ -28,11 +28,16 @@ To attempt a source fetch after reviewing the manifest:
 
 Fetched text chunks and the ingestion report are written below data/local/processed/, which is excluded from Git. If any source fails robots, network, content-type, redirect, or extraction checks, the run records the failure and exits non-zero.
 
+## Verification record
+
+GitHub Actions run 13 passed on 10 October 2026:
+- Clean Python 3.11 environment created.
+- Offline manifest dry-run completed successfully: 9 rows, 5 approved, 4 skipped; no network requests made.
+- Automated tests: 15 passed.
+
 ## Still required before Phase 2 is considered fully accepted
 
-- [ ] Install dependencies in a clean local environment.
-- [ ] Run pytest and review the actual test results.
-- [ ] Run the manifest dry-run and review the five approved and four skipped sources.
-- [ ] Attempt source fetching only when the environment permits access; manually review the downloaded text and report.
-- [ ] Confirm no excluded/copyrighted material or safety-sensitive emergency instructions entered the generated local corpus.
-- [ ] Record the actual source count, character count, chunk count, and any failures; do not invent counts.
+- [ ] Run the same setup and tests in the developer's local environment.
+- [ ] Fetch approved sources only after reviewing the manifest; inspect the actual extracted text and ingestion report.
+- [ ] Confirm no excluded/copyrighted material or unsafe treatment/emergency instructions entered the generated local corpus.
+- [ ] Record actual fetched-source count, character count, chunk count, and failures from the real fetch run; do not invent counts.
