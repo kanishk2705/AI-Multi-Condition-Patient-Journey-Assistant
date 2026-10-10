@@ -73,7 +73,7 @@ The corpus is small and curated. Retrieval scores are not medical accuracy or cl
 
 ## Phase 4 — benchmark and retrieval evaluation
 
-The draft benchmark and evaluator are described in [`docs/PHASE_4_ACCEPTANCE.md`](docs/PHASE_4_ACCEPTANCE.md). It contains 36 answerable questions (24 development, 12 held-out) across the six condition-stage cells, plus 12 separate safety/insufficient-evidence challenge prompts. Relevance labels are provisional until manually reviewed.
+The draft benchmark and evaluator are described in [`docs/PHASE_4_ACCEPTANCE.md`](docs/PHASE_4_ACCEPTANCE.md). It contains 36 answerable questions (24 development, 12 held-out) across the six condition-stage cells, plus 12 separate safety/insufficient-evidence challenge prompts. Relevance labels are provisional until manually reviewed. Use [`data/benchmark/relevance_review.csv`](data/benchmark/relevance_review.csv) as the 54-row question-to-chunk review worksheet.
 
 After building the local index, run the development split first:
 
