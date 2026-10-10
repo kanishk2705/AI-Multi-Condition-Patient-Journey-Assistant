@@ -100,7 +100,7 @@ def fetch_and_extract(source: SourceRecord, session: requests.Session | None = N
     if len(response.content) > MAX_HTML_BYTES:
         raise IngestionError(f"{source.source_id}: page exceeds the configured size limit.")
 
-    extracted = extract_source_text(response.text, source.extraction_mode)
+    extracted = extract_source_text(response.content, source.extraction_mode)
     return extracted, response.url or source.url
 
 

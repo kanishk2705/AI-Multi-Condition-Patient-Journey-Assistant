@@ -45,3 +45,43 @@ def test_medical_test_extractor_ignores_site_navigation_and_scripts():
 
 def test_normalize_text_collapses_duplicate_lines():
     assert normalize_text(" A   B \n\n A   B \n C ") == "A B\n\nC"
+def test_normalize_text_removes_spaces_before_punctuation():
+    assert normalize_text("disease . coughing , tightness !") == (
+        "disease. coughing, tightness!"
+    )
+
+
+def test_topic_summary_extractor_handles_utf8_html_bytes():
+    html = """
+    <html><body><main>
+      <h2>Summary</h2>
+      <p>Type 2 diabetes&nbsp;affects how the body uses glucose.
+      Glucose is an important source of energy. Information about this
+      condition can help people understand the condition and prepare
+      questions to discuss with a qualified healthcare professional.
+      General information does not replace individual medical advice.</p>
+    </main></body></html>
+    """.encode("utf-8")
+
+    result = extract_medlineplus_topic_summary(html)
+
+    assert "Â" not in result
+    assert "Type 2 diabetes affects" in result
+def test_medical_test_extractor_stops_before_references():
+    html = """
+    <html><body><main>
+      <h1>Blood Glucose Test</h1>
+      <p>This medical test measures glucose in the blood and is used
+      to help evaluate blood sugar levels. The test may be used in
+      different circumstances, and preparation depends on the type of
+      test ordered. People should ask their healthcare professional
+      about preparation and questions concerning their results.</p>
+      <h2>References</h2>
+      <p>Third-party bibliography material must not enter the corpus.</p>
+    </main></body></html>
+    """
+
+    result = extract_medlineplus_medical_test(html)
+
+    assert "This medical test measures glucose" in result
+    assert "Third-party bibliography material" not in result

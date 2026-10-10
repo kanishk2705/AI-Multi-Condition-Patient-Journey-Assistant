@@ -10,29 +10,44 @@ class TextExtractionError(ValueError):
 
 
 def normalize_text(text: str) -> str:
-    """Normalize whitespace while preserving paragraph boundaries."""
+    """Normalize whitespace and punctuation while preserving paragraph boundaries."""
     lines = []
     for line in text.replace("\r", "\n").split("\n"):
         line = re.sub(r"\s+", " ", line).strip()
+        line = re.sub(r"\s+([,.;:!?])", r"\1", line)
         if line and (not lines or lines[-1] != line):
             lines.append(line)
     return "\n\n".join(lines)
 
 
 def _blocks_from_tags(container: Tag) -> list[str]:
+    """Extract article blocks and stop before bibliography sections."""
     blocks: list[str] = []
     selectors = ["h1", "h2", "h3", "h4", "p", "li", "dd"]
+    heading_tags = {"h1", "h2", "h3", "h4"}
+    stop_headings = {
+        "references",
+        "references and resources",
+        "bibliography",
+    }
+
     for node in container.find_all(selectors):
-        # Avoid duplicate text when list items contain nested paragraphs or sub-lists.
+        if node.name in heading_tags:
+            heading_text = node.get_text(" ", strip=True).casefold().rstrip(":")
+            if heading_text in stop_headings:
+                break
+
+        # Avoid duplicate text from nested list items and paragraphs.
         if node.name == "li" and node.find(["p", "ul", "ol", "li"]):
             continue
+
         text = node.get_text(" ", strip=True)
         if text and (not blocks or blocks[-1] != text):
             blocks.append(text)
+
     return blocks
 
-
-def extract_medlineplus_topic_summary(html: str) -> str:
+def extract_medlineplus_topic_summary(html: str | bytes) -> str:
     """Extract only the health-topic page's Summary section.
 
     MedlinePlus states that summaries on health-topic pages are public domain.
@@ -65,7 +80,7 @@ def extract_medlineplus_topic_summary(html: str) -> str:
     return result
 
 
-def extract_medlineplus_medical_test(html: str) -> str:
+def extract_medlineplus_medical_test(html: str | bytes) -> str:
     """Extract main text of a MedlinePlus medical-test page, excluding site chrome/media."""
     soup = BeautifulSoup(html, "html.parser")
     container = soup.find("main") or soup.find("article") or soup.body
@@ -84,7 +99,7 @@ def extract_medlineplus_medical_test(html: str) -> str:
     return result
 
 
-def extract_source_text(html: str, extraction_mode: str) -> str:
+def extract_source_text(html: str | bytes, extraction_mode: str) -> str:
     if extraction_mode == "medlineplus_topic_summary":
         return extract_medlineplus_topic_summary(html)
     if extraction_mode == "medlineplus_medical_test":
