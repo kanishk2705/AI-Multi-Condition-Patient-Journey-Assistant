@@ -20,7 +20,7 @@ def test_topic_summary_extractor_stops_at_next_major_section():
     """
     result = extract_medlineplus_topic_summary(html)
     assert "Asthma affects the airways" in result
-    assert "Symptoms can vary over time" in result
+    assert "Symptoms and triggers may vary" in result
     assert "This section must not be included" not in result
 
 
