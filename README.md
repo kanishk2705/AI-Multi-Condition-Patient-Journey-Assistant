@@ -2,7 +2,7 @@
 
 An undergraduate AI project investigating whether condition- and journey-stage-aware retrieval improves the relevance and source-grounding of educational health-information answers.
 
-**Status:** Phase 2 — source validation and ingestion implementation. No evaluation or model-performance results are claimed yet.
+**Status:** Phase 2 — source validation and ingestion implementation. GitHub Actions passed 15 offline tests and verified the manifest dry-run (9 rows: 5 approved, 4 skipped). Actual source fetching and manual corpus inspection remain pending. No model-performance results are claimed.
 
 ## Problem and research question
 
