@@ -28,8 +28,9 @@ class FakeCollection:
                 return False
         return True
 
-    def count(self, where=None):
-        return sum(self.matches(record["metadata"], where) for record in self.records)
+    def count(self):
+        # Match the installed Chroma API: count() has no where parameter.
+        return len(self.records)
 
     def query(self, *, query_embeddings, n_results, include, where=None):
         self.query_calls.append({
@@ -131,7 +132,26 @@ def test_contextual_retrieval_filters_condition_and_stage_before_ranking():
     assert all("appointment_preparation" in item.metadata["stage_scope"] for item in results)
 
 
-def test_contextual_retrieval_returns_empty_when_no_chunks_are_eligible():
+def test_contextual_retrieval_returns_empty_when_filter_has_no_matches():
+    # The collection is non-empty, but no record matches both conditions.
+    collection = FakeCollection(sample_records())
+    retriever = SemanticRetriever(collection, FakeEncoder())
+
+    results = retriever.retrieve_contextual(
+        "Explain the question.",
+        condition="type_2_diabetes",
+        stage="appointment_preparation",
+    )
+
+    assert results == []
+    assert len(collection.query_calls) == 1
+    assert collection.query_calls[0]["n_results"] == len(sample_records())
+    assert collection.query_calls[0]["where"] == build_context_filter(
+        "type_2_diabetes", "appointment_preparation"
+    )
+
+
+def test_empty_collection_returns_no_results_without_querying():
     collection = FakeCollection([])
     retriever = SemanticRetriever(collection, FakeEncoder())
 
