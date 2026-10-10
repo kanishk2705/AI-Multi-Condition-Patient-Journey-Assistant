@@ -169,7 +169,7 @@ def load_source_manifest(path: str | Path) -> list[SourceRecord]:
                     )
                 if not _mode_matches_source(mode, parsed):
                     errors.append(
-                        f"Line {line_number}: extraction mode {mode!r} does not match host {host!r}."
+                        f"Line {line_number}: extraction mode {mode!r} does not match the approved host/path policy for {row.get('url')!r}."
                     )
                 if not row.get("reuse_basis"):
                     errors.append(f"Line {line_number}: approved source requires a reuse_basis.")
