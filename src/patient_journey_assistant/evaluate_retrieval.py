@@ -238,8 +238,10 @@ def _aggregate_from_per_query(
             item["methods"][method]["metrics"]["retrieval_coverage"] for item in per_question
         ),
     }
-    return {key: round(float(value), 8) if isinstance(value, (int, float)) else value
-            for key, value in output.items()}
+    return {
+        key: int(value) if key == "question_count" else round(float(value), 8)
+        for key, value in output.items()
+    }
 
 
 def _default_output_path(split: str) -> Path:
@@ -274,6 +276,12 @@ def main() -> int:
         ]
         validate_relevant_ids(questions, (item["chunk_id"] for item in corpus))
         retriever = create_persistent_retriever(args.index_dir, args.collection)
+        indexed_count = retriever.collection.count()
+        if indexed_count != len(corpus):
+            raise ValueError(
+                f"The local index has {indexed_count} chunks but the current corpus has "
+                f"{len(corpus)}. Rebuild the index before evaluation."
+            )
         evaluated = evaluate_questions(questions, retriever, k=args.k)
         collection_metadata = retriever.collection.metadata or {}
         report = {
