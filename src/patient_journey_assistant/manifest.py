@@ -71,10 +71,15 @@ def _is_allowed_host(host: str) -> bool:
     )
 
 
-def _mode_matches_host(mode: str, host: str) -> bool:
-    host = host.casefold().rstrip(".")
-    if mode in {"medlineplus_topic_summary", "medlineplus_medical_test"}:
-        return host == "medlineplus.gov" or host.endswith(".medlineplus.gov")
+def _mode_matches_source(mode: str, parsed_url) -> bool:
+    host = (parsed_url.hostname or "").casefold().rstrip(".")
+    path = parsed_url.path.casefold()
+    is_medlineplus = host == "medlineplus.gov" or host.endswith(".medlineplus.gov")
+    if mode == "medlineplus_topic_summary":
+        # Keep this mode away from Lab Tests, Medical Encyclopedia, and other content paths.
+        return is_medlineplus and path.endswith(".html") and not path.startswith(("/lab-tests/", "/ency/"))
+    if mode == "medlineplus_medical_test":
+        return is_medlineplus and path.startswith("/lab-tests/")
     return mode == "none"
 
 
@@ -162,7 +167,7 @@ def load_source_manifest(path: str | Path) -> list[SourceRecord]:
                     errors.append(
                         f"Line {line_number}: approved source must have a supported extraction mode."
                     )
-                if not _mode_matches_host(mode, host):
+                if not _mode_matches_source(mode, parsed):
                     errors.append(
                         f"Line {line_number}: extraction mode {mode!r} does not match host {host!r}."
                     )
