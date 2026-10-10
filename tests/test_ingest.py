@@ -1,6 +1,8 @@
+from pathlib import Path
+
 import pytest
 
-from patient_journey_assistant.ingest import IngestionError, _check_robots
+from patient_journey_assistant.ingest import IngestionError, _check_robots, ingest_approved_sources
 
 
 class FakeResponse:
@@ -33,3 +35,19 @@ def test_robots_disallow_is_respected():
     session = FakeSession(response)
     with pytest.raises(IngestionError, match="robots.txt disallows"):
         _check_robots("https://medlineplus.gov/lab-tests/lung-function-tests/", session)
+
+
+def test_dry_run_validates_manifest_without_network_or_output(tmp_path):
+    root = Path(__file__).resolve().parents[1]
+    session = FakeSession(FakeResponse(200, "User-agent: *\\n"))
+    report = ingest_approved_sources(
+        root / "data" / "source_manifest.csv",
+        tmp_path / "output",
+        fetch=False,
+        session=session,
+    )
+    assert report["manifest_rows"] == 9
+    assert report["approved_rows"] == 5
+    assert len(report["skipped_rows"]) == 4
+    assert session.calls == []
+    assert not (tmp_path / "output").exists()
