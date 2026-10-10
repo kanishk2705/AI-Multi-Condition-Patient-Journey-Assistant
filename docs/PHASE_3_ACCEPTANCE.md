@@ -32,6 +32,15 @@ Compare both retrieval methods for one query:
 
 Default embedding model: `sentence-transformers/all-MiniLM-L6-v2`. First use may download model weights. No Google Gen AI key is required for indexing or retrieval.
 
+
+## Automated CI verification — 10 October 2026
+
+- GitHub Actions run 18 used Python 3.11.
+- Offline manifest dry-run completed: 9 manifest rows, 5 approved, 4 skipped; no network fetch was made by the dry-run.
+- Automated tests: **29 passed**.
+- This CI job installs development/test dependencies only. It does not install the full embedding/vector database requirements and does not build or query a real Chroma index.
+- The local index build, first-time model download, and real-corpus comparison remain pending.
+
 ## Verification still required on a developer machine
 
 - [ ] Install the full requirements successfully in the target Python environment.
