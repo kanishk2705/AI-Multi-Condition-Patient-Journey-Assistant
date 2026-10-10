@@ -2,63 +2,61 @@
 
 An undergraduate AI project investigating whether condition- and journey-stage-aware retrieval improves the relevance and source-grounding of educational health-information answers.
 
-**Status:** Phase 1 — project specification and repository scaffold. Implementation and evaluation have not yet been completed.
+**Status:** Phase 2 — source validation and ingestion implementation. GitHub Actions passed 15 offline tests and verified the manifest dry-run (9 rows: 5 approved, 4 skipped). Actual source fetching and manual corpus inspection remain pending. No model-performance results are claimed.
 
-## Problem
+## Problem and research question
 
-A general semantic search system can retrieve text that is topically similar to a health question but not appropriate to the user's selected condition or information-seeking stage. This project compares ordinary semantic retrieval with retrieval conditioned on both condition and journey stage.
+A generic semantic retriever may return text that is topically similar to a health question but not appropriate for the user's selected condition or information-seeking stage.
 
-## Initial scope
+**Research question:** Does condition- and journey-stage-aware retrieval return more relevant evidence and support more faithfully grounded answers than ordinary semantic retrieval?
+
+## Frozen scope
 
 - **Conditions:** asthma and type 2 diabetes.
-- **Information stages:** understanding the condition; preparing for an appointment; understanding general ongoing-care information.
-- **Inputs:** selected condition, selected stage, and a question.
-- **Output:** an educational explanation grounded in retrieved passages, with direct links to the sources.
-- **Sources:** a small curated collection of official public-health and government health-information pages.
-- **Evaluation:** 36 answerable benchmark questions plus 12 safety/insufficient-evidence challenge questions.
+- **Stages:** understanding the condition; preparing for an appointment; understanding general ongoing-care information.
+- **Approach:** compare semantic retrieval over the full approved collection against semantic retrieval constrained by the selected condition and stage.
+- **Evaluation:** 36 answerable questions plus 12 safety/insufficient-evidence challenges, using pre-labelled relevant sources, Recall@5, MRR@5, citation support, answer quality, and abstention behaviour.
 
-## What makes this an investigation
+See the [project charter](docs/PROJECT_CHARTER.md) and [evaluation plan](docs/EVALUATION_PLAN.md).
 
-The system will compare two retrieval methods on the same documents, questions, embedding model, and generation settings:
+## Current Phase 2 work
 
-1. Semantic retrieval over the entire collection (baseline).
-2. Semantic retrieval restricted or prioritized by condition and journey-stage metadata (proposed method).
+The source manifest validator checks required fields, domain allowlists, statuses, stage labels, dates, duplicate IDs/URLs, approved extraction modes, and reuse basis. The ingestion CLI is dry-run by default and fetches only approved rows when explicitly requested. It checks robots.txt, HTTPS, redirect domains, response type/size, and uses restrictive page-specific extraction modes.
 
-Retrieval metrics, citation support, answer quality, and abstention behaviour will be evaluated and reported honestly, including negative or inconclusive results.
+The initial approved collection uses:
+- MedlinePlus health-topic **Summary sections only**, which the official MedlinePlus usage policy identifies as public-domain content.
+- MedlinePlus **medical-test information**, also identified in that policy as public-domain content.
 
-## Architecture
+WHO entries are deferred until the exact licence/permission basis is established. NHS entries remain candidates until page-specific content and exclusions are manually reviewed. See the [data and safety policy](docs/DATA_AND_SAFETY_POLICY.md) and [source manifest](data/source_manifest.csv).
 
-`Official sources → ingestion → clean text and metadata → chunking → embeddings → vector index → retrieval → grounded generation → cited answer`
+## Setup
 
-The initial stack is Python, Sentence Transformers, ChromaDB, the Google Gen AI SDK, Streamlit, and pytest. The LLM model is configurable through environment variables.
+Requires Python 3.11 or compatible.
 
-## Safety and privacy boundaries
+    python -m pip install -e .
+    python -m pip install -r requirements-dev.txt
+    pytest
 
-- This is an educational information-navigation prototype, not a medical device or clinical decision-support system.
-- It must not diagnose, triage, prescribe, recommend medication changes, or replace a qualified health professional.
-- It must abstain when its approved sources do not support an answer.
-- Urgent or emergency requests must not be handled as routine information queries; the interface should direct users to local emergency services or an appropriate healthcare professional.
-- Do not ask users for names, contact details, medical records, or other identifying/personal health information.
-- Do not store or log user questions in the MVP.
-- Source text will not be republished as a general-purpose mirror. Preserve source attribution and links, respect source terms, and ingest only the selected pages needed for the project.
+Install the full application requirements before implementing the embedding index or Streamlit interface:
 
-## Repository map
+    python -m pip install -r requirements.txt
 
-- `docs/PROJECT_CHARTER.md` — frozen requirements and scope.
-- `docs/EVALUATION_PLAN.md` — experiment design and metrics.
-- `docs/DATA_AND_SAFETY_POLICY.md` — source handling, privacy, and safety rules.
-- `data/source_manifest.csv` — initial candidate-source register.
-- `src/patient_journey_assistant/` — application package.
-- `tests/` — automated tests and evaluation checks.
+## Validate source manifest (offline dry-run)
 
-## Current status and next steps
+    python -m patient_journey_assistant.ingest --manifest data/source_manifest.csv
 
-- [x] Freeze the initial problem, scope, architecture, safety boundaries, and evaluation plan.
-- [x] Create the initial source manifest.
-- [ ] Validate candidate sources and ingest the initial curated collection.
-- [ ] Implement and test both retrieval methods.
-- [ ] Build the question/evidence benchmark and run the comparison.
-- [ ] Add grounded answer generation and the Streamlit interface.
-- [ ] Deploy, document measured results, and publish screenshots/demo.
+No network requests are made by default.
 
-No performance results are claimed yet.
+## Explicitly fetch approved sources
+
+Only do this after checking the manifest and source policy:
+
+    python -m patient_journey_assistant.ingest --manifest data/source_manifest.csv --fetch-approved
+
+Generated chunks and the ingestion report are written under data/local/processed/ and are excluded from Git. The fetcher respects robots.txt and skips any source not marked approved. Inspect the local text and report before using the corpus further.
+
+## Safety and limitations
+
+This is an educational information-navigation prototype, not a diagnostic or treatment tool, not a medical device, and not validated for clinical use. It must not diagnose, triage, prescribe, advise medication changes, or replace a healthcare professional. It should abstain when approved evidence is missing or conflicting. Do not enter identifying or personal medical information. The application is designed not to persist questions or answers.
+
+No source performance, answer accuracy, deployment, or user-impact claims are made until these are measured.
