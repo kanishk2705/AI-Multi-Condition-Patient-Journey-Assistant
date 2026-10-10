@@ -76,10 +76,16 @@ def _mode_matches_source(mode: str, parsed_url) -> bool:
     path = parsed_url.path.casefold()
     is_medlineplus = host == "medlineplus.gov" or host.endswith(".medlineplus.gov")
     if mode == "medlineplus_topic_summary":
-        # Keep this mode away from Lab Tests, Medical Encyclopedia, and other content paths.
-        return is_medlineplus and path.endswith(".html") and not path.startswith(("/lab-tests/", "/ency/"))
+        # Exact paths avoid accidentally enabling copyrighted page categories.
+        allowed_paths = {"/asthma.html", "/diabetestype2.html"}
+        return is_medlineplus and path in allowed_paths
     if mode == "medlineplus_medical_test":
-        return is_medlineplus and path.startswith("/lab-tests/")
+        allowed_paths = {
+            "/lab-tests/lung-function-tests/",
+            "/lab-tests/hemoglobin-a1c-hba1c-test/",
+            "/lab-tests/blood-glucose-test/",
+        }
+        return is_medlineplus and path in allowed_paths
     return mode == "none"
 
 
