@@ -41,6 +41,17 @@ Default embedding model: `sentence-transformers/all-MiniLM-L6-v2`. First use may
 - This CI job installs development/test dependencies only. It does not install the full embedding/vector database requirements and does not build or query a real Chroma index.
 - The local index build, first-time model download, and real-corpus comparison remain pending.
 
+## Local retrieval smoke checks — 10 October 2026
+
+The developer installed the full requirements, built the persistent local index, and ran one smoke query for each of the six frozen condition-stage combinations against the 39-chunk corpus.
+
+- The local index report recorded 39 chunks, the embedding model `sentence-transformers/all-MiniLM-L6-v2`, 384-dimensional embeddings, and cosine distance.
+- All six contextual retrieval runs returned only chunks whose condition and stage metadata matched the requested context.
+- In five of six smoke comparisons, the top-five result IDs and order matched the baseline.
+- In the type 2 diabetes × understanding-condition comparison, contextual retrieval replaced one baseline result from a blood-glucose-test chunk whose stage metadata did not include `understanding_condition` with an eligible type 2 diabetes summary chunk.
+- These are functional smoke checks, not benchmark results. They do not establish that either method is generally more relevant or more accurate.
+- Hugging Face emitted an unauthenticated-request warning, but the model loaded and the commands completed.
+
 ## Verification still required on a developer machine
 
 - [ ] Install the full requirements successfully in the target Python environment.
