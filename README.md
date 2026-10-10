@@ -70,3 +70,17 @@ The command prints results from both methods, including rank, cosine similarity,
 This is an educational information-navigation prototype, not a diagnostic or treatment tool, not a medical device, and not validated for clinical use. It must not diagnose, triage, prescribe, advise medication changes, or replace a healthcare professional. It should abstain when approved evidence is missing or conflicting. Do not enter identifying or personal medical information.
 
 The corpus is small and curated. Retrieval scores are not medical accuracy or clinical-safety measures. No improvement, answer accuracy, deployment, or user-impact claims are made until those outcomes are actually evaluated.
+
+## Phase 4 — benchmark and retrieval evaluation
+
+The draft benchmark and evaluator are described in [`docs/PHASE_4_ACCEPTANCE.md`](docs/PHASE_4_ACCEPTANCE.md). It contains 36 answerable questions (24 development, 12 held-out) across the six condition-stage cells, plus 12 separate safety/insufficient-evidence challenge prompts. Relevance labels are provisional until manually reviewed.
+
+After building the local index, run the development split first:
+
+    python -m patient_journey_assistant.evaluate_retrieval --split dev
+
+Run the held-out split only after review/freeze:
+
+    python -m patient_journey_assistant.evaluate_retrieval --split heldout
+
+Evaluation results are written under `data/local/evaluation/`; no source text, local index, or generated evaluation output should be committed. Challenge prompts are behavior rubrics only and are not scored until answer generation is implemented.
