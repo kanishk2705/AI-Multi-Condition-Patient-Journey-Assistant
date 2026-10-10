@@ -81,12 +81,12 @@ class SemanticRetriever:
         if k < 1:
             raise ValueError("k must be at least 1.")
 
-        eligible_count = (
-            self.collection.count()
-            if where is None
-            else self.collection.count(where=where)
-        )
-        if eligible_count < 1:
+        # Chroma's Collection.count() returns the total collection size and
+        # does not accept a metadata filter. Use the total as an upper bound
+        # for query n_results; Chroma applies the where filter inside query()
+        # and returns only the eligible matches.
+        corpus_count = self.collection.count()
+        if corpus_count < 1:
             return []
 
         vectors = self.encoder.encode([query.strip()])
@@ -96,7 +96,7 @@ class SemanticRetriever:
         # Rank every eligible item so the top-k boundary is stable if distances tie.
         query_args: dict[str, Any] = {
             "query_embeddings": [vectors[0]],
-            "n_results": eligible_count,
+            "n_results": corpus_count,
             "include": ["documents", "metadatas", "distances"],
         }
         if where is not None:
