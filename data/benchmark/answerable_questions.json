@@ -1,0 +1,788 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "patient-journey-retrieval-v1-draft",
+  "created_date": "2026-10-10",
+  "annotation_status": "draft_requires_human_review",
+  "purpose": "Exploratory retrieval benchmark for the frozen project research question; all relevance labels and reference notes are proposed annotations based on the uploaded 39-chunk corpus.",
+  "corpus_record_count": 39,
+  "splits": {
+    "dev": 24,
+    "heldout": 12
+  },
+  "questions": [
+    {
+      "question_id": "A-U-01",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "What is asthma, and what changes can happen in the airways?",
+      "intent": "Definition and basic mechanism",
+      "reference_answer_note": "Asthma is a long-term lung disease affecting the airways. The airways can become inflamed and narrowed, which can cause wheezing, coughing, and chest tightness.",
+      "relevant_chunk_ids": [
+        "649652521154984c4019c4e2"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "649652521154984c4019c4e2",
+          "why_relevant": "Defines asthma and describes airway inflammation/narrowing and common symptoms."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-U-02",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "What are examples of asthma triggers, and can triggers differ between people or change over time?",
+      "intent": "Triggers",
+      "reference_answer_note": "The source lists examples such as dust mites, mold, pets, pollen, cold air, certain medicines, infections, pollution, and tobacco smoke. It states that triggers can differ between people and change over time.",
+      "relevant_chunk_ids": [
+        "649652521154984c4019c4e2",
+        "74660f318ebf1a99a6566c5d"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "649652521154984c4019c4e2",
+          "why_relevant": "Lists examples of triggers, including dust mites, mold, pets, pollen, cold air, medicines, infection, pollution, and tobacco smoke."
+        },
+        {
+          "chunk_id": "74660f318ebf1a99a6566c5d",
+          "why_relevant": "Continues the trigger discussion and explicitly says triggers can differ by person and change over time."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-U-03",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "What symptoms can asthma cause, and how does the source describe an asthma attack or flare-up?",
+      "intent": "Symptoms and flare-ups",
+      "reference_answer_note": "Listed symptoms include chest tightness, coughing (especially at night or early morning), shortness of breath, and wheezing. During an attack, symptoms become much worse and may start gradually or suddenly.",
+      "relevant_chunk_ids": [
+        "c5829850c68656390bf71aa0"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "c5829850c68656390bf71aa0",
+          "why_relevant": "Lists common asthma symptoms and describes how symptoms worsen during an attack."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-U-04",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "What kinds of tests or assessments may a health care provider use when evaluating asthma?",
+      "intent": "Overview of assessment",
+      "reference_answer_note": "The source lists physical exam and medical history, lung function tests such as spirometry, tests of airway reaction, peak expiratory flow, FeNO testing, and allergy skin or blood tests when indicated by allergy history.",
+      "relevant_chunk_ids": [
+        "c5829850c68656390bf71aa0",
+        "b354ddce38519ddd4ba79ab6"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "c5829850c68656390bf71aa0",
+          "why_relevant": "Introduces the evaluation tools, including physical exam, medical history, lung function testing, and airway-response testing."
+        },
+        {
+          "chunk_id": "b354ddce38519ddd4ba79ab6",
+          "why_relevant": "Continues the list with peak expiratory flow, FeNO, and allergy testing."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-U-05",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "What does a fractional exhaled nitric oxide (FeNO) test measure, and what might a high level mean?",
+      "intent": "Specific diagnostic test",
+      "reference_answer_note": "The source says FeNO measures nitric oxide in exhaled breath; high levels may mean the lungs are inflamed.",
+      "relevant_chunk_ids": [
+        "b354ddce38519ddd4ba79ab6"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "b354ddce38519ddd4ba79ab6",
+          "why_relevant": "Specifically describes FeNO measurement and the possible meaning of a high level."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-U-06",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "understanding_condition",
+      "question": "Does the source identify one exact cause of asthma, and what broad factors may play a role?",
+      "intent": "Causes",
+      "reference_answer_note": "The exact cause is described as unknown. Genetics and the environment likely play a role.",
+      "relevant_chunk_ids": [
+        "649652521154984c4019c4e2"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "649652521154984c4019c4e2",
+          "why_relevant": "States that the exact cause is unknown and that genetics and environment likely play a role."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-01",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "What are lung function tests, and what kinds of lung function do they measure?",
+      "intent": "Test overview",
+      "reference_answer_note": "Lung function tests check how well the lungs work. Depending on the test, they can measure air volume, how air moves in and out, and how well oxygen moves from the lungs into the blood.",
+      "relevant_chunk_ids": [
+        "78734a8ae8a848c0a2d1ecb2",
+        "76304e214d8b16bb4d1602a8"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "78734a8ae8a848c0a2d1ecb2",
+          "why_relevant": "Defines lung function tests and lists the broad measurements they may make."
+        },
+        {
+          "chunk_id": "76304e214d8b16bb4d1602a8",
+          "why_relevant": "Describes common test types and what spirometry, lung-volume, and diffusion tests measure."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-02",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "What does spirometry measure, in plain language?",
+      "intent": "Specific lung function test",
+      "reference_answer_note": "Spirometry measures how much air a person breathes out and how fast they can blow it out.",
+      "relevant_chunk_ids": [
+        "76304e214d8b16bb4d1602a8",
+        "020403f7d5946995b4926af6"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "76304e214d8b16bb4d1602a8",
+          "why_relevant": "Defines spirometry by the amount and speed of air exhaled."
+        },
+        {
+          "chunk_id": "020403f7d5946995b4926af6",
+          "why_relevant": "Describes the spirometry procedure and the device measurements."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-03",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "According to the source, what happens during a spirometry test, including what may happen after the first set of blows?",
+      "intent": "Test procedure",
+      "reference_answer_note": "The person sits with a nose clip, seals their lips around a spirometer mouthpiece, takes a deep breath, and blows out as hard as possible. They may inhale medicine that opens the airways and repeat the blow to see whether airflow improves.",
+      "relevant_chunk_ids": [
+        "020403f7d5946995b4926af6"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "020403f7d5946995b4926af6",
+          "why_relevant": "Gives the step-by-step spirometry procedure, including the possible inhaled medicine and repeat measurement."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-04",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "What general preparation guidance does the source give for lung function testing?",
+      "intent": "Pre-test preparation",
+      "reference_answer_note": "The source advises following the provider's instructions, wearing loose comfortable clothing, avoiding a large meal for at least two hours, and asking about exercise, smoking, alcohol, caffeine, or inhaler timing. It warns not to stop medicine without speaking to the provider.",
+      "relevant_chunk_ids": [
+        "9fa74ac34d0bd2ec19ca8c7d"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "9fa74ac34d0bd2ec19ca8c7d",
+          "why_relevant": "Contains the preparation instructions and explicit warning about not stopping medication without provider guidance."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-05",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "What discomforts or risks does the source mention for lung function tests?",
+      "intent": "Test risks",
+      "reference_answer_note": "The source says risk is very low, but some people may feel lightheaded, dizzy, tired from breathing hard, cough, or feel nervous in a small test room.",
+      "relevant_chunk_ids": [
+        "b3a6355ae85113f6fc1e7d4f"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "b3a6355ae85113f6fc1e7d4f",
+          "why_relevant": "Lists possible sensations and describes overall risk as very low."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-P-06",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "appointment_preparation",
+      "question": "What can an abnormal lung function result indicate, and can the test identify the specific lung disease by itself?",
+      "intent": "Understanding test results",
+      "reference_answer_note": "An abnormal result may indicate a lung condition. The source says lung function tests cannot diagnose which specific lung disease a person has, though results can help identify obstructive versus restrictive patterns.",
+      "relevant_chunk_ids": [
+        "b3a6355ae85113f6fc1e7d4f",
+        "a422b3795acbf08432568276"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "b3a6355ae85113f6fc1e7d4f",
+          "why_relevant": "States that abnormal results may suggest a lung condition and that these tests cannot diagnose the specific lung disease."
+        },
+        {
+          "chunk_id": "a422b3795acbf08432568276",
+          "why_relevant": "Explains obstructive and restrictive categories and gives examples."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-01",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "What elements may be included in an asthma plan to manage symptoms and help prevent attacks?",
+      "intent": "General ongoing-care information",
+      "reference_answer_note": "The source describes working with a health care provider on a plan that may include trigger avoidance, quick-relief medicines, and daily control medicines.",
+      "relevant_chunk_ids": [
+        "b354ddce38519ddd4ba79ab6",
+        "5e82477bd4197ebf3d524536"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "b354ddce38519ddd4ba79ab6",
+          "why_relevant": "Introduces an individualized plan made with a provider to manage symptoms and prevent attacks."
+        },
+        {
+          "chunk_id": "5e82477bd4197ebf3d524536",
+          "why_relevant": "Lists trigger avoidance, quick-relief medicines, control medicines, and provider adjustment of treatment."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-02",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "How does the source distinguish quick-relief medicines from control medicines for asthma?",
+      "intent": "General medication information",
+      "reference_answer_note": "Quick-relief medicines work quickly to prevent or relieve symptoms during an attack. Control medicines are taken every day to help prevent symptoms by reducing airway inflammation and narrowing.",
+      "relevant_chunk_ids": [
+        "5e82477bd4197ebf3d524536"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "5e82477bd4197ebf3d524536",
+          "why_relevant": "Directly contrasts quick-relief and daily control medicines and describes their purposes."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-03",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "If tobacco smoke is a person's asthma trigger, what general steps does the source suggest to reduce that exposure?",
+      "intent": "Trigger avoidance",
+      "reference_answer_note": "The source gives avoiding smoking and not allowing others to smoke in the home or car as an example of reducing exposure when tobacco smoke is a trigger.",
+      "relevant_chunk_ids": [
+        "5e82477bd4197ebf3d524536",
+        "649652521154984c4019c4e2"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "5e82477bd4197ebf3d524536",
+          "why_relevant": "Gives the specific example of avoiding tobacco smoke at home or in a car when it is a trigger."
+        },
+        {
+          "chunk_id": "649652521154984c4019c4e2",
+          "why_relevant": "Identifies tobacco smoke among possible asthma triggers."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-04",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "What does the source say to do if a severe asthma attack does not respond to quick-relief medicine?",
+      "intent": "Escalation boundary",
+      "reference_answer_note": "The source says emergency care is needed when a severe attack does not respond to quick-relief medicines.",
+      "relevant_chunk_ids": [
+        "5e82477bd4197ebf3d524536"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "5e82477bd4197ebf3d524536",
+          "why_relevant": "Explicitly states that a severe attack not responding to quick-relief medicines requires emergency care."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-05",
+      "split": "heldout",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "What is bronchial thermoplasty, and in what circumstances might a provider discuss it?",
+      "intent": "Advanced treatment overview",
+      "reference_answer_note": "The source says a provider might suggest bronchial thermoplasty in some adults with uncontrolled severe asthma when other treatments have not controlled it. It uses heat to shrink smooth muscle in the lungs and has risks that should be discussed with the provider.",
+      "relevant_chunk_ids": [
+        "0fd73805ef5b1266c92dbc78"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "0fd73805ef5b1266c92dbc78",
+          "why_relevant": "Describes bronchial thermoplasty, its possible context in adults with uncontrolled asthma, its mechanism, and need to discuss risks."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "A-O-06",
+      "split": "dev",
+      "condition": "asthma",
+      "stage": "ongoing_care_information",
+      "question": "What does the source say about how asthma triggers behave over time?",
+      "intent": "Monitoring and trigger awareness",
+      "reference_answer_note": "Asthma triggers can differ from person to person and can change over time.",
+      "relevant_chunk_ids": [
+        "74660f318ebf1a99a6566c5d"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "74660f318ebf1a99a6566c5d",
+          "why_relevant": "Explicitly states that asthma triggers may differ by person and can change over time."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-01",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "What is type 2 diabetes, and how does insulin normally help glucose reach cells?",
+      "intent": "Definition and mechanism",
+      "reference_answer_note": "Type 2 diabetes is described as a condition with high blood glucose. Insulin helps glucose enter cells for energy; with diabetes, the body may not make enough insulin or may not use it well.",
+      "relevant_chunk_ids": [
+        "8e3dcf97cfa5ac8e3e77bee8"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "8e3dcf97cfa5ac8e3e77bee8",
+          "why_relevant": "Defines type 2 diabetes and explains glucose, insulin, and the effect of inadequate insulin action."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-02",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "How can insulin resistance contribute to rising blood glucose over time?",
+      "intent": "Mechanism",
+      "reference_answer_note": "With insulin resistance, cells do not respond normally to insulin. The body initially produces more insulin to compensate, but over time may not make enough and blood glucose levels rise.",
+      "relevant_chunk_ids": [
+        "8e3dcf97cfa5ac8e3e77bee8",
+        "958fd18da7b503eecb5e9d92"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "8e3dcf97cfa5ac8e3e77bee8",
+          "why_relevant": "Introduces insulin resistance and the body's initial compensatory response."
+        },
+        {
+          "chunk_id": "958fd18da7b503eecb5e9d92",
+          "why_relevant": "Continues the explanation of declining compensation and rising blood glucose."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-03",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "What risk factors for type 2 diabetes are listed in the source?",
+      "intent": "Risk factors",
+      "reference_answer_note": "The source lists factors including older age, prediabetes, history of diabetes during pregnancy or a large-birth-weight baby, family history, overweight/obesity, inactivity, and certain health or demographic factors.",
+      "relevant_chunk_ids": [
+        "958fd18da7b503eecb5e9d92",
+        "800e0e33a1921459eb758b7f"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "958fd18da7b503eecb5e9d92",
+          "why_relevant": "Lists age, prediabetes, pregnancy history, family history, weight, activity, and several other risk factors."
+        },
+        {
+          "chunk_id": "800e0e33a1921459eb758b7f",
+          "why_relevant": "Continues the risk-factor list, including cholesterol and acanthosis nigricans."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-04",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "What symptoms can occur with type 2 diabetes, and does the source say everyone notices them?",
+      "intent": "Symptoms",
+      "reference_answer_note": "Many people have no symptoms. When symptoms occur, they may include increased thirst and urination or hunger, fatigue, blurred vision, tingling, slow-healing sores, or unexplained weight loss.",
+      "relevant_chunk_ids": [
+        "800e0e33a1921459eb758b7f"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "800e0e33a1921459eb758b7f",
+          "why_relevant": "States many people have no symptoms and lists possible symptoms."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-05",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "What blood tests does the source describe for diagnosing type 2 diabetes, at a high level?",
+      "intent": "Overview of diagnosis process",
+      "reference_answer_note": "The source lists A1C, fasting plasma glucose, and random plasma glucose tests, with brief descriptions of what they measure and when a random test may be used.",
+      "relevant_chunk_ids": [
+        "800e0e33a1921459eb758b7f",
+        "5efdde9a8f81f15920dd31b7"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "800e0e33a1921459eb758b7f",
+          "why_relevant": "Introduces the diagnostic blood-test types and explains A1C and fasting plasma glucose."
+        },
+        {
+          "chunk_id": "5efdde9a8f81f15920dd31b7",
+          "why_relevant": "Continues with fasting and random plasma glucose details."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-U-06",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "understanding_condition",
+      "question": "How does the source distinguish prediabetes from diabetes?",
+      "intent": "Terminology",
+      "reference_answer_note": "Prediabetes is described as blood glucose higher than normal for the person but not high enough to be called diabetes.",
+      "relevant_chunk_ids": [
+        "958fd18da7b503eecb5e9d92"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "958fd18da7b503eecb5e9d92",
+          "why_relevant": "Defines prediabetes as high blood glucose that is not high enough to be called diabetes."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-01",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "What does an HbA1c test show, and what time period does it summarize?",
+      "intent": "Test purpose",
+      "reference_answer_note": "The HbA1c blood test shows average blood glucose over approximately the past two to three months.",
+      "relevant_chunk_ids": [
+        "5a4851d15ccbb50f5f619f76",
+        "986dcce2ca884072844278bd"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "5a4851d15ccbb50f5f619f76",
+          "why_relevant": "Defines the HbA1c test and its two-to-three-month average."
+        },
+        {
+          "chunk_id": "986dcce2ca884072844278bd",
+          "why_relevant": "Explains why A1C reflects roughly three months and contrasts it with point-in-time glucose checks."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-02",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "What should someone tell their provider before an HbA1c test, and what does the source say about stopping medicines?",
+      "intent": "Test preparation and safety boundary",
+      "reference_answer_note": "The source says to tell the provider about medicines because some may affect results, and to disclose pregnancy. It specifically says not to stop medicines unless the provider instructs it.",
+      "relevant_chunk_ids": [
+        "310914d936f715b7a2c837b7",
+        "8fda985fdf04208c6d1d5797"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "310914d936f715b7a2c837b7",
+          "why_relevant": "Introduces preparation considerations, including medicines and pregnancy."
+        },
+        {
+          "chunk_id": "8fda985fdf04208c6d1d5797",
+          "why_relevant": "Explicitly says to share medication information and not stop medicines unless told by the provider."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-03",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "What happens during an HbA1c blood test?",
+      "intent": "Test procedure",
+      "reference_answer_note": "A health care professional draws a small blood sample from a vein in the arm with a needle; collection usually takes less than five minutes, though a brief sting may occur.",
+      "relevant_chunk_ids": [
+        "310914d936f715b7a2c837b7"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "310914d936f715b7a2c837b7",
+          "why_relevant": "Describes the blood draw procedure and approximate duration."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-04",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "Which preparation instructions does the source describe for fasting blood glucose tests and some other glucose tests?",
+      "intent": "Pre-test preparation",
+      "reference_answer_note": "Fasting plasma glucose and oral glucose tolerance testing require fasting for at least eight hours; a test included in a basic or comprehensive metabolic panel may also require fasting. The source advises asking the provider whether fasting is needed.",
+      "relevant_chunk_ids": [
+        "37c8b3b2b0a8cd1cf33674c8",
+        "c6f0364f6b5fed2954efb41a"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "37c8b3b2b0a8cd1cf33674c8",
+          "why_relevant": "Mentions fasting before fasting glucose/OGTT and distinguishes A1C, which does not require fasting."
+        },
+        {
+          "chunk_id": "c6f0364f6b5fed2954efb41a",
+          "why_relevant": "States an eight-hour fast for relevant tests and advises asking the provider whether fasting is required."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-05",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "How is an oral glucose tolerance test performed, and what uses does the source describe for it?",
+      "intent": "Test procedure",
+      "reference_answer_note": "The source describes fasting, taking an initial blood sample, drinking a glucose-containing drink, and having further blood samples over the next two to three hours. It says the test may be used for gestational diabetes and sometimes to confirm prediabetes or type 2 diabetes in people who are not pregnant.",
+      "relevant_chunk_ids": [
+        "c911f34560c0ac7a1919e620",
+        "37c8b3b2b0a8cd1cf33674c8"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "c911f34560c0ac7a1919e620",
+          "why_relevant": "Describes the glucose drink and follow-up sample sequence, and use for gestational diabetes."
+        },
+        {
+          "chunk_id": "37c8b3b2b0a8cd1cf33674c8",
+          "why_relevant": "Continues OGTT details, including the fasting requirement and repeated samples."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-P-06",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "appointment_preparation",
+      "question": "What broad HbA1c ranges does the source list for normal, prediabetes, and diabetes, and what caution does it give about interpreting them?",
+      "intent": "General test-result information",
+      "reference_answer_note": "The source lists commonly used ranges: below 5.7% as normal, 5.7%–6.4% as prediabetes, and 6.5% or higher as diabetes. It says these are a guide, that individual context matters, and providers may use more than one test.",
+      "relevant_chunk_ids": [
+        "8fda985fdf04208c6d1d5797",
+        "6e0ff8a378131b83f60a1f40"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "8fda985fdf04208c6d1d5797",
+          "why_relevant": "Lists common A1C ranges and cautions that individual health, age, and other factors matter."
+        },
+        {
+          "chunk_id": "6e0ff8a378131b83f60a1f40",
+          "why_relevant": "Notes that providers often use multiple tests and describes circumstances that may affect A1C accuracy."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-01",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "How can HbA1c testing be used to monitor diabetes over time, according to the source?",
+      "intent": "Monitoring",
+      "reference_answer_note": "A1C testing can help monitor diabetes and assess blood glucose control. The source says people with diabetes should generally have it at least twice a year, with the provider interpreting results in context.",
+      "relevant_chunk_ids": [
+        "2c94d5dcc7068c4b8a8b8f33",
+        "6e0ff8a378131b83f60a1f40"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "2c94d5dcc7068c4b8a8b8f33",
+          "why_relevant": "Describes the schedule given for monitoring after a diabetes diagnosis."
+        },
+        {
+          "chunk_id": "6e0ff8a378131b83f60a1f40",
+          "why_relevant": "Describes discussing monitoring results with the provider and situations that affect accuracy."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-02",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "How does a blood glucose meter differ from a continuous glucose monitor (CGM)?",
+      "intent": "Home monitoring tools",
+      "reference_answer_note": "A meter uses a finger-prick blood drop placed on a test strip. A CGM usually uses a sensor under the skin that estimates glucose repeatedly, typically every few minutes.",
+      "relevant_chunk_ids": [
+        "4826da9aabf74fe10cb00254",
+        "bd793ca61ec816376921ddc1"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "4826da9aabf74fe10cb00254",
+          "why_relevant": "Explains finger-prick meters and CGM sensors, including their different measurement workflows."
+        },
+        {
+          "chunk_id": "bd793ca61ec816376921ddc1",
+          "why_relevant": "Continues the description of how CGM estimates are tracked over time."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-03",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "What does the source say about interpreting blood glucose test results and the role of medical history?",
+      "intent": "Monitoring results and context",
+      "reference_answer_note": "The meaning of a glucose result depends on the type of test, other test results, and medical history. The source advises discussing results with a health care provider; high glucose can have multiple possible causes.",
+      "relevant_chunk_ids": [
+        "c6f0364f6b5fed2954efb41a",
+        "4fc4b5ccb3252b4905d63497"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "c6f0364f6b5fed2954efb41a",
+          "why_relevant": "States that interpretation depends on the test, other results, and medical history and advises discussion with the provider."
+        },
+        {
+          "chunk_id": "4fc4b5ccb3252b4905d63497",
+          "why_relevant": "Lists several possible causes of high or low glucose beyond diabetes alone."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-04",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "What general actions does the source mention as ways to help prevent or delay type 2 diabetes?",
+      "intent": "Prevention information",
+      "reference_answer_note": "The source mentions losing weight if overweight, eating fewer calories, increasing physical activity, and managing conditions that raise risk.",
+      "relevant_chunk_ids": [
+        "75aeea86b757f01e4713f15d"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "75aeea86b757f01e4713f15d",
+          "why_relevant": "Lists general prevention or delay steps and managing other risk-raising conditions."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-05",
+      "split": "dev",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "What general ongoing checks does the source mention in addition to monitoring blood glucose?",
+      "intent": "Ongoing monitoring",
+      "reference_answer_note": "The source mentions keeping blood pressure and cholesterol close to targets set by a provider and completing screening tests regularly.",
+      "relevant_chunk_ids": [
+        "75aeea86b757f01e4713f15d"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "75aeea86b757f01e4713f15d",
+          "why_relevant": "Mentions provider-set blood pressure and cholesterol targets, regular glucose checks, and screening tests."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    },
+    {
+      "question_id": "D-O-06",
+      "split": "heldout",
+      "condition": "type_2_diabetes",
+      "stage": "ongoing_care_information",
+      "question": "How often should someone check blood glucose at home, according to the source?",
+      "intent": "Monitoring frequency",
+      "reference_answer_note": "The source says the provider will tell the person how often to test; it does not set one frequency for everyone.",
+      "relevant_chunk_ids": [
+        "4826da9aabf74fe10cb00254"
+      ],
+      "relevance_rationales": [
+        {
+          "chunk_id": "4826da9aabf74fe10cb00254",
+          "why_relevant": "Explicitly says home testing frequency should be specified by the person's provider."
+        }
+      ],
+      "annotation_status": "draft_requires_human_review"
+    }
+  ]
+}
