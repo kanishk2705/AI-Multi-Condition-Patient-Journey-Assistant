@@ -2,7 +2,7 @@
 
 An undergraduate applied-AI project investigating whether condition- and journey-stage-aware retrieval improves the relevance of evidence for educational health-information questions.
 
-**Current status:** Phase 2 source ingestion has been locally verified. Phase 3 retrieval code is implemented on the `phase-3-retrieval` branch; building the local embedding index and running real-corpus comparisons remain to be verified. No retrieval-performance or answer-quality results are claimed.
+**Current status:** Phase 2 source ingestion has been locally verified. Phase 3 retrieval implementation is on the `phase-3-retrieval` branch. GitHub Actions on Python 3.11 passed all 29 automated tests. Full dependency installation, building the local embedding index, and real-corpus comparisons remain to be verified. No retrieval-performance or answer-quality results are claimed.
 
 ## Research question
 
