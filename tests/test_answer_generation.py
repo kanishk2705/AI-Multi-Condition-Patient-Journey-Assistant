@@ -37,7 +37,11 @@ class FakeRetriever:
         self.calls = []
 
     def retrieve_contextual(self, query, *, condition, stage, k=5):
-        self.calls.append((query, condition, stage, k))
+        self.calls.append(("contextual", query, condition, stage, k))
+        return self.items[:k]
+
+    def retrieve_baseline(self, query, k=5):
+        self.calls.append(("baseline", query, None, None, k))
         return self.items[:k]
 
 
@@ -284,3 +288,22 @@ def test_generated_possible_diagnosis_fails_closed():
     )
     assert response.status == "abstained"
     assert response.reason_code == "citation_or_safety_validation_failed"
+
+
+def test_baseline_answer_mode_preserves_unfiltered_retrieved_sources_for_evaluation():
+    chunk = make_chunk(
+        condition="asthma",
+        stage_scope=["appointment_preparation"],
+    )
+    retriever = FakeRetriever(items=[chunk])
+    generator = FakeGenerator(payload())
+    response = answer_question(
+        "What is type 2 diabetes?",
+        condition="type_2_diabetes",
+        stage="understanding_condition",
+        retriever=retriever,
+        generator=generator,
+        method="baseline",
+    )
+    assert response.status == "answered"
+    assert retriever.calls[0][0] == "baseline"
