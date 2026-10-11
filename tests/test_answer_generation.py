@@ -263,3 +263,24 @@ def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatc
     )
     assert response.status == "configuration_missing"
     assert created == []
+
+
+def test_generated_possible_diagnosis_fails_closed():
+    generator = FakeGenerator(payload([
+        {"text": "You might have diabetes.", "source_chunk_ids": [CHUNK_ID]}
+    ]))
+    chunk = make_chunk(
+        condition="type_2_diabetes",
+        stage_scope=["understanding_condition"],
+        source_url="https://medlineplus.gov/diabetestype2.html",
+        title="Type 2 Diabetes",
+    )
+    response = answer_question(
+        "What is type 2 diabetes?",
+        condition="type_2_diabetes",
+        stage="understanding_condition",
+        retriever=FakeRetriever(items=[chunk]),
+        generator=generator,
+    )
+    assert response.status == "abstained"
+    assert response.reason_code == "citation_or_safety_validation_failed"
