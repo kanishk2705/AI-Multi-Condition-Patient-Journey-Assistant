@@ -84,3 +84,15 @@ Run the held-out split only after review/freeze:
     python -m patient_journey_assistant.evaluate_retrieval --split heldout
 
 Evaluation results are written under `data/local/evaluation/`; no source text, local index, or generated evaluation output should be committed. Challenge prompts are behavior rubrics only and are not scored until answer generation is implemented.
+
+
+## Phase 5 — evidence-grounded answer generation and interface
+
+Phase 5 adds structured RAG answers, deterministic scope checks, claim-level citations validated against retrieved chunk IDs, and a Streamlit interface. The generation provider is configured with `GEMINI_API_KEY` (or `GOOGLE_API_KEY`) and optional `PJA_GENERATION_MODEL`; the default model alias is `gemini-flash-latest`. Copy the blank `.env.example` to a local `.env` only if running locally; never commit API keys.
+
+After the local approved-source index is built and the environment is configured, start the interface with:
+
+    streamlit run app.py
+
+The automated tests use a mocked generation provider and do not need a live API key. They test safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
+
