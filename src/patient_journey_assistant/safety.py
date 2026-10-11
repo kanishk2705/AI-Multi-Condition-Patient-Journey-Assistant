@@ -54,7 +54,20 @@ _PERSONAL_MEDICATION_PATTERNS = (
         r"my\s+(?:blood\s+glucose|blood\s+sugar|hba1c|a1c)\s+(?:result|reading|level|value)|"
         r"i\s+(?:got|received)\s+my\s+test\s+result)\b",
         re.I,
-    ),    re.compile(
+    ),
+    re.compile(
+        r"\bhow\s+much\b.{0,40}\b(?:insulin|medicine|medication|drug|dose|dosage|pill|tablet|inhaler|metformin)\b"
+        r".{0,50}\b(?:should|can|may|do)\s+i\b",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:should|can|may|must|do)\s+i\b.{0,120}\b"
+        r"(?:change|adjust|increase|decrease|start|stop|skip|follow|switch|avoid|take|inject)\b"
+        r".{0,100}\b(?:my\s+)?(?:diet|food|exercise|treatment|blood\s+sugar|glucose|symptoms|"
+        r"insulin|medicine|medication|drug|dose|dosage|pill|tablet|inhaler|metformin)\b",
+        re.I,
+    ),
+    re.compile(
         r"\b(?:should\s+i|what\s+should\s+i\s+do)\b.{0,100}\b"
         r"(?:my\s+symptoms|my\s+blood\s+sugar|my\s+glucose|my\s+a1c|my\s+hba1c)\b",
         re.I,
