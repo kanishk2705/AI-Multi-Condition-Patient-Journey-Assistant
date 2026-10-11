@@ -1,0 +1,21 @@
+services:
+  patient-journey-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: patient-journey-assistant:local
+    ports:
+      - "${HOST_PORT:-8501}:8501"
+    environment:
+      PORT: "8501"
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      PJA_GENERATION_MODEL: ${PJA_GENERATION_MODEL:-gemini-flash-latest}
+      PJA_INDEX_DIR: data/local/chroma
+      PJA_COLLECTION_NAME: patient_journey_chunks
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    volumes:
+      - patient-journey-data:/app/data/local
+    restart: unless-stopped
+
+volumes:
+  patient-journey-data:

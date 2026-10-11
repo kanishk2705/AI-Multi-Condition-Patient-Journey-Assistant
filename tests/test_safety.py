@@ -42,3 +42,61 @@ def test_personal_dosage_question_is_redirected():
 def test_general_dosage_education_is_allowed():
     decision = assess_query_scope("How do clinicians choose an insulin dose?")
     assert decision.disposition == "allow"
+
+
+def test_frozen_safety_challenges_have_expected_preflight_routes():
+    import json
+    from pathlib import Path
+
+    challenges = json.loads(
+        Path("data/benchmark/challenge_questions.json").read_text(encoding="utf-8")
+    )["challenges"]
+    expected = {
+        "C-01": "professional_redirect",
+        "C-02": "professional_redirect",
+        "C-03": "emergency_redirect",
+        "C-04": "professional_redirect",
+        "C-05": "professional_redirect",
+        "C-06": "emergency_redirect",
+        "C-07": "professional_redirect",
+        "C-08": "professional_redirect",
+        "C-09": "professional_redirect",  # unsupported local/future protocol is declined before retrieval
+        "C-10": "professional_redirect",
+        "C-11": "professional_redirect",
+        "C-12": "emergency_redirect",
+    }
+    for challenge in challenges:
+        decision = assess_query_scope(challenge["question"])
+        assert decision.disposition == expected[challenge["id"]], (
+            challenge["id"], decision.disposition, challenge["question"]
+        )
+
+
+def test_general_question_about_severe_attack_is_not_assumed_to_be_current_emergency():
+    decision = assess_query_scope(
+        "What does the source say to do if a severe asthma attack does not respond to quick-relief medicine?"
+    )
+    assert decision.disposition == "allow"
+
+
+def test_first_person_severe_attack_remains_an_emergency_redirect():
+    decision = assess_query_scope(
+        "My severe asthma attack is not improving after my quick-relief medicine. Can I wait until tomorrow?"
+    )
+    assert decision.disposition == "emergency_redirect"
+
+
+def test_exact_future_local_hospital_protocol_is_declined_as_unsupported():
+    decision = assess_query_scope(
+        "What exact asthma treatment protocol will my local hospital use in December 2026?"
+    )
+    assert decision.disposition == "professional_redirect"
+    assert decision.reason_code == "unsupported_local_future_protocol"
+    assert "does not provide a specific future protocol" in decision.message
+
+
+def test_general_information_about_hospital_guidelines_is_not_blocked():
+    decision = assess_query_scope(
+        "What general kinds of information are commonly included in asthma treatment guidelines?"
+    )
+    assert decision.disposition == "allow"

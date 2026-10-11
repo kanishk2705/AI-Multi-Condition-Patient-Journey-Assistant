@@ -37,7 +37,11 @@ class FakeRetriever:
         self.calls = []
 
     def retrieve_contextual(self, query, *, condition, stage, k=5):
-        self.calls.append((query, condition, stage, k))
+        self.calls.append(("contextual", query, condition, stage, k))
+        return self.items[:k]
+
+    def retrieve_baseline(self, query, k=5):
+        self.calls.append(("baseline", query, None, None, k))
         return self.items[:k]
 
 
@@ -245,7 +249,7 @@ def test_unapproved_source_host_is_not_sent_to_model():
     assert generator.calls == 0
 
 
-def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatch):
+def test_missing_api_key_uses_extractive_fallback_after_scope_allows_question(monkeypatch):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
     created = []
@@ -261,8 +265,10 @@ def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatc
         retriever=retriever_factory,
         generator=None,
     )
-    assert response.status == "configuration_missing"
-    assert created == []
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert response.model_name == "extractive-fallback"
+    assert created == [True]
 
 
 def test_generated_possible_diagnosis_fails_closed():
@@ -284,3 +290,80 @@ def test_generated_possible_diagnosis_fails_closed():
     )
     assert response.status == "abstained"
     assert response.reason_code == "citation_or_safety_validation_failed"
+
+
+def test_baseline_answer_mode_preserves_unfiltered_retrieved_sources_for_evaluation():
+    chunk = make_chunk(
+        condition="asthma",
+        stage_scope=["appointment_preparation"],
+    )
+    retriever = FakeRetriever(items=[chunk])
+    generator = FakeGenerator(payload())
+    response = answer_question(
+        "What is type 2 diabetes?",
+        condition="type_2_diabetes",
+        stage="understanding_condition",
+        retriever=retriever,
+        generator=generator,
+        method="baseline",
+    )
+    # The baseline is genuinely unfiltered, but a claim citing the wrong selected
+    # condition/stage is refused by the output citation guard.
+    assert response.status == "abstained"
+    assert response.reason_code == "citation_or_safety_validation_failed"
+    assert retriever.calls[0][0] == "baseline"
+
+
+def test_missing_provider_uses_verbatim_extractive_fallback_without_external_call(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+    retriever = FakeRetriever()
+    response = answer_question(
+        "What do lung function tests measure?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+    )
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert response.model_name == "extractive-fallback"
+    assert response.sources[0].source_url == "https://medlineplus.gov/lab-tests/lung-function-tests/"
+    assert response.claims[0].text == retriever.items[0].text
+    assert "verbatim" in response.message
+    assert retriever.calls[0][0] == "contextual"
+
+
+def test_extractive_fallback_does_not_quote_wrong_condition_or_stage():
+    wrong_chunk = make_chunk(condition="type_2_diabetes", stage_scope=["ongoing_care_information"])
+    retriever = FakeRetriever(items=[wrong_chunk])
+    # Contextual retrieval must not pass ineligible chunks to the extractive fallback.
+    response = answer_question(
+        "What do lung function tests measure?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+    )
+    assert response.status == "abstained"
+
+
+def test_extractive_fallback_can_quote_general_conditional_asthma_education():
+    source_text = (
+        "What is asthma? Asthma is a chronic lung disease. "
+        "When you have asthma, your airways can become inflamed and narrowed. "
+        "This can cause wheezing, coughing, and tightness in your chest."
+    )
+    chunk = make_chunk(text=source_text)
+    retriever = FakeRetriever(items=[chunk])
+    response = answer_question(
+        "What is asthma and what changes happen in the airways?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+        generation_mode="extractive",
+    )
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert all(claim.source_chunk_ids == (CHUNK_ID,) for claim in response.claims)

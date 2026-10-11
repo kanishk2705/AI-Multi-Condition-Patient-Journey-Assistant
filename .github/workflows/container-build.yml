@@ -1,0 +1,70 @@
+name: Container build
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - ".dockerignore"
+      - "scripts/container-entrypoint.sh"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - "src/**"
+      - "app.py"
+      - ".github/workflows/container-build.yml"
+  push:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - ".dockerignore"
+      - "scripts/container-entrypoint.sh"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - "src/**"
+      - "app.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docker-build:
+    name: Build portable runtime image
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build --pull --tag patient-journey-assistant:ci .
+      - name: Start container and wait for Streamlit health endpoint
+        run: |
+          set -eu
+          docker run --detach --name pja-runtime-smoke -p 8501:8501 patient-journey-assistant:ci
+          cleanup() {
+            docker logs pja-runtime-smoke 2>&1 | tail -n 80 || true
+            docker rm --force pja-runtime-smoke >/dev/null 2>&1 || true
+          }
+          trap cleanup EXIT
+          attempt=0
+          until [ "$attempt" -ge 120 ]; do
+            if python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=3)"; then
+              echo "Streamlit became healthy after container initialization."
+              exit 0
+            fi
+            attempt=$((attempt + 1))
+            sleep 5
+          done
+          echo "Container did not become healthy within 10 minutes." >&2
+          exit 1
+      - name: Confirm app health endpoint is configured
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          dockerfile = Path("Dockerfile").read_text(encoding="utf-8")
+          entrypoint = Path("scripts/container-entrypoint.sh").read_text(encoding="utf-8")
+          assert "HEALTHCHECK" in dockerfile
+          assert "python -m patient_journey_assistant.ingest" in entrypoint
+          assert "python -m patient_journey_assistant.build_index" in entrypoint
+          assert "streamlit run app.py" in entrypoint
+          print("Container boot, corpus initialization and health-check hooks are present.")
+          PY

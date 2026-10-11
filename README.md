@@ -2,7 +2,7 @@
 
 An undergraduate applied-AI project investigating whether condition- and journey-stage-aware retrieval improves the relevance of evidence for educational health-information questions.
 
-**Current status (11 October 2026):** Phases 1–3 are merged. Phase 4 has an automated evaluation workflow; 37 tests passed, all five approved sources were fetched, the exact 39-chunk snapshot was reproduced and indexed, and both development and held-out retrieval benchmarks completed. The preliminary results show no Recall@5 or coverage improvement from contextual filtering. See [Phase 4 Results](docs/PHASE_4_RESULTS.md). Answer generation and the Streamlit interface are not yet implemented. Benchmark labels are assistant-adjudicated provisional annotations, not independent human gold labels.
+**Current status (11 October 2026):** Phases 1–5 are merged. Phase 6 includes paired extractive answer/citation evaluation, deterministic safety-preflight checks, LLM-as-judge evaluation code (not run without a provider key), and a Dockerized Streamlit runtime. The current automated suite reports 76 passing tests; the frozen 39-chunk source snapshot rebuilds successfully; the 12 challenge prompts pass the preflight-routing check. See [Phase 4 retrieval results](docs/PHASE_4_RESULTS.md) and [Phase 6 answer/citation results](docs/PHASE_6_RESULTS.md). The no-key demo quotes sentences from approved sources rather than synthesizing a language-model answer.
 
 ## Research question
 
@@ -94,5 +94,18 @@ After the local approved-source index is built and the environment is configured
 
     streamlit run app.py
 
-The automated tests use a mocked generation provider and do not need a live API key. They test safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
+The automated tests use a mocked generation provider and do not need a live API key. Without a provider key, in-scope questions use a clearly labelled extractive fallback that quotes sentences from approved retrieved passages; it does not generate new explanatory text or call an external model. The tests check safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
 
+
+## Phase 6 — answer-quality evaluation and portable runtime
+
+Phase 6 adds paired answer generation for baseline and condition/stage-aware retrieval, a provisional 0–2 LLM-as-judge rubric, and automated preflight routing checks for the frozen 12 safety challenges. The default answer-quality sample contains one development question per condition-stage cell; live scoring is performed only if a Gemini API key is configured in GitHub Actions. Judge scores are preliminary diagnostics, not human ground truth.
+
+Docker support now builds a portable Streamlit image. On first start, the container ingests only source-manifest rows marked approved, builds the local Chroma index and starts the app. The image excludes local source data, indexes and API keys.
+
+See [Phase 6 acceptance](docs/PHASE_6_ACCEPTANCE.md). Build/run with Docker Compose using `docker compose up --build`; configure `GEMINI_API_KEY` only in the local shell or ignored `.env` file if live answers are needed. The app is not clinically validated, and a public hosted deployment is not claimed.
+
+
+## Phase 6 results
+
+The deterministic extractive fallback was evaluated on all 24 development and 12 held-out questions using both retrieval methods. These are citation-overlap diagnostics against assistant-adjudicated provisional labels, not human judgments of answer correctness. See [Phase 6 Results](docs/PHASE_6_RESULTS.md). A Gemini provider key is not configured in CI, so live LLM generation and LLM-as-judge scoring were skipped.
