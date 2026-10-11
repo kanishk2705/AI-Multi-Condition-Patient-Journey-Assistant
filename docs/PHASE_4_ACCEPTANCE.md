@@ -9,7 +9,7 @@
 - `data/benchmark/answerable_questions.json` — 36 answerable questions, split into 24 development and 12 held-out questions; each question has a reference-answer note, one or more relevant chunk IDs, and a rationale for every assigned chunk.
 - `data/benchmark/challenge_questions.json` — 12 safety/insufficient-evidence prompts with expected behavior rubrics. They are not run through retrieval metrics and have no observed pass/fail scores yet.
 - `data/benchmark/chunk_inventory.csv` — metadata-only inventory of the 39 uploaded chunk IDs and source/stage provenance. It does not contain source text.
-- `data/benchmark/relevance_review.csv` — reviewer-friendly worksheet with 54 proposed question-to-chunk judgments, rationale, and source links; use it alongside the local chunk text during annotation review.
+- `data/benchmark/relevance_review.csv` — adjudication log with the original proposals, explicit KEEP/REMOVE decisions, rationales, and source links. It contains 55 rows including the rejected proposals and their replacements.
 
 Question allocation is balanced across the six condition-stage cells: four development and two held-out questions per cell. The held-out split is logically separated in the data and the evaluator defaults to development; because the repository is public, the held-out prompts are not secret. Avoid tuning against held-out results.
 
@@ -60,7 +60,8 @@ The metadata coverage is uneven: the asthma appointment-preparation cell relies 
 - [x] Inspect the uploaded corpus: 39 unique, non-empty chunk records across five MedlinePlus source records.
 - [x] Draft 36 answerable questions across six cells with 24/12 development/held-out allocation.
 - [x] Attach proposed relevant chunk IDs and per-chunk rationales to each answerable question.
-- [x] Generate a reviewer-friendly CSV worksheet for the 54 proposed question-to-chunk judgments.
+- [x] Adjudicate the proposed labels against the exact uploaded corpus text; retain rejected proposals in the CSV audit log.
+- [x] Correct the unsupported prediabetes-definition question, remove two overinclusive gold labels, and preserve the six-cell 24/12 balance.
 - [x] Draft 12 safety/insufficient-evidence challenge prompts with expected-behavior rubrics.
 - [x] Add an offline evaluator for per-question and macro-average paired retrieval metrics.
 - [ ] Human-review and freeze questions, reference notes, and chunk relevance labels.
