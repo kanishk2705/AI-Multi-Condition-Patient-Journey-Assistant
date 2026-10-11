@@ -50,7 +50,7 @@ PERSONALIZED_DIRECTIVE_PATTERNS = (
     ),
     re.compile(r"\b(?:take|inject)\s+\d+(?:\.\d+)?\s*(?:mg|mcg|units?)\b", re.I),
     re.compile(
-        r"\b(?:you|your child|the patient)\s+(?:(?:definitely|likely|probably)\s+|(?:may|might|could)\s+)?"
+        r"^\s*(?:you|your child|the patient)\s+(?:(?:definitely|likely|probably)\s+|(?:may|might|could)\s+)?"
         r"(?:have|be diagnosed with|are suffering from|were diagnosed with)\s+(?:asthma|diabetes)\b",
         re.I,
     ),
