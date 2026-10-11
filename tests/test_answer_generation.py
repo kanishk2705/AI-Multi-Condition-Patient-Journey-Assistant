@@ -305,5 +305,8 @@ def test_baseline_answer_mode_preserves_unfiltered_retrieved_sources_for_evaluat
         generator=generator,
         method="baseline",
     )
-    assert response.status == "answered"
+    # The baseline is genuinely unfiltered, but a claim citing the wrong selected
+    # condition/stage is refused by the output citation guard.
+    assert response.status == "abstained"
+    assert response.reason_code == "citation_or_safety_validation_failed"
     assert retriever.calls[0][0] == "baseline"
