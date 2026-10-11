@@ -346,3 +346,24 @@ def test_extractive_fallback_does_not_quote_wrong_condition_or_stage():
         generator=None,
     )
     assert response.status == "abstained"
+
+
+def test_extractive_fallback_can_quote_general_conditional_asthma_education():
+    source_text = (
+        "What is asthma? Asthma is a chronic lung disease. "
+        "When you have asthma, your airways can become inflamed and narrowed. "
+        "This can cause wheezing, coughing, and tightness in your chest."
+    )
+    chunk = make_chunk(text=source_text)
+    retriever = FakeRetriever(items=[chunk])
+    response = answer_question(
+        "What is asthma and what changes happen in the airways?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+        generation_mode="extractive",
+    )
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert all(claim.source_chunk_ids == (CHUNK_ID,) for claim in response.claims)
