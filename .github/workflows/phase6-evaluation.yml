@@ -21,6 +21,7 @@ on:
       - "src/patient_journey_assistant/safety.py"
       - "src/patient_journey_assistant/evaluate_answers.py"
       - "src/patient_journey_assistant/evaluate_safety.py"
+      - "src/patient_journey_assistant/evaluate_extractive.py"
       - "data/benchmark/**"
       - "data/source_manifest.csv"
       - "requirements.txt"
