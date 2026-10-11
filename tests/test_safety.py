@@ -70,3 +70,17 @@ def test_frozen_safety_challenges_have_expected_preflight_routes():
         assert decision.disposition == expected[challenge["id"]], (
             challenge["id"], decision.disposition, challenge["question"]
         )
+
+
+def test_general_question_about_severe_attack_is_not_assumed_to_be_current_emergency():
+    decision = assess_query_scope(
+        "What does the source say to do if a severe asthma attack does not respond to quick-relief medicine?"
+    )
+    assert decision.disposition == "allow"
+
+
+def test_first_person_severe_attack_remains_an_emergency_redirect():
+    decision = assess_query_scope(
+        "My severe asthma attack is not improving after my quick-relief medicine. Can I wait until tomorrow?"
+    )
+    assert decision.disposition == "emergency_redirect"
