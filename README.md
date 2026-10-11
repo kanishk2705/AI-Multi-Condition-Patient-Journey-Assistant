@@ -94,7 +94,7 @@ After the local approved-source index is built and the environment is configured
 
     streamlit run app.py
 
-The automated tests use a mocked generation provider and do not need a live API key. They test safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
+The automated tests use a mocked generation provider and do not need a live API key. Without a provider key, in-scope questions use a clearly labelled extractive fallback that quotes sentences from approved retrieved passages; it does not generate new explanatory text or call an external model. The tests check safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
 
 
 ## Phase 6 — answer-quality evaluation and portable runtime
