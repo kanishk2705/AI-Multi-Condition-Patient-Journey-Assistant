@@ -96,3 +96,11 @@ After the local approved-source index is built and the environment is configured
 
 The automated tests use a mocked generation provider and do not need a live API key. They test safety routing, abstention, citation provenance and failure-closed behavior, but they do not establish the correctness of live generated answers or clinical safety. See [Phase 5 Acceptance](docs/PHASE_5_ACCEPTANCE.md).
 
+
+## Phase 6 — answer-quality evaluation and portable runtime
+
+Phase 6 adds paired answer generation for baseline and condition/stage-aware retrieval, a provisional 0–2 LLM-as-judge rubric, and automated preflight routing checks for the frozen 12 safety challenges. The default answer-quality sample contains one development question per condition-stage cell; live scoring is performed only if a Gemini API key is configured in GitHub Actions. Judge scores are preliminary diagnostics, not human ground truth.
+
+Docker support now builds a portable Streamlit image. On first start, the container ingests only source-manifest rows marked approved, builds the local Chroma index and starts the app. The image excludes local source data, indexes and API keys.
+
+See [Phase 6 acceptance](docs/PHASE_6_ACCEPTANCE.md). The app is not yet a clinically validated tool, and a public hosted deployment is not claimed.
