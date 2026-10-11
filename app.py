@@ -89,7 +89,9 @@ if submitted:
                         )
                 if citation_links:
                     st.caption("Evidence: " + " · ".join(citation_links))
-            if response.model_name:
+            if response.reason_code == "extractive_fallback":
+                st.caption("Answer mode: extractive source sentences; no external language model was called.")
+            elif response.model_name:
                 st.caption(f"Generation model: {response.model_name}")
         elif response.status in {"redirected", "professional_redirect"}:
             st.warning(response.message)
