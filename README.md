@@ -2,7 +2,7 @@
 
 An undergraduate applied-AI project investigating whether condition- and journey-stage-aware retrieval improves the relevance of evidence for educational health-information questions.
 
-**Current status:** Phase 2 source ingestion has been locally verified. Phase 3 retrieval implementation is on the `phase-3-retrieval` branch. GitHub Actions on Python 3.11 passed all 29 automated tests. Full dependency installation, building the local embedding index, and real-corpus comparisons remain to be verified. No retrieval-performance or answer-quality results are claimed.
+**Current status (11 October 2026):** Phases 1–3 are merged. Phase 4 has an automated evaluation workflow; 37 tests passed, all five approved sources were fetched, the exact 39-chunk snapshot was reproduced and indexed, and both development and held-out retrieval benchmarks completed. The preliminary results show no Recall@5 or coverage improvement from contextual filtering. See [Phase 4 Results](docs/PHASE_4_RESULTS.md). Answer generation and the Streamlit interface are not yet implemented. Benchmark labels are assistant-adjudicated provisional annotations, not independent human gold labels.
 
 ## Research question
 
@@ -73,7 +73,7 @@ The corpus is small and curated. Retrieval scores are not medical accuracy or cl
 
 ## Phase 4 — benchmark and retrieval evaluation
 
-The draft benchmark and evaluator are described in [`docs/PHASE_4_ACCEPTANCE.md`](docs/PHASE_4_ACCEPTANCE.md). It contains 36 answerable questions (24 development, 12 held-out) across the six condition-stage cells, plus 12 separate safety/insufficient-evidence challenge prompts. Relevance labels have been checked against the local corpus by an AI assistant and remain provisional pending independent human validation. Use [`data/benchmark/relevance_review.csv`](data/benchmark/relevance_review.csv) as the 54-row question-to-chunk review worksheet.
+The benchmark and measured results are documented in [`docs/PHASE_4_ACCEPTANCE.md`](docs/PHASE_4_ACCEPTANCE.md) and [`docs/PHASE_4_RESULTS.md`](docs/PHASE_4_RESULTS.md). It contains 36 answerable questions (24 development, 12 held-out) across the six condition-stage cells, plus 12 separate safety/insufficient-evidence challenge prompts. Relevance labels have been checked against the exact 39-chunk corpus by an AI assistant and remain provisional pending independent human validation. Use [`data/benchmark/relevance_review.csv`](data/benchmark/relevance_review.csv) as the 55-row question-to-chunk adjudication log (52 KEEP / 3 REMOVE decisions).
 
 After building the local index, run the development split first:
 
