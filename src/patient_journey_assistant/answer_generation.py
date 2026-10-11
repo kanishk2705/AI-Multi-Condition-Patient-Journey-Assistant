@@ -432,6 +432,7 @@ def answer_question(
     generator: TextGenerator | None = None,
     k: int = DEFAULT_TOP_K,
     method: Literal["contextual", "baseline"] = "contextual",
+    generation_mode: Literal["auto", "llm", "extractive"] = "auto",
 ) -> AnswerResponse:
     """Run safety routing, retrieval, grounded generation and citation checks.
 
@@ -450,6 +451,8 @@ def answer_question(
         return _abstain("The retrieval configuration is invalid.", "invalid_top_k")
     if method not in {"contextual", "baseline"}:
         return _abstain("The selected retrieval method is not supported.", "invalid_method")
+    if generation_mode not in {"auto", "llm", "extractive"}:
+        return _abstain("The selected generation mode is not supported.", "invalid_generation_mode")
 
     scope: ScopeDecision = assess_query_scope(question)
     if scope.disposition == "emergency_redirect":
@@ -466,13 +469,24 @@ def answer_question(
         )
 
     active_generator = generator
-    extractive_mode = False
-    if active_generator is None:
+    extractive_mode = generation_mode == "extractive"
+    if extractive_mode:
+        active_generator = None
+    elif active_generator is None:
         try:
             active_generator = GoogleGenAITextGenerator()
         except GenerationConfigurationError:
-            # Continue with a source-sentence fallback below. It returns only verbatim
-            # sentences from retrieved passages and never sends data to a third party.
+            if generation_mode == "llm":
+                return AnswerResponse(
+                    status="configuration_missing",
+                    message=(
+                        "LLM answer generation is not configured in this environment. "
+                        "No language-model answer was generated."
+                    ),
+                    reason_code="generation_configuration_missing",
+                )
+            # Auto mode uses a source-sentence fallback when the provider is absent.
+            # It returns only verbatim sentences and makes no third-party model call.
             active_generator = None
             extractive_mode = True
 
