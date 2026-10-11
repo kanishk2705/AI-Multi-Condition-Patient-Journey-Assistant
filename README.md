@@ -103,4 +103,4 @@ Phase 6 adds paired answer generation for baseline and condition/stage-aware ret
 
 Docker support now builds a portable Streamlit image. On first start, the container ingests only source-manifest rows marked approved, builds the local Chroma index and starts the app. The image excludes local source data, indexes and API keys.
 
-See [Phase 6 acceptance](docs/PHASE_6_ACCEPTANCE.md). The app is not yet a clinically validated tool, and a public hosted deployment is not claimed.
+See [Phase 6 acceptance](docs/PHASE_6_ACCEPTANCE.md). Build/run with Docker Compose using `docker compose up --build`; configure `GEMINI_API_KEY` only in the local shell or ignored `.env` file if live answers are needed. The app is not clinically validated, and a public hosted deployment is not claimed.
