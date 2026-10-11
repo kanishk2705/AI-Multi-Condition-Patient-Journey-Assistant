@@ -1,0 +1,153 @@
+name: Phase 4 retrieval benchmark
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/patient_journey_assistant/**"
+      - "data/benchmark/**"
+      - "data/source_manifest.csv"
+      - "requirements.txt"
+      - ".github/workflows/phase4-evaluation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase4-evaluation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  retrieval-benchmark:
+    name: Rebuild approved corpus and evaluate both retrieval methods
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install application dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e . --no-deps
+          python -m pip install -r requirements.txt
+          python -m pip install -r requirements-dev.txt
+
+      - name: Validate source manifest offline
+        run: python -m patient_journey_assistant.ingest --manifest data/source_manifest.csv
+
+      - name: Fetch only approved sources and build the local corpus
+        run: |
+          python -m patient_journey_assistant.ingest \
+            --manifest data/source_manifest.csv \
+            --output-dir data/local/processed \
+            --fetch-approved \
+            --delay-seconds 1
+
+      - name: Verify fetched corpus matches the benchmark snapshot
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          from pathlib import Path
+
+          expected = {
+              row["chunk_id"]
+              for row in csv.DictReader(Path("data/benchmark/chunk_inventory.csv").open(encoding="utf-8", newline=""))
+          }
+          records = [
+              json.loads(line)
+              for line in Path("data/local/processed/chunks.jsonl").read_text(encoding="utf-8").splitlines()
+              if line.strip()
+          ]
+          actual = {record["chunk_id"] for record in records}
+          if len(expected) != 39:
+              raise SystemExit(f"Benchmark inventory should contain 39 chunks; found {len(expected)}.")
+          if actual != expected:
+              missing = sorted(expected - actual)
+              added = sorted(actual - expected)
+              raise SystemExit(
+                  "Live source revision no longer matches the frozen benchmark corpus. "
+                  f"Missing IDs: {missing[:10]}; unexpected IDs: {added[:10]}. "
+                  "Do not evaluate against a drifted corpus; review the corpus and benchmark together."
+              )
+          report = json.loads(Path("data/local/processed/ingestion_report.json").read_text(encoding="utf-8"))
+          if report["failed_sources"] or len(report["fetched_sources"]) != 5:
+              raise SystemExit("Expected all five approved MedlinePlus sources to be fetched successfully.")
+          print(f"Verified frozen corpus snapshot: {len(actual)} chunk IDs match.")
+          PY
+
+      - name: Run automated tests
+        run: pytest
+
+      - name: Build the recorded embedding index
+        run: |
+          python -m patient_journey_assistant.build_index \
+            --chunks data/local/processed/chunks.jsonl \
+            --index-dir data/local/chroma
+
+      - name: Evaluate development split
+        run: python -m patient_journey_assistant.evaluate_retrieval --split dev
+
+      - name: Evaluate held-out split
+        run: python -m patient_journey_assistant.evaluate_retrieval --split heldout
+
+      - name: Write metric summary
+        if: success()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          lines = [
+              "# Phase 4 retrieval benchmark results",
+              "",
+              "> Preliminary results: benchmark relevance labels are assistant-adjudicated and have not been independently human-validated. This is an exploratory benchmark, not evidence of clinical accuracy or safety.",
+              "",
+              "| Split | Method | Questions | Recall@5 macro | MRR@5 macro | Retrieval coverage |",
+              "|---|---|---:|---:|---:|---:|",
+          ]
+          for split in ("dev", "heldout"):
+              p = Path(f"data/local/evaluation/retrieval_{split}.json")
+              report = json.loads(p.read_text(encoding="utf-8"))
+              results = report["results"]
+              for method_key, label in (("baseline", "Baseline semantic"), ("contextual", "Condition + stage")):
+                  m = results["method_summaries"][method_key]
+                  lines.append(
+                      f"| {split} | {label} | {m['question_count']} | "
+                      f"{m['recall_at_k_macro']:.4f} | {m['mrr_at_k_macro']:.4f} | "
+                      f"{m['retrieval_coverage']:.4f} |"
+                  )
+              delta = results["contextual_minus_baseline"]
+              lines.extend([
+                  "",
+                  f"**{split} paired contextual − baseline:** "
+                  f"Recall@5 {delta['recall_at_k_macro']:+.4f}; "
+                  f"MRR@5 {delta['mrr_at_k_macro']:+.4f}; "
+                  f"coverage {delta['retrieval_coverage']:+.4f}.",
+                  "",
+              ])
+          summary = Path(__import__("os").environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a", encoding="utf-8") as f:
+              f.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Upload retrieval reports (no raw source text or index)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase4-retrieval-evaluation
+          path: |
+            data/local/evaluation/retrieval_dev.json
+            data/local/evaluation/retrieval_heldout.json
+            data/local/processed/ingestion_report.json
+          if-no-files-found: warn
+          retention-days: 30
