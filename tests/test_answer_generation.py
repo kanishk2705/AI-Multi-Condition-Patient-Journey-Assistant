@@ -310,3 +310,37 @@ def test_baseline_answer_mode_preserves_unfiltered_retrieved_sources_for_evaluat
     assert response.status == "abstained"
     assert response.reason_code == "citation_or_safety_validation_failed"
     assert retriever.calls[0][0] == "baseline"
+
+
+def test_missing_provider_uses_verbatim_extractive_fallback_without_external_call(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+    retriever = FakeRetriever()
+    response = answer_question(
+        "What do lung function tests measure?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+    )
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert response.model_name == "extractive-fallback"
+    assert response.sources[0].source_url == "https://medlineplus.gov/lab-tests/lung-function-tests/"
+    assert response.claims[0].text == retriever.items[0].text
+    assert "verbatim" in response.message
+    assert retriever.calls[0][0] == "contextual"
+
+
+def test_extractive_fallback_does_not_quote_wrong_condition_or_stage():
+    wrong_chunk = make_chunk(condition="type_2_diabetes", stage_scope=["ongoing_care_information"])
+    retriever = FakeRetriever(items=[wrong_chunk])
+    # Contextual retrieval must not pass ineligible chunks to the extractive fallback.
+    response = answer_question(
+        "What do lung function tests measure?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever,
+        generator=None,
+    )
+    assert response.status == "abstained"
