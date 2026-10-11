@@ -56,8 +56,9 @@ _PERSONAL_MEDICATION_PATTERNS = (
         re.I,
     ),
     re.compile(
-        r"\bhow\s+much\b.{0,40}\b(?:insulin|medicine|medication|drug|dose|dosage|pill|tablet|inhaler|metformin)\b"
-        r".{0,50}\b(?:should|can|may|do)\s+i\b",
+        r"\b(?:how\s+much|what\s+(?:dose|dosage|amount))\b.{0,80}\b"
+        r"(?:of\s+)?(?:insulin|medicine|medication|drug|dose|dosage|pill|tablet|inhaler|metformin)\b"
+        r".{0,60}\b(?:should|can|may|do)\s+i\b",
         re.I,
     ),
     re.compile(
