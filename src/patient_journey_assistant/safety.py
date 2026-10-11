@@ -41,6 +41,27 @@ _EMERGENCY_PATTERNS = (
     re.compile(r"\b(?:sudden|severe|rapidly\s+worsening)\s+(?:breathing\s+problems|shortness\s+of\s+breath)\b", re.I),
 )
 
+
+UNSUPPORTED_INFORMATION_MESSAGE = (
+    "The approved source collection does not provide a specific future protocol for your local "
+    "hospital or clinic. Contact that facility directly for its current policy. This assistant "
+    "can only summarize the general educational information available in its approved sources."
+)
+
+_SPECIFIC_PROTOCOL_PATTERN = re.compile(
+    r"\b(?:exact|specific|official|current|latest)\b.{0,100}\b(?:treatment\s+)?(?:protocol|policy|procedure|guideline)\b"
+    r"|\b(?:treatment\s+)?(?:protocol|policy|procedure|guideline)\b.{0,100}\b(?:exact|specific|official|current|latest)\b",
+    re.I,
+)
+_LOCAL_INSTITUTION_PATTERN = re.compile(
+    r"\b(?:my|our|local|nearby)\s+(?:local\s+|nearby\s+)?(?:hospital|clinic|healthcare\s+facility|health\s+system)\b",
+    re.I,
+)
+_FUTURE_SPECIFIC_PATTERN = re.compile(
+    r"\b(?:will|would|in\s+20\d{2}|next\s+(?:month|week|year)|upcoming|future)\b",
+    re.I,
+)
+
 _PERSONAL_DIAGNOSIS_PATTERNS = (
     re.compile(r"\b(?:do\s+i\s+have|could\s+i\s+have|diagnose\s+me|what\s+disease\s+do\s+i\s+have)\b", re.I),
     re.compile(r"\b(?:am\s+i\s+(?:diabetic|having\s+asthma)|based\s+on\s+my\s+symptoms)\b", re.I),
@@ -139,6 +160,16 @@ def assess_query_scope(question: str) -> ScopeDecision:
             disposition="emergency_redirect",
             message=EMERGENCY_MESSAGE,
             reason_code="possible_emergency",
+        )
+    if (
+        _SPECIFIC_PROTOCOL_PATTERN.search(normalized)
+        and _LOCAL_INSTITUTION_PATTERN.search(normalized)
+        and _FUTURE_SPECIFIC_PATTERN.search(normalized)
+    ):
+        return ScopeDecision(
+            disposition="professional_redirect",
+            message=UNSUPPORTED_INFORMATION_MESSAGE,
+            reason_code="unsupported_local_future_protocol",
         )
     if any(pattern.search(normalized) for pattern in _PERSONAL_DIAGNOSIS_PATTERNS):
         return ScopeDecision(

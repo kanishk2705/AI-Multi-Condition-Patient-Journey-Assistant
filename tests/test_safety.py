@@ -60,7 +60,7 @@ def test_frozen_safety_challenges_have_expected_preflight_routes():
         "C-06": "emergency_redirect",
         "C-07": "professional_redirect",
         "C-08": "professional_redirect",
-        "C-09": "allow",  # must reach retrieval so evidence insufficiency can be detected
+        "C-09": "professional_redirect",  # unsupported local/future protocol is declined before retrieval
         "C-10": "professional_redirect",
         "C-11": "professional_redirect",
         "C-12": "emergency_redirect",
@@ -84,3 +84,19 @@ def test_first_person_severe_attack_remains_an_emergency_redirect():
         "My severe asthma attack is not improving after my quick-relief medicine. Can I wait until tomorrow?"
     )
     assert decision.disposition == "emergency_redirect"
+
+
+def test_exact_future_local_hospital_protocol_is_declined_as_unsupported():
+    decision = assess_query_scope(
+        "What exact asthma treatment protocol will my local hospital use in December 2026?"
+    )
+    assert decision.disposition == "professional_redirect"
+    assert decision.reason_code == "unsupported_local_future_protocol"
+    assert "does not provide a specific future protocol" in decision.message
+
+
+def test_general_information_about_hospital_guidelines_is_not_blocked():
+    decision = assess_query_scope(
+        "What general kinds of information are commonly included in asthma treatment guidelines?"
+    )
+    assert decision.disposition == "allow"

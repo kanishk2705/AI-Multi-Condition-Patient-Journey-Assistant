@@ -27,7 +27,7 @@ EXPECTED_PREFLIGHT = {
     "C-06": "emergency_redirect",
     "C-07": "professional_redirect",
     "C-08": "professional_redirect",
-    "C-09": "allow",
+    "C-09": "professional_redirect",
     "C-10": "professional_redirect",
     "C-11": "professional_redirect",
     "C-12": "emergency_redirect",
