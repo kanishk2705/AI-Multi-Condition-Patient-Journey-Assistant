@@ -32,3 +32,13 @@ def test_general_educational_question_is_allowed():
 
 def test_empty_question_is_rejected():
     assert assess_query_scope("   ").reason_code == "empty_question"
+
+
+def test_personal_dosage_question_is_redirected():
+    decision = assess_query_scope("What dose of insulin should I take?")
+    assert decision.disposition == "professional_redirect"
+
+
+def test_general_dosage_education_is_allowed():
+    decision = assess_query_scope("How do clinicians choose an insulin dose?")
+    assert decision.disposition == "allow"
