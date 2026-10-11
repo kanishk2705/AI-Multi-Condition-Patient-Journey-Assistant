@@ -27,9 +27,15 @@ _EMERGENCY_PATTERNS = (
     re.compile(r"\b(?:i\s+)?(?:can(?:not|'t)|unable\s+to)\s+breathe\b", re.I),
     re.compile(r"\bsevere\s+(?:trouble\s+breathing|shortness\s+of\s+breath|breathing\s+difficulty|allergic\s+reaction)\b", re.I),
     re.compile(r"\b(?:blue\s+lips|unconscious|unresponsive|seizure|chest\s+pain)\b", re.I),
-    re.compile(r"\bsevere\s+asthma\s+attack\b", re.I),
-    re.compile(r"\bstruggling\s+to\s+breathe\b", re.I),
-    re.compile(r"\b(?:cannot|can't|unable\s+to)\s+speak\s+in\s+full\s+sentences\b", re.I),
+    re.compile(
+        r"\b(?:my|i have|i am having|i'm having|someone is having)\s+(?:a\s+)?severe\s+asthma\s+attack\b",
+        re.I,
+    ),
+    re.compile(r"\b(?:i am|i'm|we are|someone is)\s+struggling\s+to\s+breathe\b", re.I),
+    re.compile(
+        r"\b(?:i|we|someone)\b.{0,80}\b(?:cannot|can't|am unable to|are unable to)\s+speak\s+in\s+full\s+sentences\b",
+        re.I,
+    ),
     re.compile(r"\bglucose\s+meter\b.{0,80}\b(?:low|below)\b.{0,60}\b(?:confused|confusion|unconscious)\b", re.I),
     re.compile(r"\b(?:call\s+an\s+ambulance|medical\s+emergency)\b", re.I),
     re.compile(r"\b(?:sudden|severe|rapidly\s+worsening)\s+(?:breathing\s+problems|shortness\s+of\s+breath)\b", re.I),
