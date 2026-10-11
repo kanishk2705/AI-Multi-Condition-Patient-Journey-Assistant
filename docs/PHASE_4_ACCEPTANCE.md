@@ -64,16 +64,21 @@ The metadata coverage is uneven: the asthma appointment-preparation cell relies 
 - [x] Correct the unsupported prediabetes-definition question, remove two overinclusive gold labels, and preserve the six-cell 24/12 balance.
 - [x] Draft 12 safety/insufficient-evidence challenge prompts with expected-behavior rubrics.
 - [x] Add an offline evaluator for per-question and macro-average paired retrieval metrics.
-- [ ] Human-review and freeze questions, reference notes, and chunk relevance labels.
-- [ ] Run automated tests in CI after integration.
-- [ ] Build/use the local 39-chunk index and run the development benchmark.
-- [ ] Inspect development results and correct only defensible benchmark or implementation issues.
-- [ ] Run the held-out split once after freezing the benchmark and report actual outcomes, including ties or regressions.
+- [x] Check and adjudicate provisional question-to-chunk labels against the uploaded corpus; mark them as AI-adjudicated, not independent human gold labels.
+- [x] Run the automated test suite in CI: 37 passed.
+- [x] Fetch the five approved sources and verify exact equality with the 39-chunk benchmark snapshot.
+- [x] Build the local embedding index: 39 chunks, 384 dimensions, recorded Sentence Transformers model, cosine distance.
+- [x] Run the development split and record the actual metrics.
+- [x] Run the held-out split and report the actual metrics, including ties and missed evidence.
+- [x] Add an automated workflow and upload metric reports as an artifact without committing local chunk text or index files.
 - [ ] Implement answer generation before scoring actual challenge pass/fail or generated-answer quality.
+
+See [Phase 4 Results](PHASE_4_RESULTS.md) for the exact measured metrics, paired differences, retrieval misses, and reproducibility record.
 
 ## Reporting boundaries
 
-- Benchmark construction and test-suite success do not demonstrate retrieval improvement.
+- The observed benchmark did not show improved Recall@5 or retrieval coverage. Development MRR increased only slightly (+0.0069); all held-out metrics tied.
+- The current labels are provisional AI-adjudicated annotations. Treat the recorded metrics as preliminary, not as independently validated gold-standard evaluation.
 - A high retrieval score does not establish clinical accuracy or safety.
 - No challenge pass rate exists until the generation behavior is implemented and reviewed.
 - The public repository exposes held-out questions. The held-out split is therefore a process separation, not a secret or external blind test.
