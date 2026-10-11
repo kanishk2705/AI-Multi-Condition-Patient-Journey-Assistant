@@ -47,7 +47,11 @@ PERSONALIZED_DIRECTIVE_PATTERNS = (
         re.I,
     ),
     re.compile(r"\b(?:take|inject)\s+\d+(?:\.\d+)?\s*(?:mg|mcg|units?)\b", re.I),
-    re.compile(r"\byou\s+(?:have|definitely have|are suffering from)\s+(?:asthma|diabetes)\b", re.I),
+    re.compile(
+        r"\b(?:you|your child|the patient)\s+(?:(?:definitely|likely|probably)\s+|(?:may|might|could)\s+)?"
+        r"(?:have|be diagnosed with|are suffering from|were diagnosed with)\s+(?:asthma|diabetes)\b",
+        re.I,
+    ),
 )
 URL_IN_CLAIM_PATTERN = re.compile(r"(?:https?://|\bwww\.)", re.I)
 
