@@ -249,7 +249,7 @@ def test_unapproved_source_host_is_not_sent_to_model():
     assert generator.calls == 0
 
 
-def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatch):
+def test_missing_api_key_uses_extractive_fallback_after_scope_allows_question(monkeypatch):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
     created = []
@@ -265,8 +265,10 @@ def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatc
         retriever=retriever_factory,
         generator=None,
     )
-    assert response.status == "configuration_missing"
-    assert created == []
+    assert response.status == "answered"
+    assert response.reason_code == "extractive_fallback"
+    assert response.model_name == "extractive-fallback"
+    assert created == [True]
 
 
 def test_generated_possible_diagnosis_fails_closed():
