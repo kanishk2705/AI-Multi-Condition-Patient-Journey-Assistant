@@ -315,9 +315,9 @@ def answer_question(
 ) -> AnswerResponse:
     """Run safety routing, retrieval, grounded generation and citation checks.
 
-    Contextual is the production/UI default. Baseline is exposed for paired experiments;
-    baseline citations must point to retrieved approved sources but are not silently
-    filtered by condition/stage, because that mismatch is part of what evaluation measures.
+    Contextual is the production/UI default. Baseline is exposed for paired experiments
+    and sends its unfiltered top-k to the generator, but displayed citations must still
+    match the selected condition/stage. A mismatch is recorded as abstention, not shown.
 
     A callable retriever is lazily constructed only after the query passes safety
     checks. No query or retrieved passage content is written to logs or persistent storage.
@@ -447,7 +447,7 @@ def answer_question(
 
     validated = _validated_sources(
         draft.claims, eligible, condition=condition, stage=stage,
-        require_context=(method == "contextual"),
+        require_context=True,
     )
     if validated is None:
         return _abstain(
