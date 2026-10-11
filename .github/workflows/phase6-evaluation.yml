@@ -8,6 +8,7 @@ on:
       - "src/patient_journey_assistant/safety.py"
       - "src/patient_journey_assistant/evaluate_answers.py"
       - "src/patient_journey_assistant/evaluate_safety.py"
+      - "src/patient_journey_assistant/evaluate_extractive.py"
       - "data/benchmark/**"
       - "data/source_manifest.csv"
       - "requirements.txt"
@@ -122,3 +123,56 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m patient_journey_assistant.evaluate_answers --split dev --per-cell 1
 
+      - name: Write extractive evaluation summary
+        if: success()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          lines = [
+              "# Extractive fallback evaluation",
+              "",
+              "> Deterministic verbatim-sentence fallback. Citation overlap is computed against assistant-adjudicated provisional labels, not independent human ground truth.",
+              "",
+              "| Split | Method | Questions | Answer rate | Gold-label citation precision (macro) | Gold-label citation recall (macro) | Citation coverage |",
+              "|---|---|---:|---:|---:|---:|---:|",
+          ]
+          for split in ("dev", "heldout"):
+              p = Path(f"data/local/evaluation/extractive_answers_{split}.json")
+              report = json.loads(p.read_text(encoding="utf-8"))
+              for method, label in (("baseline", "Baseline semantic"), ("contextual", "Condition + stage")):
+                  m = report["results"]["method_summaries"][method]
+                  lines.append(
+                      f"| {split} | {label} | {m['question_count']} | "
+                      f"{m['answer_rate']:.4f} | "
+                      f"{m['citation_relevance_precision_macro']:.4f} | "
+                      f"{m['citation_relevance_recall_macro']:.4f} | "
+                      f"{m['labelled_relevant_citation_coverage']:.4f} |"
+                  )
+              delta = report["results"]["paired_differences_contextual_minus_baseline"]
+              lines.extend([
+                  "",
+                  f"**{split} paired contextual − baseline:** citation precision "
+                  f"{delta['citation_relevance_precision_macro_contextual_minus_baseline']:+.4f}; "
+                  f"citation recall {delta['citation_relevance_recall_macro_contextual_minus_baseline']:+.4f}; "
+                  f"citation coverage {delta['labelled_relevant_citation_coverage_contextual_minus_baseline']:+.4f}.",
+                  "",
+              ])
+          with Path(__import__("os").environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as stream:
+              stream.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Upload local evaluation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase6-answer-quality-and-safety
+          path: |
+            data/local/evaluation/safety_preflight.json
+            data/local/evaluation/extractive_answers_dev.json
+            data/local/evaluation/extractive_answers_heldout.json
+            data/local/evaluation/answer_quality_dev.json
+            data/local/processed/ingestion_report.json
+          if-no-files-found: warn
+          retention-days: 30
