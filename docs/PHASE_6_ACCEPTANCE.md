@@ -39,3 +39,8 @@ On first startup the container fetches the five approved source records from the
 - Citation provenance checks verify retrieved IDs, context labels and approved HTTPS hosts; they cannot prove semantic entailment.
 - No cloud account, provider secret, or hosting service is provisioned by this repository. A public deployment is not claimed just because the container can be built.
 - The app is an educational information-navigation prototype, not a diagnostic or treatment tool.
+
+
+## Current automated extractive evaluation
+
+See [Phase 6 Results](PHASE_6_RESULTS.md) for the report from the automated CI run. The no-key fallback answered all 24 development and 12 held-out questions using verbatim sentences from source passages. Citation overlap against provisional relevance labels was lower for contextual retrieval precision on both splits, while coverage and answer rate tied; development citation recall was slightly lower and held-out citation recall tied. These figures measure source/citation overlap, not human-rated semantic answer correctness.
