@@ -60,7 +60,7 @@ def test_relevance_rationales_match_relevant_chunk_ids():
     for question in benchmark["questions"]:
         rationale_ids = [item["chunk_id"] for item in question["relevance_rationales"]]
         assert set(rationale_ids) == set(question["relevant_chunk_ids"])
-        assert question["annotation_status"] == "draft_requires_human_review"
+        assert question["annotation_status"] == "assistant_adjudicated_provisional"
 
 
 def test_challenge_set_has_twelve_expected_behavior_rubrics():
@@ -101,3 +101,17 @@ def test_evaluator_rejects_unknown_gold_chunk_ids():
     benchmark = load_benchmark(BENCHMARK)
     with pytest.raises(ValueError, match="absent from the current corpus"):
         validate_relevant_ids(benchmark["questions"], {"known-chunk-only"})
+
+
+def test_assistant_adjudication_removed_unsupported_or_overinclusive_labels():
+    benchmark = load_benchmark(BENCHMARK)
+    by_id = {item["question_id"]: item for item in benchmark["questions"]}
+
+    assert by_id["A-O-03"]["relevant_chunk_ids"] == ["5e82477bd4197ebf3d524536"]
+    assert by_id["A-P-02"]["relevant_chunk_ids"] == ["76304e214d8b16bb4d1602a8"]
+    assert by_id["D-U-06"]["relevant_chunk_ids"] == ["75aeea86b757f01e4713f15d"]
+    assert "medicines" in by_id["D-U-06"]["question"].lower()
+    assert all(
+        item["annotation_status"] == "assistant_adjudicated_provisional"
+        for item in benchmark["questions"]
+    )
