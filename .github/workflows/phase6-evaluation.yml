@@ -75,12 +75,10 @@ jobs:
             echo "No Gemini API key is configured. Live answer scoring will be skipped; all offline checks still run."
           fi
 
-      - name: Install full application dependencies for live evaluation
-        if: steps.provider.outputs.available == 'true'
+      - name: Install full application dependencies for local-index and extractive evaluation
         run: python -m pip install -r requirements.txt
 
       - name: Fetch only approved sources and build the exact corpus
-        if: steps.provider.outputs.available == 'true'
         run: |
           python -m patient_journey_assistant.ingest \
             --manifest data/source_manifest.csv \
@@ -110,8 +108,13 @@ jobs:
           PY
 
       - name: Build persistent local embedding index
-        if: steps.provider.outputs.available == 'true'
         run: python -m patient_journey_assistant.build_index --chunks data/local/processed/chunks.jsonl --index-dir data/local/chroma
+
+      - name: Evaluate extractive fallback against development benchmark
+        run: python -m patient_journey_assistant.evaluate_extractive --split dev
+
+      - name: Evaluate extractive fallback against held-out benchmark
+        run: python -m patient_journey_assistant.evaluate_extractive --split heldout
 
       - name: Evaluate one development question per cell with the live model
         if: steps.provider.outputs.available == 'true'
