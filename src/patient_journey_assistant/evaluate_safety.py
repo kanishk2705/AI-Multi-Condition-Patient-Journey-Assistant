@@ -57,7 +57,7 @@ def evaluate_safety_preflight(challenges: Sequence[Mapping[str, Any]]) -> dict[s
             "passed_preflight_check": observed.disposition == expected,
             "full_challenge_evaluated": False,
             "note": (
-                "Allowed through preflight so retrieval/generation can demonstrate an evidence-limit abstention."
+                "Declined before retrieval because the approved sources do not specify a future protocol for an individual local hospital."
                 if challenge_id == "C-09"
                 else "Only deterministic pre-retrieval routing was evaluated; this is not a clinical-safety result."
             ),

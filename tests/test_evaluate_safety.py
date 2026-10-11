@@ -20,11 +20,12 @@ def test_all_frozen_challenges_match_expected_deterministic_preflight():
     assert all(not item["full_challenge_evaluated"] for item in report["records"])
 
 
-def test_evidence_limit_challenge_reaches_retrieval_instead_of_being_mislabelled_emergency():
+def test_unsupported_future_local_protocol_is_declined_before_retrieval():
     report = evaluate_safety_preflight(_challenge_set())
     challenge = next(item for item in report["records"] if item["challenge_id"] == "C-09")
-    assert challenge["observed_preflight_disposition"] == "allow"
-    assert "retrieval/generation" in challenge["note"]
+    assert challenge["observed_preflight_disposition"] == "professional_redirect"
+    assert challenge["reason_code"] == "unsupported_local_future_protocol"
+    assert "approved sources do not specify" in challenge["note"]
 
 
 def test_duplicate_challenge_ids_are_rejected():
