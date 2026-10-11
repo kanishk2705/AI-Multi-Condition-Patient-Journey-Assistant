@@ -243,3 +243,23 @@ def test_unapproved_source_host_is_not_sent_to_model():
     )
     assert response.status == "abstained"
     assert generator.calls == 0
+
+
+def test_missing_api_key_fails_cleanly_without_constructing_retriever(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+    created = []
+
+    def retriever_factory():
+        created.append(True)
+        return FakeRetriever()
+
+    response = answer_question(
+        "What happens during lung function testing?",
+        condition="asthma",
+        stage="appointment_preparation",
+        retriever=retriever_factory,
+        generator=None,
+    )
+    assert response.status == "configuration_missing"
+    assert created == []
