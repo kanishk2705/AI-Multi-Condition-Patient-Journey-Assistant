@@ -303,6 +303,126 @@ def _validated_sources(
     return tuple(final_claims), tuple(unique_sources)
 
 
+
+
+_EXTRACTIVE_STOPWORDS = {
+    "about", "above", "after", "again", "against", "also", "among", "and", "any",
+    "are", "because", "been", "before", "being", "between", "both", "but", "can",
+    "could", "did", "does", "during", "each", "for", "from", "had", "has", "have",
+    "her", "here", "hers", "him", "his", "how", "into", "its", "itself", "may",
+    "might", "more", "most", "not", "onto", "our", "out", "over", "same", "should",
+    "some", "such", "than", "that", "the", "their", "them", "then", "there", "these",
+    "they", "this", "those", "through", "under", "until", "very", "was", "were",
+    "what", "when", "where", "which", "while", "who", "why", "will", "with", "would",
+    "you", "your", "does", "use", "used", "using", "tell", "explain", "describe",
+    "please", "information", "general", "condition",
+}
+
+
+def _content_tokens(text: str) -> set[str]:
+    """Return simple normalized content tokens for extractive sentence ranking."""
+    words = re.findall(r"[a-zA-Z][a-zA-Z'-]{2,}", text.casefold())
+    tokens: set[str] = set()
+    for word in words:
+        word = word.strip("'-")
+        if len(word) < 3 or word in _EXTRACTIVE_STOPWORDS:
+            continue
+        tokens.add(word)
+        if word.endswith("ies") and len(word) > 5:
+            tokens.add(word[:-3] + "y")
+        elif word.endswith("ing") and len(word) > 6:
+            tokens.add(word[:-3])
+        elif word.endswith("ed") and len(word) > 5:
+            tokens.add(word[:-2])
+        elif word.endswith("s") and len(word) > 4:
+            tokens.add(word[:-1])
+    return tokens
+
+
+def _extractive_fallback(
+    question: str,
+    chunks: Sequence[RetrievedChunk],
+    *,
+    condition: str,
+    stage: str,
+    max_claims: int = 3,
+) -> AnswerResponse:
+    """Return verbatim source sentences when no LLM provider is configured.
+
+    It makes no novel medical claims: each sentence is copied from an eligible
+    retrieved passage and cited back to that passage. This fallback is deliberately
+    labelled separately from LLM-generated answers and is not included in RAG
+    answer-quality results as if it used a language model.
+    """
+    query_tokens = _content_tokens(question)
+    candidates: list[tuple[float, int, int, str, RetrievedChunk]] = []
+    for chunk_rank, chunk in enumerate(chunks):
+        metadata = chunk.metadata or {}
+        if metadata.get("condition") != condition or stage not in metadata.get("stage_scope", []):
+            continue
+        for sentence_index, raw_sentence in enumerate(
+            re.split(r"(?<=[.!?])\s+(?=[A-Z0-9])", " ".join(chunk.text.split()))
+        ):
+            sentence = raw_sentence.strip(" \t\r\n-•")
+            if len(sentence) < 24 or not re.search(r"[A-Za-z]", sentence):
+                continue
+            sentence_tokens = _content_tokens(sentence)
+            overlap = (
+                len(query_tokens & sentence_tokens) / len(query_tokens)
+                if query_tokens else 0.0
+            )
+            similarity = max(0.0, min(1.0, float(chunk.similarity)))
+            # Lexical overlap helps answer the wording; retrieved similarity
+            # retains semantically relevant wording that does not share tokens.
+            score = 0.65 * overlap + 0.35 * similarity
+            candidates.append((score, chunk_rank, sentence_index, sentence, chunk))
+
+    candidates.sort(key=lambda item: (-item[0], item[1], item[2], item[4].chunk_id))
+    selected: list[DraftClaim] = []
+    used_sentences: set[str] = set()
+    counts_by_chunk: dict[str, int] = {}
+    for _score, _rank, _index, sentence, chunk in candidates:
+        norm = re.sub(r"\W+", " ", sentence.casefold()).strip()
+        if not norm or norm in used_sentences:
+            continue
+        if counts_by_chunk.get(chunk.chunk_id, 0) >= 2:
+            continue
+        selected.append(DraftClaim(text=sentence, source_chunk_ids=[chunk.chunk_id]))
+        used_sentences.add(norm)
+        counts_by_chunk[chunk.chunk_id] = counts_by_chunk.get(chunk.chunk_id, 0) + 1
+        if len(selected) >= max_claims:
+            break
+
+    if not selected:
+        return _abstain(
+            "The approved source passages did not provide a usable extractive answer.",
+            "extractive_fallback_no_sentence",
+            "extractive-fallback",
+        )
+    validated = _validated_sources(
+        selected, chunks, condition=condition, stage=stage, require_context=True
+    )
+    if validated is None:
+        return _abstain(
+            "The retrieved passage did not pass source and safety validation, so no extract was presented.",
+            "extractive_fallback_validation_failed",
+            "extractive-fallback",
+        )
+    claims, sources = validated
+    return AnswerResponse(
+        status="answered",
+        message=(
+            "No language-model API key is configured. This is an extractive summary: "
+            "each sentence is quoted verbatim from an approved retrieved source passage; "
+            "no new explanatory text was generated."
+        ),
+        claims=claims,
+        sources=sources,
+        model_name="extractive-fallback",
+        reason_code="extractive_fallback",
+    )
+
+
 def answer_question(
     question: str,
     *,
@@ -346,18 +466,15 @@ def answer_question(
         )
 
     active_generator = generator
+    extractive_mode = False
     if active_generator is None:
         try:
             active_generator = GoogleGenAITextGenerator()
         except GenerationConfigurationError:
-            return AnswerResponse(
-                status="configuration_missing",
-                message=(
-                    "Answer generation is not configured in this environment. No answer was "
-                    "generated. The application requires its configured language-model service."
-                ),
-                reason_code="generation_configuration_missing",
-            )
+            # Continue with a source-sentence fallback below. It returns only verbatim
+            # sentences from retrieved passages and never sends data to a third party.
+            active_generator = None
+            extractive_mode = True
 
     try:
         if callable(retriever) and not hasattr(retriever, "retrieve_contextual"):
@@ -411,6 +528,11 @@ def answer_question(
             "The approved source collection did not return usable evidence for this question.",
             "no_eligible_evidence",
             getattr(active_generator, "model_name", None),
+        )
+
+    if extractive_mode:
+        return _extractive_fallback(
+            question, eligible, condition=condition, stage=stage
         )
 
     prompt = build_generation_prompt(question, condition, stage, eligible)
