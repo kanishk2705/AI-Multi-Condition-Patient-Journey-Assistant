@@ -4,11 +4,18 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - "src/patient_journey_assistant/**"
+      - "src/patient_journey_assistant/embeddings.py"
+      - "src/patient_journey_assistant/vector_index.py"
+      - "src/patient_journey_assistant/retrieval.py"
+      - "src/patient_journey_assistant/metrics.py"
+      - "src/patient_journey_assistant/evaluate_retrieval.py"
+      - "src/patient_journey_assistant/manifest.py"
+      - "src/patient_journey_assistant/chunking.py"
+      - "src/patient_journey_assistant/ingest.py"
+      - "src/patient_journey_assistant/text_processing.py"
       - "data/benchmark/**"
       - "data/source_manifest.csv"
       - "requirements.txt"
-      - ".github/workflows/phase4-evaluation.yml"
   workflow_dispatch:
 
 permissions:
