@@ -2,8 +2,8 @@
   "schema_version": 1,
   "benchmark_id": "patient-journey-retrieval-v1-draft",
   "created_date": "2026-10-10",
-  "annotation_status": "draft_requires_human_review",
-  "purpose": "Exploratory retrieval benchmark for the frozen project research question; all relevance labels and reference notes are proposed annotations based on the uploaded 39-chunk corpus.",
+  "annotation_status": "assistant_adjudicated_provisional",
+  "purpose": "Exploratory retrieval benchmark with question-to-chunk annotations checked by an AI assistant against the exact 39-chunk corpus. Labels are provisional, not independently human-adjudicated ground truth; report results as preliminary.",
   "corpus_record_count": 39,
   "splits": {
     "dev": 24,
@@ -27,7 +27,7 @@
           "why_relevant": "Defines asthma and describes airway inflammation/narrowing and common symptoms."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-U-02",
@@ -51,7 +51,7 @@
           "why_relevant": "Continues the trigger discussion and explicitly says triggers can differ by person and change over time."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-U-03",
@@ -70,7 +70,7 @@
           "why_relevant": "Lists common asthma symptoms and describes how symptoms worsen during an attack."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-U-04",
@@ -94,7 +94,7 @@
           "why_relevant": "Continues the list with peak expiratory flow, FeNO, and allergy testing."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-U-05",
@@ -113,7 +113,7 @@
           "why_relevant": "Specifically describes FeNO measurement and the possible meaning of a high level."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-U-06",
@@ -132,7 +132,7 @@
           "why_relevant": "States that the exact cause is unknown and that genetics and environment likely play a role."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-01",
@@ -156,7 +156,7 @@
           "why_relevant": "Describes common test types and what spirometry, lung-volume, and diffusion tests measure."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-02",
@@ -167,20 +167,15 @@
       "intent": "Specific lung function test",
       "reference_answer_note": "Spirometry measures how much air a person breathes out and how fast they can blow it out.",
       "relevant_chunk_ids": [
-        "76304e214d8b16bb4d1602a8",
-        "020403f7d5946995b4926af6"
+        "76304e214d8b16bb4d1602a8"
       ],
       "relevance_rationales": [
         {
           "chunk_id": "76304e214d8b16bb4d1602a8",
           "why_relevant": "Defines spirometry by the amount and speed of air exhaled."
-        },
-        {
-          "chunk_id": "020403f7d5946995b4926af6",
-          "why_relevant": "Describes the spirometry procedure and the device measurements."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-03",
@@ -199,7 +194,7 @@
           "why_relevant": "Gives the step-by-step spirometry procedure, including the possible inhaled medicine and repeat measurement."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-04",
@@ -218,7 +213,7 @@
           "why_relevant": "Contains the preparation instructions and explicit warning about not stopping medication without provider guidance."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-05",
@@ -237,7 +232,7 @@
           "why_relevant": "Lists possible sensations and describes overall risk as very low."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-P-06",
@@ -261,7 +256,7 @@
           "why_relevant": "Explains obstructive and restrictive categories and gives examples."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-01",
@@ -285,7 +280,7 @@
           "why_relevant": "Lists trigger avoidance, quick-relief medicines, control medicines, and provider adjustment of treatment."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-02",
@@ -304,7 +299,7 @@
           "why_relevant": "Directly contrasts quick-relief and daily control medicines and describes their purposes."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-03",
@@ -315,20 +310,15 @@
       "intent": "Trigger avoidance",
       "reference_answer_note": "The source gives avoiding smoking and not allowing others to smoke in the home or car as an example of reducing exposure when tobacco smoke is a trigger.",
       "relevant_chunk_ids": [
-        "5e82477bd4197ebf3d524536",
-        "649652521154984c4019c4e2"
+        "5e82477bd4197ebf3d524536"
       ],
       "relevance_rationales": [
         {
           "chunk_id": "5e82477bd4197ebf3d524536",
           "why_relevant": "Gives the specific example of avoiding tobacco smoke at home or in a car when it is a trigger."
-        },
-        {
-          "chunk_id": "649652521154984c4019c4e2",
-          "why_relevant": "Identifies tobacco smoke among possible asthma triggers."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-04",
@@ -347,7 +337,7 @@
           "why_relevant": "Explicitly states that a severe attack not responding to quick-relief medicines requires emergency care."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-05",
@@ -366,7 +356,7 @@
           "why_relevant": "Describes bronchial thermoplasty, its possible context in adults with uncontrolled asthma, its mechanism, and need to discuss risks."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "A-O-06",
@@ -385,7 +375,7 @@
           "why_relevant": "Explicitly states that asthma triggers may differ by person and can change over time."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-01",
@@ -404,7 +394,7 @@
           "why_relevant": "Defines type 2 diabetes and explains glucose, insulin, and the effect of inadequate insulin action."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-02",
@@ -428,7 +418,7 @@
           "why_relevant": "Continues the explanation of declining compensation and rising blood glucose."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-03",
@@ -452,7 +442,7 @@
           "why_relevant": "Continues the risk-factor list, including cholesterol and acanthosis nigricans."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-04",
@@ -471,7 +461,7 @@
           "why_relevant": "States many people have no symptoms and lists possible symptoms."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-05",
@@ -495,26 +485,26 @@
           "why_relevant": "Continues with fasting and random plasma glucose details."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-U-06",
       "split": "dev",
       "condition": "type_2_diabetes",
       "stage": "understanding_condition",
-      "question": "How does the source distinguish prediabetes from diabetes?",
-      "intent": "Terminology",
-      "reference_answer_note": "Prediabetes is described as blood glucose higher than normal for the person but not high enough to be called diabetes.",
+      "question": "Which types of medicines does the source say may be used to manage type 2 diabetes?",
+      "intent": "General medication categories in the condition overview",
+      "reference_answer_note": "The overview lists oral medicines, insulin, and other injectable medicines; it notes that some people may need more than one type over time.",
       "relevant_chunk_ids": [
-        "958fd18da7b503eecb5e9d92"
+        "75aeea86b757f01e4713f15d"
       ],
       "relevance_rationales": [
         {
-          "chunk_id": "958fd18da7b503eecb5e9d92",
-          "why_relevant": "Defines prediabetes as high blood glucose that is not high enough to be called diabetes."
+          "chunk_id": "75aeea86b757f01e4713f15d",
+          "why_relevant": "The condition summary explicitly lists oral medicines, insulin, and other injectable medicines, and its stage metadata includes understanding_condition."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-01",
@@ -538,7 +528,7 @@
           "why_relevant": "Explains why A1C reflects roughly three months and contrasts it with point-in-time glucose checks."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-02",
@@ -562,7 +552,7 @@
           "why_relevant": "Explicitly says to share medication information and not stop medicines unless told by the provider."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-03",
@@ -581,7 +571,7 @@
           "why_relevant": "Describes the blood draw procedure and approximate duration."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-04",
@@ -605,7 +595,7 @@
           "why_relevant": "States an eight-hour fast for relevant tests and advises asking the provider whether fasting is required."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-05",
@@ -629,7 +619,7 @@
           "why_relevant": "Continues OGTT details, including the fasting requirement and repeated samples."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-P-06",
@@ -653,7 +643,7 @@
           "why_relevant": "Notes that providers often use multiple tests and describes circumstances that may affect A1C accuracy."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-01",
@@ -677,7 +667,7 @@
           "why_relevant": "Describes discussing monitoring results with the provider and situations that affect accuracy."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-02",
@@ -701,7 +691,7 @@
           "why_relevant": "Continues the description of how CGM estimates are tracked over time."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-03",
@@ -725,7 +715,7 @@
           "why_relevant": "Lists several possible causes of high or low glucose beyond diabetes alone."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-04",
@@ -744,7 +734,7 @@
           "why_relevant": "Lists general prevention or delay steps and managing other risk-raising conditions."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-05",
@@ -763,7 +753,7 @@
           "why_relevant": "Mentions provider-set blood pressure and cholesterol targets, regular glucose checks, and screening tests."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     },
     {
       "question_id": "D-O-06",
@@ -782,7 +772,8 @@
           "why_relevant": "Explicitly says home testing frequency should be specified by the person's provider."
         }
       ],
-      "annotation_status": "draft_requires_human_review"
+      "annotation_status": "assistant_adjudicated_provisional"
     }
-  ]
+  ],
+  "adjudicated_date": "2026-10-11"
 }
