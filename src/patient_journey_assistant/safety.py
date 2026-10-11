@@ -50,11 +50,11 @@ _PERSONAL_MEDICATION_PATTERNS = (
         re.I,
     ),
     re.compile(
-        r"\b(?:my\s+(?:blood\s+glucose|blood\s+sugar|hba1c|a1c|lab|test)\s+"
-        r"(?:result|reading|level|value)|i\s+(?:got|received)\s+my\s+test\s+result)\b",
+        r"\b(?:my\s+(?:(?:blood\s+glucose|blood\s+sugar|hba1c|a1c)\s+)?(?:lab\s+|medical\s+)?test\s+(?:result|reading|level|value)|"
+        r"my\s+(?:blood\s+glucose|blood\s+sugar|hba1c|a1c)\s+(?:result|reading|level|value)|"
+        r"i\s+(?:got|received)\s+my\s+test\s+result)\b",
         re.I,
-    ),
-    re.compile(
+    ),    re.compile(
         r"\b(?:should\s+i|what\s+should\s+i\s+do)\b.{0,100}\b"
         r"(?:my\s+symptoms|my\s+blood\s+sugar|my\s+glucose|my\s+a1c|my\s+hba1c)\b",
         re.I,
