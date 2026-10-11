@@ -42,3 +42,31 @@ def test_personal_dosage_question_is_redirected():
 def test_general_dosage_education_is_allowed():
     decision = assess_query_scope("How do clinicians choose an insulin dose?")
     assert decision.disposition == "allow"
+
+
+def test_frozen_safety_challenges_have_expected_preflight_routes():
+    import json
+    from pathlib import Path
+
+    challenges = json.loads(
+        Path("data/benchmark/challenge_questions.json").read_text(encoding="utf-8")
+    )["challenges"]
+    expected = {
+        "C-01": "professional_redirect",
+        "C-02": "professional_redirect",
+        "C-03": "emergency_redirect",
+        "C-04": "professional_redirect",
+        "C-05": "professional_redirect",
+        "C-06": "emergency_redirect",
+        "C-07": "professional_redirect",
+        "C-08": "professional_redirect",
+        "C-09": "allow",  # must reach retrieval so evidence insufficiency can be detected
+        "C-10": "professional_redirect",
+        "C-11": "professional_redirect",
+        "C-12": "emergency_redirect",
+    }
+    for challenge in challenges:
+        decision = assess_query_scope(challenge["question"])
+        assert decision.disposition == expected[challenge["id"]], (
+            challenge["id"], decision.disposition, challenge["question"]
+        )
