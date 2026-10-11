@@ -254,7 +254,7 @@ def main() -> int:
         "--split",
         choices=("dev", "heldout"),
         default="dev",
-        help="Evaluate only one split. Held-out tests are never included by default.",
+        help="Evaluate only one split. Development is the default; held-out results are written only when explicitly requested.",
     )
     parser.add_argument("--benchmark", default=str(DEFAULT_BENCHMARK_PATH))
     parser.add_argument("--chunks", default=str(DEFAULT_CHUNKS_PATH))
@@ -300,7 +300,7 @@ def main() -> int:
             },
             "results": evaluated,
             "limitations": [
-                "Benchmark questions, reference notes, and relevance labels are draft annotations requiring human review.",
+                "Questions and relevance labels were assistant-adjudicated against the current corpus but are not independently human-validated; treat all metrics as preliminary.",
                 "This is a small exploratory benchmark over a curated 39-chunk corpus.",
                 "Retrieval metrics do not establish answer correctness, clinical safety, or real-world impact.",
                 "The challenge set is not scored by this retrieval-only command.",
