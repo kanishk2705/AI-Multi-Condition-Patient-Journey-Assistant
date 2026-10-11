@@ -27,6 +27,10 @@ _EMERGENCY_PATTERNS = (
     re.compile(r"\b(?:i\s+)?(?:can(?:not|'t)|unable\s+to)\s+breathe\b", re.I),
     re.compile(r"\bsevere\s+(?:trouble\s+breathing|shortness\s+of\s+breath|breathing\s+difficulty|allergic\s+reaction)\b", re.I),
     re.compile(r"\b(?:blue\s+lips|unconscious|unresponsive|seizure|chest\s+pain)\b", re.I),
+    re.compile(r"\bsevere\s+asthma\s+attack\b", re.I),
+    re.compile(r"\bstruggling\s+to\s+breathe\b", re.I),
+    re.compile(r"\b(?:cannot|can't|unable\s+to)\s+speak\s+in\s+full\s+sentences\b", re.I),
+    re.compile(r"\bglucose\s+meter\b.{0,80}\b(?:low|below)\b.{0,60}\b(?:confused|confusion|unconscious)\b", re.I),
     re.compile(r"\b(?:call\s+an\s+ambulance|medical\s+emergency)\b", re.I),
     re.compile(r"\b(?:sudden|severe|rapidly\s+worsening)\s+(?:breathing\s+problems|shortness\s+of\s+breath)\b", re.I),
 )
@@ -35,6 +39,8 @@ _PERSONAL_DIAGNOSIS_PATTERNS = (
     re.compile(r"\b(?:do\s+i\s+have|could\s+i\s+have|diagnose\s+me|what\s+disease\s+do\s+i\s+have)\b", re.I),
     re.compile(r"\b(?:am\s+i\s+(?:diabetic|having\s+asthma)|based\s+on\s+my\s+symptoms)\b", re.I),
     re.compile(r"\bdoes\s+this\s+mean\s+i\s+have\s+(?:diabetes|asthma)\b", re.I),
+    re.compile(r"\b(?:confirm|rule\s+out|guarantee)\b.{0,80}\b(?:i\s+have|i\s+do\s+not\s+have|i\s+don't\s+have)\b", re.I),
+    re.compile(r"\bcan\s+you\s+guarantee\b.{0,80}\b(?:i\s+do\s+not|i\s+don't)\s+have\b", re.I),
 )
 _PERSONAL_MEDICATION_PATTERNS = (
     re.compile(
@@ -53,6 +59,25 @@ _PERSONAL_MEDICATION_PATTERNS = (
         r"\b(?:my\s+(?:(?:blood\s+glucose|blood\s+sugar|hba1c|a1c)\s+)?(?:lab\s+|medical\s+)?test\s+(?:result|reading|level|value)|"
         r"my\s+(?:blood\s+glucose|blood\s+sugar|hba1c|a1c)\s+(?:result|reading|level|value)|"
         r"i\s+(?:got|received)\s+my\s+test\s+result)\b",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:which|what)\b.{0,100}\b(?:medicine|medication|drug|inhaler|insulin|dose|dosage|brand|regimen)\b"
+        r".{0,100}\b(?:should|can|may|do)\s+i\b",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:should|can|may|must)\s+i\b.{0,80}\b(?:stop|start|skip|change|adjust|increase|decrease|continue)\b",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:can|should|may|must)\s+i\b.{0,100}\b(?:skip|cancel|avoid|stop\s+attending|miss)\b"
+        r".{0,80}\b(?:follow.?ups?|appointments?|screening|tests?)\b",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:given|considering|based\s+on)\s+my\b.{0,150}\b(?:make|create|design|build|recommend|give)\b"
+        r".{0,100}\b(?:plan|regimen|schedule)\b",
         re.I,
     ),
     re.compile(
@@ -116,6 +141,24 @@ def assess_query_scope(question: str) -> ScopeDecision:
             reason_code="personal_diagnosis_request",
         )
     if any(pattern.search(normalized) for pattern in _PERSONAL_MEDICATION_PATTERNS):
+        return ScopeDecision(
+            disposition="professional_redirect",
+            message=PROFESSIONAL_MESSAGE,
+            reason_code="personal_medical_decision",
+        )
+    # Catch pronoun-based medicine changes such as "Should I stop it?" when the
+    # name of the medicine appears elsewhere in the same question.
+    has_medication_reference = re.search(
+        r"\b(?:inhaler|insulin|medicine|medication|drug|dose|dosage|pill|tablet|metformin|controller)\b",
+        normalized,
+        re.I,
+    )
+    pronoun_change = re.search(
+        r"\b(?:should|can|may|must)\s+i\b.{0,70}\b(?:stop|start|skip|change|adjust|increase|decrease|continue)\s+(?:it|them|this|that)\b",
+        normalized,
+        re.I,
+    )
+    if has_medication_reference and pronoun_change:
         return ScopeDecision(
             disposition="professional_redirect",
             message=PROFESSIONAL_MESSAGE,
