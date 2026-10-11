@@ -66,20 +66,22 @@ def evaluate_extractive_fallback(
             ))
             cited_set = set(cited)
             hits = cited_set & relevant
-            metadata = {
-                source.chunk_id: source
-                for source in response.sources
-            }
-            context_ids = {
-                source.chunk_id for source in response.sources
-            }
-            context_concordant_rate = (
-                sum(
-                    1 for chunk_id in cited
-                    if chunk_id in context_ids
-                ) / len(cited)
-                if cited else None
-            )
+            context_concordant_rate = None
+            collection = getattr(retriever, "collection", None)
+            if cited and collection is not None:
+                indexed = collection.get(ids=cited, include=["metadatas"])
+                metadata_by_id = {
+                    chunk_id: (meta or {})
+                    for chunk_id, meta in zip(indexed.get("ids", []), indexed.get("metadatas", []))
+                }
+                concordant = 0
+                for chunk_id in cited:
+                    meta = metadata_by_id.get(chunk_id, {})
+                    raw_scope = meta.get("stage_scope_csv", "")
+                    scope = raw_scope.split("|") if raw_scope else meta.get("stage_scope", [])
+                    if meta.get("condition") == condition and stage in scope:
+                        concordant += 1
+                context_concordant_rate = concordant / len(cited)
             pair[method] = {
                 "status": response.status,
                 "reason_code": response.reason_code,
