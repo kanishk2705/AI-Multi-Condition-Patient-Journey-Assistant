@@ -79,7 +79,7 @@ if submitted:
             st.caption(response.message)
             source_by_id = {item.chunk_id: item for item in response.sources}
             for claim in response.claims:
-                st.markdown(claim.text)
+                st.text(claim.text)
                 citation_links = []
                 for chunk_id in claim.source_chunk_ids:
                     source = source_by_id.get(chunk_id)
