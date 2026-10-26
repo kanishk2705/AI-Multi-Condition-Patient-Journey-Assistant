@@ -1,0 +1,602 @@
+[
+ {
+  "n": 0,
+  "qid": "a29",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "Occupational asthma is asthma that develops or gets worse in the workplace. [P2]",
+  "cited_passages": {
+   "P2": "Occupational asthma is asthma that develops or gets worse in the workplace. It can happen in an adult who is around allergens, for example, dust and mold, or other sensitizing agents at work. Once you become sensitized to a substance, being around a very small amount can be enough to trigger serious symptoms. Your asthma can continue to get worse every time you are around the trigger. To prevent asthma flare-ups, you should remove the sensitizing agent from your place of work and avoid any further contact."
+  }
+ },
+ {
+  "n": 1,
+  "qid": "a14",
+  "answerer": "llm",
+  "idx": 5,
+  "sentence": "Household chemicals, tobacco smoke, and outdoor air pollution are also everyday triggers for asthma [P4].",
+  "cited_passages": {
+   "P4": "The exact cause of asthma is unknown. Genetics and your environment likely play a role in who gets asthma. An asthma attack can happen when you are exposed to an asthma trigger. An asthma trigger is something that can set off or worsen your asthma symptoms. Different triggers can cause different types of asthma: Allergic asthma is caused by allergens. Allergens are substances that cause an allergic reaction. They can include: Dust mites. Mold. Pets. Pollen from grass, trees, and weeds. Waste from pests such as cockroaches and mice. Nonallergic asthma is caused by triggers that are not allergens, such as: Breathing in cold air. Certain medicines. Household chemicals. Infections such as colds and the flu. Outdoor air pollution. Tobacco smoke. Occupational asthma is caused by breathing in chemicals or industrial dusts at work. Exercise-induced asthma happens during physical exercise, especially when the air is dry. Asthma triggers may be different for each person and can change over time."
+  }
+ },
+ {
+  "n": 2,
+  "qid": "a08",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "Your healthcare provider may also recommend adding biologic medicines or allergy shots, which can be specific to the allergen. [P3]",
+  "cited_passages": {
+   "P3": "Allergic asthma often starts at a young age. Breathing can become difficult when you are around certain allergens, such as pollens, dust mites, or mold. Avoiding the allergens that trigger your asthma can help control your symptoms and prevent flare-ups. Typical treatment includes inhaled corticosteroids. Your healthcare provider may also recommend adding biologic medicines or allergy shots, which can be specific to the allergen. Some people only have seasonal allergic asthma, which means that they do not have symptoms outside of a certain pollen season. Your provider may recommend medicines, such as a daily controller or a reliever inhaler, from the start of your allergy season until a few weeks after the season ends."
+  }
+ },
+ {
+  "n": 3,
+  "qid": "t10",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "Inflammation of the pancreas, also called pancreatitis, can damage the pancreas and lead to diabetes [P1].",
+  "cited_passages": {
+   "P1": "The pancreas can be damaged by injury or diseases such as inflammation of the pancreas, also called pancreatitis. Diabetes may be the first sign of pancreatic cancer in older people without diabetes risk factors who develop diabetes. A damaged pancreas may make less insulin and lead to diabetes. In some cases, your pancreas may need to be removed. Without a pancreas, your body can’t produce insulin. You’ll develop diabetes and will have to take insulin."
+  }
+ },
+ {
+  "n": 4,
+  "qid": "t10",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "A damaged pancreas may make less insulin and lead to diabetes. [P1]",
+  "cited_passages": {
+   "P1": "The pancreas can be damaged by injury or diseases such as inflammation of the pancreas, also called pancreatitis. Diabetes may be the first sign of pancreatic cancer in older people without diabetes risk factors who develop diabetes. A damaged pancreas may make less insulin and lead to diabetes. In some cases, your pancreas may need to be removed. Without a pancreas, your body can’t produce insulin. You’ll develop diabetes and will have to take insulin."
+  }
+ },
+ {
+  "n": 5,
+  "qid": "d23",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "Eating regular meals and not skipping them can help you avoid nighttime low blood sugar. [P2]",
+  "cited_passages": {
+   "P2": "Low blood sugar can happen at any time during the day. Some people may experience low blood sugar while they sleep. Reasons this may happen include: Having an active day. Being physically active close to bedtime. Taking too much insulin. Drinking alcohol at night. Eating regular meals and not skipping them can help you avoid nighttime low blood sugar. Eating when you drink alcohol can also help. If you think you're at risk for low blood sugar overnight, have a snack before bed. You may wake up when you have low blood sugar, but you shouldn't rely on that. A continuous glucose monitor (CGM) can alert you if your blood sugar gets low while you're sleeping."
+  }
+ },
+ {
+  "n": 6,
+  "qid": "a11",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Asthma medicines can be used in several ways -- as reliever therapy or as controller therapy. [P1]",
+  "cited_passages": {
+   "P1": "Take your medicine exactly as your doctor tells you and stay away from things that can trigger an attack to control your asthma. Everyone with asthma does not take the same medicine. You can breathe in some medicines and take other medicines as a pill. Asthma medicines can be used in several ways -- as reliever therapy or as controller therapy. If you need to use your reliever medicine more and more, visit your doctor to see if you need a different medicine. Controller medicines help you have fewer and milder asthma attacks. Asthma medicines can have side effects. Most side effects are mild and soon go away. Ask your doctor about the side effects of your medicines."
+  }
+ },
+ {
+  "n": 7,
+  "qid": "d13",
+  "answerer": "llm",
+  "idx": 1,
+  "sentence": "It occurs when the body does not have enough insulin, so it breaks down fat for fuel and produces ketones [P2].",
+  "cited_passages": {
+   "P2": "If your body doesn't have enough insulin, it starts breaking down fat as fuel, which produces a byproduct called ketones. When too many ketones are produced too fast, they can cause DKA. DKA is very serious and can cause a coma or even death. You can use an over-the-counter kit to test your urine for ketones. If ketones are present, call your doctor right away. You'll probably need to go to the hospital for treatment."
+  }
+ },
+ {
+  "n": 8,
+  "qid": "a14",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "Emotional stress, physical activity, and infections such as colds, the flu, or COVID‑19 may worsen asthma [P2].",
+  "cited_passages": {
+   "P2": "Asthma triggers are things that set off or make asthma symptoms worse. Common triggers include: Indoor allergens, such as dust mites, mold, and pet dander or fur. Outdoor allergens, such as pollens and mold. Emotional stress. Physical activity, although with treatment you or your child should still be able to stay active. Infections, such as colds, the flu, or COVID-19. Certain medicines, such as aspirin, which may cause serious breathing problems in people with asthma that is difficult to treat. Poor air quality or very cold air. Learn about avoiding triggers to help manage your asthma."
+  }
+ },
+ {
+  "n": 9,
+  "qid": "d17",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "Before a meal. [P3]",
+  "cited_passages": {
+   "P3": "How often you check your blood sugar depends on the type of diabetes you have and if you take any diabetes medicines. Typical times to check your blood sugar are: When you first wake up, before you eat or drink anything. Before a meal. Two hours after a meal. At bedtime. If you have type 1 diabetes, have type 2 diabetes and take insulin, or often have low blood sugar, your doctor may want you to check your blood sugar more often, such as before and after you're physically active."
+  }
+ },
+ {
+  "n": 10,
+  "qid": "d25",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "Wash your feet with warm water and soap, dry them, then you may use talcum powder or cornstarch between the toes and avoid putting lotion there [P1].",
+  "cited_passages": {
+   "P1": "The best way to protect your feet is by controlling your blood sugar levels every day. This will help keep nerve and blood vessel damage from getting worse. The next step is to keep the skin of your feet healthy. Good foot care for people with diabetes includes: Checking your feet every day. Look for cuts, redness, and other changes in the skin and toenails, including warts or other spots that your shoes could rub. Make sure to check the bottoms of your feet too. Washing your feet every day. Use warm water and soap. Don't soak your feet because that can dry out your skin. After you dry your feet, you can use talcum powder or cornstarch between your toes. They soak up moisture that can cause infection. If you use lotion, don't apply it between your toes."
+  }
+ },
+ {
+  "n": 11,
+  "qid": "d03",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Learn more about the causes of type 2 diabetes. [P2]",
+  "cited_passages": {
+   "P2": "Type 2 diabetes is caused by several factors, including overweight and obesity. not being physically active. insulin resistance. genes. Learn more about the causes of type 2 diabetes."
+  }
+ },
+ {
+  "n": 12,
+  "qid": "a27",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "When to call your provider or go to the emergency room. [P3]",
+  "cited_passages": {
+   "P3": "Your healthcare provider will work with you to create a treatment plan for your asthma. An asthma action plan is a written treatment plan that describes the following: How to identify allergens or triggers to avoid. How to know if you are having an asthma attack and what to do. Which medicines to take and when to take them. When to call your provider or go to the emergency room. Whom to contact in an emergency. You can download a sample Asthma Action Plan and use it to write down the plan you create with your provider to help you monitor and treat your symptoms."
+  }
+ },
+ {
+  "n": 13,
+  "qid": "a20",
+  "answerer": "llm",
+  "idx": 3,
+  "sentence": "People with asthma who get flu symptoms should call their health care provider right away. [P4]",
+  "cited_passages": {
+   "P4": "Asthma is a lung disease that is caused by chronic inflammation of the airways. People with asthma are at higher risk of developing serious flu complications, even if their asthma is mild or their symptoms are well-controlled by medication. Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. People with asthma who get flu symptoms should call their health care provider right away. There are antiviral drugs that can treat flu illness and help prevent serious flu complications."
+  }
+ },
+ {
+  "n": 14,
+  "qid": "t17",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "A medical alert ID tells other people that you have diabetes and need care right away. [P1]",
+  "cited_passages": {
+   "P1": "wearing a medical alert identification bracelet or pendant. A medical alert ID tells other people that you have diabetes and need care right away. Getting prompt care can help prevent the serious problems that low blood glucose levels can cause."
+  }
+ },
+ {
+  "n": 15,
+  "qid": "c05",
+  "answerer": "llm",
+  "idx": 3,
+  "sentence": "If they develop flu symptoms, they should contact their health‑care provider right away and receive prompt antiviral treatment. [P1]",
+  "cited_passages": {
+   "P1": "In addition to getting the flu vaccine, people with diabetes should follow CDC's everyday preventive actions. These include avoiding people who are sick, covering coughs, and washing hands often. They can also take steps for cleaner air and hygiene practices like cleaning frequently touched surfaces. Plan to maintain sufficient supplies of regular medications for chronic conditions. Have at least a two-week supply of necessary medications on hand. If they experience flu symptoms, they should contact their healthcare provider right away. Antiviral drugs can treat flu illness and may prevent serious flu complications. CDC recommends prompt flu treatment for people with diabetes who have flu or suspected flu."
+  }
+ },
+ {
+  "n": 16,
+  "qid": "a23",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "If your symptoms don't get better and you can't reach your doctor, go to the hospital. *Peak flow measurement is a quick test to measure air flowing out of the lungs. [P2]",
+  "cited_passages": {
+   "P2": "I have a lot of trouble breathing. Or. My reliever medicines don't help. Or. I can't do any of the things I usually do. Or. I was in the yellow zone for 24 hours and I'm not getting better. Or. When I use a peak flow meter my peak flow* is less than half of my best peak flow. Add any other medicines your doctor has prescribed and call your doctor. If your symptoms don't get better and you can't reach your doctor, go to the hospital. *Peak flow measurement is a quick test to measure air flowing out of the lungs. The information on this page was last reviewed by subject matter experts to ensure accuracy."
+  }
+ },
+ {
+  "n": 17,
+  "qid": "a03",
+  "answerer": "llm",
+  "idx": 4,
+  "sentence": "Being overweight or obese can raise risk of developing asthma [P2].",
+  "cited_passages": {
+   "P2": "Allergies: Asthma is usually a type of allergic reaction. People who have asthma often have other types of allergies, such as food or pollen allergies. Obesity: Being overweight can raise your risk of developing asthma or make your asthma symptoms worse. Race or ethnicity: Puerto Rican people and Black or African American people have a higher risk of developing asthma than people of other racial or ethnic groups. Black or African American and Hispanic children are more likely than non-Hispanic White children to die from asthma. Sex: More boys than girls have asthma as children. In adults, asthma is more common among women. Occupational hazards: Breathing in chemicals or industrial dust in the workplace can raise your risk of developing asthma. Climate change: Air pollution and changing weather patterns contribute to asthma onset and exposure to allergens. Learn how asthma affects people from some communities more than others and steps for managing asthma."
+  }
+ },
+ {
+  "n": 18,
+  "qid": "d44",
+  "answerer": "llm",
+  "idx": 5,
+  "sentence": "If you think you’re at risk for low blood sugar overnight, having a snack before bed is recommended [P1].",
+  "cited_passages": {
+   "P1": "Low blood sugar can happen at any time during the day. Some people may experience low blood sugar while they sleep. Reasons this may happen include: Having an active day. Being physically active close to bedtime. Taking too much insulin. Drinking alcohol at night. Eating regular meals and not skipping them can help you avoid nighttime low blood sugar. Eating when you drink alcohol can also help. If you think you're at risk for low blood sugar overnight, have a snack before bed. You may wake up when you have low blood sugar, but you shouldn't rely on that. A continuous glucose monitor (CGM) can alert you if your blood sugar gets low while you're sleeping."
+  }
+ },
+ {
+  "n": 19,
+  "qid": "d18",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "A continuous glucose monitor (CGM) uses a sensor inserted under the skin to measure your blood sugar every few minutes [P1].",
+  "cited_passages": {
+   "P1": "Use a blood sugar meter (also called a glucometer) or a continuous glucose monitor (CGM) to check your blood sugar. A blood sugar meter measures the amount of sugar in a small sample of blood, usually from your fingertip. A CGM uses a sensor inserted under the skin to measure your blood sugar every few minutes. If you use a CGM, you'll still need to test daily with a blood sugar meter. This will help make sure your CGM readings are accurate."
+  }
+ },
+ {
+  "n": 20,
+  "qid": "d09",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "The reverse can also occur—an A1C test may indicate diabetes even though a blood glucose test does not. [P1]",
+  "cited_passages": {
+   "P1": "Yes. In some people, a blood glucose test may show diabetes when an A1C test does not. The reverse can also occur—an A1C test may indicate diabetes even though a blood glucose test does not. Because of these differences in test results, health care professionals repeat tests before making a diagnosis. People with differing test results may be in an early stage of the disease, when blood glucose levels have not risen high enough to show up on every test. In this case, health care professionals may choose to follow the person closely and repeat the test in several months."
+  }
+ },
+ {
+  "n": 21,
+  "qid": "a06",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "Spirometry is done before and after the test. [P2]",
+  "cited_passages": {
+   "P2": "Your health care provider may use many tools to diagnose asthma: Physical exam. Medical history. Lung function tests, including spirometry, to test how well your lungs work. Tests to measure how your airways react to specific exposures. During this test, you inhale different concentrations of allergens or medicines that may tighten the muscles in your airways. Spirometry is done before and after the test. Peak expiratory flow (PEF) tests to measure how fast you can blow air out using maximum effort. Fractional exhaled nitric oxide (FeNO) tests to measure levels of nitric oxide in your breath when you breathe out. High levels of nitric oxide may mean that your lungs are inflamed. Allergy skin or blood tests, if you have a history of allergies. These tests check which allergens cause a reaction from your immune system."
+  }
+ },
+ {
+  "n": 22,
+  "qid": "t02",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "The immune system destroys the beta cells in the pancreas that make insulin[P2].",
+  "cited_passages": {
+   "P2": "Type 1 diabetes develops when the body’s immune system destroys the cells in the pancreas that make insulin. These cells are called beta cells. Genes and factors in the environment—the places where people live, play, work, study, and gather—may trigger the immune system to destroy beta cells in type 1 diabetes. Insulin is a hormone that helps blood glucose get into the body’s cells to be used as energy. When your body doesn’t have enough insulin, glucose in your blood can’t get into the cells. As a result, your cells lack energy, your blood glucose level rises, and you develop diabetes. Studies such as The Environmental Determinants of Diabetes in the Young (TEDDY) are trying to learn more about the causes of type 1 diabetes. Type 1 Diabetes TrialNet and other groups are working to find treatments that may prevent or slow the development of type 1 diabetes in people who are at risk for getting the disease."
+  }
+ },
+ {
+  "n": 23,
+  "qid": "d09",
+  "answerer": "llm",
+  "idx": 3,
+  "sentence": "A1C tests are less likely to be affected by short‑term changes than fasting glucose or oral‑glucose‑tolerance tests [P2].",
+  "cited_passages": {
+   "P2": "Your results can vary because of natural changes in your blood glucose level. For example, your blood glucose level moves up and down when you eat or exercise. Sickness and stress also can affect your blood glucose test results. A1C tests are less likely to be affected by short-term changes than FPG or OGTT tests. The following chart shows how multiple blood glucose measurements over 4 days compare with an A1C measurement. The straight black line shows an A1C measurement of 7.0 percent. The blue line shows an example of how blood glucose test results might look from self-monitoring four times a day over a 4-day period."
+  }
+ },
+ {
+  "n": 24,
+  "qid": "a20",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "If you have asthma, take steps to prevent getting flu. [P2]",
+  "cited_passages": {
+   "P2": "Influenza, commonly called \"flu,\" is caused by the influenza virus, which infects the respiratory tract (nose, throat, and lungs). People with asthma are more likely to have serious health problems from getting the flu. If you have asthma, take steps to prevent getting flu. Flu virus infection can cause you to have an asthma attack. An annual flu vaccine is the most important step you can take to protect yourself and others from flu. Flu vaccine may be given at the same time as other vaccines. Learn more about flu, how to prevent it, what to do if you get sick, and actions you can take to protect yourself and others."
+  }
+ },
+ {
+  "n": 25,
+  "qid": "a22",
+  "answerer": "llm",
+  "idx": 1,
+  "sentence": "Occupational asthma is caused by breathing in chemicals or industrial dusts at work [P2].",
+  "cited_passages": {
+   "P2": "The exact cause of asthma is unknown. Genetics and your environment likely play a role in who gets asthma. An asthma attack can happen when you are exposed to an asthma trigger. An asthma trigger is something that can set off or worsen your asthma symptoms. Different triggers can cause different types of asthma: Allergic asthma is caused by allergens. Allergens are substances that cause an allergic reaction. They can include: Dust mites. Mold. Pets. Pollen from grass, trees, and weeds. Waste from pests such as cockroaches and mice. Nonallergic asthma is caused by triggers that are not allergens, such as: Breathing in cold air. Certain medicines. Household chemicals. Infections such as colds and the flu. Outdoor air pollution. Tobacco smoke. Occupational asthma is caused by breathing in chemicals or industrial dusts at work. Exercise-induced asthma happens during physical exercise, especially when the air is dry. Asthma triggers may be different for each person and can change over time."
+  }
+ },
+ {
+  "n": 26,
+  "qid": "a19",
+  "answerer": "llm",
+  "idx": 1,
+  "sentence": "Vaping electronic cigarettes may also worsen asthma symptoms [P1].",
+  "cited_passages": {
+   "P1": "Quit smoking and avoid secondhand smoke. Smoking tobacco and breathing in secondhand smoke make asthma harder to treat. Heating tobacco, inhaling (vaping) electronic cigarettes (e-cigarettes), and being exposed to secondhand vapor may also worsen asthma symptoms. An ingredient in the tobacco plant that makes you addicted to smoking (nicotine) and flavorings in e-cigarettes may damage your lungs. Get enough good quality sleep. Getting quality sleep can sometimes be hard with asthma. Develop healthy sleep habits, such as going to sleep and waking up at the same time every day, following a calming bedtime routine, and keeping your bedroom cool and dark."
+  }
+ },
+ {
+  "n": 27,
+  "qid": "d35",
+  "answerer": "llm",
+  "idx": 5,
+  "sentence": "Ask your health‑care team for mental‑health resources for people with diabetes [P1].",
+  "cited_passages": {
+   "P1": "Feeling stressed, sad, or angry can be common for people with diabetes. Managing diabetes or learning to cope with new information about your health can be hard. People with chronic illnesses such as diabetes may develop anxiety or other mental health conditions. Learn healthy ways to lower your stress, and ask for help from your health care team or a mental health professional. While it may be uncomfortable to talk about your feelings, finding a health care professional whom you trust and want to talk with may help you lower your feelings of stress, depression, or anxiety. manage problems sleeping or remembering things. see how diabetes affects your family, school, work, or financial situation. Ask your health care team for mental health resources for people with diabetes."
+  }
+ },
+ {
+  "n": 28,
+  "qid": "a07",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Challenge tests, also called bronchial provocation tests, assess how sensitive your airways are. [P1]",
+  "cited_passages": {
+   "P1": "Challenge tests, also called bronchial provocation tests, assess how sensitive your airways are. These tests compare how fast you can blow air before and after a challenge agent. Challenge agents are substances or activities that may tighten the muscles in your airways if they become irritated from being too sensitive, including: Inhaled medicines such as methacholine, mannitol, or histamine. Allergens or irritants that cause no reaction in people who do not have asthma. Exercise, which cools and dries the airways. Hyperventilation, or breathing in short, quick breaths."
+  }
+ },
+ {
+  "n": 29,
+  "qid": "a07",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "If you are an adult with uncontrolled asthma, in some cases your provider might suggest bronchial thermoplasty. [P3]",
+  "cited_passages": {
+   "P3": "Sometimes asthma is severe and cannot be controlled with other treatments. If you are an adult with uncontrolled asthma, in some cases your provider might suggest bronchial thermoplasty. This is a procedure that uses heat to shrink the smooth muscle in the lungs. Shrinking the muscle reduces your airway's ability to tighten and allows you to breathe more easily. The procedure has some risks, so it's important to discuss them with your provider."
+  }
+ },
+ {
+  "n": 30,
+  "qid": "c08",
+  "answerer": "llm",
+  "idx": 3,
+  "sentence": "If you have ketones in your urine, you should go to the emergency room [P2].",
+  "cited_passages": {
+   "P2": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. You have ketones in your urine. You can't keep any liquids down for more than 4 hours, or can't keep food down more than 24 hours. You lose 5 pounds or more during the illness. Your blood sugar is lower than 60 mg/dl. You have vomiting and/or severe diarrhea for more than 6 hours. Your temperature is over 101 degrees F for 24 hours. Being sick and/or having a low blood sugar level can cause fatigue or difficulty thinking clearly. If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving."
+  }
+ },
+ {
+  "n": 31,
+  "qid": "a08",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Allergies: Asthma is usually a type of allergic reaction. [P1]",
+  "cited_passages": {
+   "P1": "Allergies: Asthma is usually a type of allergic reaction. People who have asthma often have other types of allergies, such as food or pollen allergies. Obesity: Being overweight can raise your risk of developing asthma or make your asthma symptoms worse. Race or ethnicity: Puerto Rican people and Black or African American people have a higher risk of developing asthma than people of other racial or ethnic groups. Black or African American and Hispanic children are more likely than non-Hispanic White children to die from asthma. Sex: More boys than girls have asthma as children. In adults, asthma is more common among women. Occupational hazards: Breathing in chemicals or industrial dust in the workplace can raise your risk of developing asthma. Climate change: Air pollution and changing weather patterns contribute to asthma onset and exposure to allergens. Learn how asthma affects people from some communities more than others and steps for managing asthma."
+  }
+ },
+ {
+  "n": 32,
+  "qid": "a18",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "If you are taking inhaled corticosteroids to control your asthma, you may have fewer symptoms when you exercise. [P3]",
+  "cited_passages": {
+   "P3": "In exercise-induced asthma, your symptoms start or get worse when you do physical activity. Your provider may recommend taking a reliever medicine before exercising to prevent symptoms short term. If you are taking inhaled corticosteroids to control your asthma, you may have fewer symptoms when you exercise. Training regularly and warming up before you exercise can also help prevent symptoms. Talk to your provider if your asthma symptoms make it difficult to stay physically active. It may be a sign that your asthma is not well controlled or is getting worse."
+  }
+ },
+ {
+  "n": 33,
+  "qid": "c08",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P2]",
+  "cited_passages": {
+   "P2": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. You have ketones in your urine. You can't keep any liquids down for more than 4 hours, or can't keep food down more than 24 hours. You lose 5 pounds or more during the illness. Your blood sugar is lower than 60 mg/dl. You have vomiting and/or severe diarrhea for more than 6 hours. Your temperature is over 101 degrees F for 24 hours. Being sick and/or having a low blood sugar level can cause fatigue or difficulty thinking clearly. If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving."
+  }
+ },
+ {
+  "n": 34,
+  "qid": "d03",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "Type 2 diabetes may be caused by being overweight or having obesity and by not being physically active [P1].",
+  "cited_passages": {
+   "P1": "Type 2 diabetes may be caused by a combination of factors: Being overweight or having obesity. Not being physically active. Genetics and family history. Type 2 diabetes usually starts with insulin resistance. This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insulin, and your blood glucose levels rise."
+  }
+ },
+ {
+  "n": 35,
+  "qid": "a29",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "Your asthma action plan should explain how to tell if your asthma is getting worse [P4].",
+  "cited_passages": {
+   "P4": "Follow your asthma action plan to help you know what to do and when to call 9-1-1 for emergency care. You should also use your reliever inhaler as soon as you start to have symptoms. Your asthma action plan should explain how to tell if your asthma is getting worse and when to increase your reliever and controller medicines. You may be able to manage an asthma flare-up with just your reliever inhaler. If you have a serious asthma attack or your symptoms do not go away soon after taking your reliever medicine, you may need medical attention."
+  }
+ },
+ {
+  "n": 36,
+  "qid": "a11",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "Reliever medicines are used as soon as you start to have asthma symptoms and can help a flare‑up quickly [P4].",
+  "cited_passages": {
+   "P4": "Follow your asthma action plan to help you know what to do and when to call 9-1-1 for emergency care. You should also use your reliever inhaler as soon as you start to have symptoms. Your asthma action plan should explain how to tell if your asthma is getting worse and when to increase your reliever and controller medicines. You may be able to manage an asthma flare-up with just your reliever inhaler. If you have a serious asthma attack or your symptoms do not go away soon after taking your reliever medicine, you may need medical attention."
+  }
+ },
+ {
+  "n": 37,
+  "qid": "d37",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "Wait 15 minutes and check your blood glucose level again. [P3]",
+  "cited_passages": {
+   "P3": "If you begin to feel one or more symptoms of low blood glucose, check your blood glucose level. If your blood glucose level is below your target or less than 70 mg/dL, follow these steps Eat or drink 15 to 20 grams of glucose or carbohydrates right away. Examples include. four glucose tablets or one tube of glucose gel. 1/2 cup (4 ounces) of fruit juice—not low-calorie or reduced-sugar juice. If you have kidney disease, don’t drink orange juice because it has a lot of potassium. Apple, grape, or cranberry juice are good options. 1/2 can (4 to 6 ounces) of soda—not low-calorie or reduced-sugar soda. 1 tablespoon of sugar, honey, or corn syrup. Wait 15 minutes and check your blood glucose level again. If your glucose level is still low, eat or drink another 15 to 20 grams of glucose or carbohydrates. Check your blood glucose level again after another 15 minutes. Repeat these steps until your glucose level is back to your target range."
+  }
+ },
+ {
+  "n": 38,
+  "qid": "d21",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "When you eat foods or drink beverages that contain carbohydrates, your digestive system breaks down the sugars and starches into glucose. [P3]",
+  "cited_passages": {
+   "P3": "Low blood glucose levels can be a side effect of insulin or some other medicines that help your pancreas release insulin into your blood. Taking these can lower your blood glucose level. Two types of diabetes pills can cause low blood glucose sulfonylureas, usually taken once or twice per day, which increase insulin over several hours. meglitinides, taken before meals to promote a short-term increase in insulin. The following may also lower your blood glucose level Not eating or drinking enough carbohydrates (carbs). When you eat foods or drink beverages that contain carbohydrates, your digestive system breaks down the sugars and starches into glucose. Glucose then enters your bloodstream and raises your blood glucose level. If you don’t eat enough carbohydrates or skip or delay any meals, your blood glucose level could drop lower than what is healthy for you. Fasting. Continuing to take medicines that lower your glucose level while fasting for a medical procedure or for other purposes can also increase the risk for low blood glucose."
+  }
+ },
+ {
+  "n": 39,
+  "qid": "d02",
+  "answerer": "llm",
+  "idx": 1,
+  "sentence": "Type 2 diabetes means the body may still make insulin, but the cells do not respond well to it and cannot easily take up enough glucose [P1].",
+  "cited_passages": {
+   "P1": "There are different types of diabetes: Type 1 diabetes. If you have type 1 diabetes, your body makes little or no insulin. It happens when your immune system attacks and destroys the cells that produce insulin. Type 2 diabetes. This is the most common form of diabetes. If you have type 2 diabetes, your body may still be able to make insulin, but your cells don't respond well to insulin. They can't easily take up enough glucose from your blood. Gestational diabetes. This is a form of diabetes that develops during pregnancy. It happens when your body can't make the extra insulin it needs during pregnancy."
+  }
+ },
+ {
+  "n": 40,
+  "qid": "a15",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "You can get the pneumococcal vaccine your provider recommends when you get a flu vaccine. [P2]",
+  "cited_passages": {
+   "P2": "Having flu increases your risk of getting pneumococcal disease. Pneumococcal pneumonia is an example of a serious flu-related complication that can cause death. People who have asthma should also be up to date with pneumococcal vaccination. This vaccination helps protect against pneumococcal pneumonia and other serious infections. You can get the pneumococcal vaccine your provider recommends when you get a flu vaccine. Talk to your health care provider to find out which pneumococcal vaccines are recommended for you."
+  }
+ },
+ {
+  "n": 41,
+  "qid": "d43",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "Trimming your toenails straight across with a clipper. [P2]",
+  "cited_passages": {
+   "P2": "Asking your doctor how to remove corns and calluses safely. Thick skin on your feet can rub and lead to sores. But removing it the wrong way could damage your skin. So you don't want to cut the skin or use medicated pads or liquid removers. Trimming your toenails straight across with a clipper. If it's hard for you to trim your own toenails, or if they're thick or curve into the skin, have a podiatrist (foot doctor) do it for you. Always wearing well-fitting shoes and socks or slippers to protect your feet when walking. You don't want to walk barefoot, even indoors. And be sure your shoes are smooth inside. A seam or pebble could rub your skin raw. Protecting your feet from heat and cold. Use sunscreen on exposed skin and don't walk barefoot at the beach. In cold weather, wear warm socks instead of warming your feet near a heater or fireplace."
+  }
+ },
+ {
+  "n": 42,
+  "qid": "d32",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "The way you take insulin may depend on your lifestyle, insurance plan, and preferences. [P1]",
+  "cited_passages": {
+   "P1": "The way you take insulin may depend on your lifestyle, insurance plan, and preferences. Talk with your doctor about the options and which one is best for you. Most people with diabetes take insulin using a needle and syringe, insulin pen, or insulin pump. Inhalers and insulin jet injectors are less common ways to take insulin. Artificial pancreas systems are now approved by the U.S. Food and Drug Administration (FDA). Talk with your doctor to see if an artificial pancreas is an option for you."
+  }
+ },
+ {
+  "n": 43,
+  "qid": "d37",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "If your blood sugar is low, have 15 grams of carbs, wait 15 minutes, then check your blood sugar again; repeat until it is back in your target range and follow with a balanced snack or meal with protein and carbs [P1].",
+  "cited_passages": {
+   "P1": "If your blood sugar is low, follow the 15-15 rule: Have 15 grams of carbs, then wait 15 minutes. Check your blood sugar again. If it's still less than 70 mg/dL, repeat this process. Keep repeating these steps until your blood sugar is back up in your target range. After treating your low blood sugar, eat a balanced snack or meal with protein and carbs. Tips to keep in mind: Young children may need less than 15 grams of carbs, especially infants and toddlers. Ask your doctor how much your child needs. Check your blood sugar often when lows are more likely, such as when the weather is hot or when you travel."
+  }
+ },
+ {
+  "n": 44,
+  "qid": "d37",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "You may not be able to treat it using the 15-15 rule. [P2]",
+  "cited_passages": {
+   "P2": "If your blood sugar drops below 55 mg/dL, it's considered severely low. You may not be able to treat it using the 15-15 rule. You also may not be able to check your own blood sugar or treat it by yourself, depending on your symptoms. Injectable glucagon is the best way to treat severely low blood sugar. A glucagon kit is available by prescription. Speak with your doctor to see if you should have a kit, and make sure you know how to use it. Contact a doctor for emergency medical treatment immediately after a glucagon injection. If a person faints (passes out) due to severely low blood sugar, they'll usually wake up within 15 minutes after a glucagon injection. If they don't wake up within 15 minutes after the injection, they should receive one more dose. If the person is awake and able to swallow: Give them a fast-acting source of sugar (regular, non-diet soda or fruit juice). Then, have them eat a long-acting source of carbs with protein (ex. crackers and cheese, sandwich with meat)."
+  }
+ },
+ {
+  "n": 45,
+  "qid": "d44",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "Low blood sugar at night may also happen without you noticing any symptoms, but it can still interfere with sleep quality and mood [P2].",
+  "cited_passages": {
+   "P2": "Your blood glucose level can drop while you sleep and stay low for several hours, causing serious problems. 7 Symptoms of low blood glucose while you sleep can include crying out or having nightmares. sweating enough to make your pajamas or sheets damp. feeling tired, irritable, or confused after waking up. Although you may not wake up or notice any symptoms, low blood glucose can interfere with your sleep, which may affect your quality of life, mood, and ability to work. Having low blood glucose during sleep can also make you less likely to notice and respond to symptoms of low blood glucose during the day."
+  }
+ },
+ {
+  "n": 46,
+  "qid": "d18",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "The sensor is placed in the tissue under your skin and provides regular glucose readings [P2].",
+  "cited_passages": {
+   "P2": "You can check your blood glucose level at home with a blood glucose meter. The meter tests a drop of your blood, usually from a prick of your fingertip. The meter will show you how much glucose is in your blood at that moment. People who take insulin to manage their diabetes may benefit from using a continuous glucose monitor (CGM). A CGM uses a sensor in the tissue under your skin and shows changes in glucose levels throughout the day and night. Many CGM systems have alarms and warnings that let you know if your glucose level is too low or too high. For safety, you may sometimes need to compare your CGM glucose readings with results from a standard blood glucose meter. This could be needed if you doubt the accuracy of your CGM readings, if you are changing your insulin dose, or if your CGM gives a warning alert."
+  }
+ },
+ {
+  "n": 47,
+  "qid": "a14",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "When you are having an asthma attack, your symptoms get much worse. [P3]",
+  "cited_passages": {
+   "P3": "The symptoms of asthma include: Chest tightness. Coughing, especially at night or early morning. Shortness of breath. Wheezing, which causes a whistling sound when you breathe out. These symptoms can range from mild to severe. You may have them every day or only once in a while. When you are having an asthma attack, your symptoms get much worse. The attacks may come on gradually or suddenly. Sometimes they can be life-threatening. They are more common in people who have severe asthma. If you are having asthma attacks, you may need a change in your treatment."
+  }
+ },
+ {
+  "n": 48,
+  "qid": "d33",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "Weight gain is another possible side effect of diabetes medicines [P1].",
+  "cited_passages": {
+   "P1": "Side effects are problems that result from taking a medicine. Some diabetes medicines can cause hypoglycemia, also called low blood glucose, if you don’t balance your medicines with food and activity. Ask your doctor whether your diabetes medicine can cause hypoglycemia or other side effects, such as upset stomach and weight gain. Aim to take your diabetes medicines as your doctor instructs you, to help prevent side effects and diabetes problems."
+  }
+ },
+ {
+  "n": 49,
+  "qid": "c05",
+  "answerer": "llm",
+  "idx": 5,
+  "sentence": "People with asthma should practice the same everyday preventive actions, including avoiding sick people, covering coughs, washing hands often, and taking steps for cleaner air and cleaning surfaces. [P4]",
+  "cited_passages": {
+   "P4": "In addition to getting a flu vaccine, people with asthma should take the same everyday preventive actions CDC recommends for everyone, including avoiding people who are sick, covering coughs, and washing hands often. This also can include taking steps for cleaner air and hygiene practices like cleaning frequently touched surfaces."
+  }
+ },
+ {
+  "n": 50,
+  "qid": "a29",
+  "answerer": "llm",
+  "idx": 2,
+  "sentence": "Waking up at night because of symptoms can be a sign that your asthma is not well controlled [P3].",
+  "cited_passages": {
+   "P3": "Nocturnal asthma refers to asthma symptoms that occur at night. It is not a separate type of asthma, but a sign of poor symptom control. It is common for asthma symptoms to get worse at night or in the early morning. Sometimes, your symptoms may wake you up at night. If this happens often, it may be a sign that your asthma is not well controlled. Being around allergens while you sleep may also worsen your symptoms at night. Knowing your asthma triggers and avoiding them at night can help you manage your asthma and sleep better."
+  }
+ },
+ {
+  "n": 51,
+  "qid": "d35",
+  "answerer": "extractive",
+  "idx": 2,
+  "sentence": "Your sleep habits may also affect your mental health and vice versa. [P2]",
+  "cited_passages": {
+   "P2": "Sleeping too much or too little may raise your blood glucose levels. Your sleep habits may also affect your mental health and vice versa. People with diabetes and overweight or obesity can also have other health conditions that affect sleep, such as sleep apnea, which can raise your blood pressure and risk of heart disease. Having diabetes can be stressful. Talk with your health care professional or health care team if you need help."
+  }
+ },
+ {
+  "n": 52,
+  "qid": "a22",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Occupational asthma is asthma that develops or gets worse in the workplace. [P1]",
+  "cited_passages": {
+   "P1": "Occupational asthma is asthma that develops or gets worse in the workplace. It can happen in an adult who is around allergens, for example, dust and mold, or other sensitizing agents at work. Once you become sensitized to a substance, being around a very small amount can be enough to trigger serious symptoms. Your asthma can continue to get worse every time you are around the trigger. To prevent asthma flare-ups, you should remove the sensitizing agent from your place of work and avoid any further contact."
+  }
+ },
+ {
+  "n": 53,
+  "qid": "a01",
+  "answerer": "llm",
+  "idx": 4,
+  "sentence": "The narrowed airways make it harder for air to flow out when you breathe out. [P3]",
+  "cited_passages": {
+   "P3": "Asthma is a chronic (long-term) condition that affects the airways in the lungs. The airways are tubes that carry air in and out of your lungs. If you have asthma, your airways can become inflamed and narrowed at times. This makes it harder for air to flow out of your airways when you breathe out. About 1 in 13 people in the United States have asthma, according to the Centers for Disease Control and Prevention. It affects people of all ages and often starts during childhood. Certain things, such as pollen, exercise, viral infections, or cold air, can set off or worsen asthma symptoms. These are called asthma triggers. When symptoms get worse, you can experience an asthma attack. There is no cure for asthma, but treatment and an asthma action plan can help you manage the condition. The plan may include monitoring, avoiding triggers, and using medicines."
+  }
+ },
+ {
+  "n": 54,
+  "qid": "c05",
+  "answerer": "llm",
+  "idx": 1,
+  "sentence": "They should follow everyday preventive actions such as avoiding people who are sick, covering coughs, washing hands often, and cleaning frequently touched surfaces. [P1]",
+  "cited_passages": {
+   "P1": "In addition to getting the flu vaccine, people with diabetes should follow CDC's everyday preventive actions. These include avoiding people who are sick, covering coughs, and washing hands often. They can also take steps for cleaner air and hygiene practices like cleaning frequently touched surfaces. Plan to maintain sufficient supplies of regular medications for chronic conditions. Have at least a two-week supply of necessary medications on hand. If they experience flu symptoms, they should contact their healthcare provider right away. Antiviral drugs can treat flu illness and may prevent serious flu complications. CDC recommends prompt flu treatment for people with diabetes who have flu or suspected flu."
+  }
+ },
+ {
+  "n": 55,
+  "qid": "c05",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "People with diabetes should get an annual flu vaccination, using the injectable flu shot and generally avoiding the nasal spray vaccine. [P2]",
+  "cited_passages": {
+   "P2": "It is important for people with diabetes to get annual flu vaccination to prevent flu and serious flu complications. People with diabetes should get the injectable flu vaccine (flu shot). They should generally not get the nasal spray flu vaccine, which contains weakened live influenza viruses. People with diabetes who experience flu symptoms should contact their healthcare provider right away. CDC recommends prompt flu antiviral treatment for people with diabetes who have flu or suspected flu."
+  }
+ },
+ {
+  "n": 56,
+  "qid": "d11",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "Prediabetes means that your blood glucose, or blood sugar, levels are higher than normal but not high enough to be called diabetes. [P1]",
+  "cited_passages": {
+   "P1": "Prediabetes means that your blood glucose, or blood sugar, levels are higher than normal but not high enough to be called diabetes. Glucose comes from the foods you eat. Too much glucose in your blood can damage your body over time. If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke. But if you make some lifestyle changes now, you may be able to delay or prevent type 2 diabetes."
+  }
+ },
+ {
+  "n": 57,
+  "qid": "d37",
+  "answerer": "extractive",
+  "idx": 0,
+  "sentence": "If your blood sugar is low, follow the 15-15 rule: Have 15 grams of carbs, then wait 15 minutes. [P1]",
+  "cited_passages": {
+   "P1": "If your blood sugar is low, follow the 15-15 rule: Have 15 grams of carbs, then wait 15 minutes. Check your blood sugar again. If it's still less than 70 mg/dL, repeat this process. Keep repeating these steps until your blood sugar is back up in your target range. After treating your low blood sugar, eat a balanced snack or meal with protein and carbs. Tips to keep in mind: Young children may need less than 15 grams of carbs, especially infants and toddlers. Ask your doctor how much your child needs. Check your blood sugar often when lows are more likely, such as when the weather is hot or when you travel."
+  }
+ },
+ {
+  "n": 58,
+  "qid": "t02",
+  "answerer": "extractive",
+  "idx": 1,
+  "sentence": "Type 1 diabetes develops when the body’s immune system destroys the cells in the pancreas that make insulin. [P2]",
+  "cited_passages": {
+   "P2": "Type 1 diabetes develops when the body’s immune system destroys the cells in the pancreas that make insulin. These cells are called beta cells. Genes and factors in the environment—the places where people live, play, work, study, and gather—may trigger the immune system to destroy beta cells in type 1 diabetes. Insulin is a hormone that helps blood glucose get into the body’s cells to be used as energy. When your body doesn’t have enough insulin, glucose in your blood can’t get into the cells. As a result, your cells lack energy, your blood glucose level rises, and you develop diabetes. Studies such as The Environmental Determinants of Diabetes in the Young (TEDDY) are trying to learn more about the causes of type 1 diabetes. Type 1 Diabetes TrialNet and other groups are working to find treatments that may prevent or slow the development of type 1 diabetes in people who are at risk for getting the disease."
+  }
+ },
+ {
+  "n": 59,
+  "qid": "d26",
+  "answerer": "llm",
+  "idx": 0,
+  "sentence": "Sleeping too much or too little may raise your blood glucose levels [P3].",
+  "cited_passages": {
+   "P3": "Sleeping too much or too little may raise your blood glucose levels. Your sleep habits may also affect your mental health and vice versa. People with diabetes and overweight or obesity can also have other health conditions that affect sleep, such as sleep apnea, which can raise your blood pressure and risk of heart disease. Having diabetes can be stressful. Talk with your health care professional or health care team if you need help."
+  }
+ }
+]

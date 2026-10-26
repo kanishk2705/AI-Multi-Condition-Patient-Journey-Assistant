@@ -1,0 +1,54 @@
+name: ci-run
+# Network-side job runner. The build sandbox cannot reach Groq, Hugging Face or the
+# health-information sites, so jobs that need them run here. A job is the script
+# ci/job.sh committed on branch ci/run; outputs are committed back to that branch.
+on:
+  push:
+    branches: [ci/run]
+concurrency:
+  group: ci-run
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    if: "!contains(github.event.head_commit.message, '[ci-done]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ci/run
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ hashFiles('ci/models.txt') }}
+          restore-keys: hf-
+      - name: Run job
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          mkdir -p ci/out
+          set -o pipefail
+          bash ci/job.sh 2>&1 | tee ci/out/log.txt || echo "JOB FAILED with status $?" | tee -a ci/out/log.txt
+      - name: Refuse to commit anything that looks like a secret
+        if: always()
+        run: |
+          if grep -rIlE 'gsk_[A-Za-z0-9]{20,}|hf_[A-Za-z0-9]{30,}' --exclude-dir=.git . ; then
+            echo "Secret-like string found; not committing"; exit 1; fi
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "ci-run[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          for d in ci/out data/raw data/cache; do [ -e "$d" ] && git add -f "$d"; done; true
+          git commit -m "[ci-done] outputs of $(git rev-parse --short HEAD)" || true
+          git push origin HEAD:ci/run

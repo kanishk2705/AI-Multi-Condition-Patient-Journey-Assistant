@@ -1,0 +1,1130 @@
+{
+"015c146d7bf3aa9f835529a93051b25c26a9e431194587b11b9d8bd01fa96817": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_93703442d9",
+"text": "An A1C result between 5.7\u202f% and 6.4\u202f% is classified as prediabetes [P1].",
+"usage": {
+"completion_time": 0.225640234,
+"completion_tokens": 62,
+"completion_tokens_details": {
+"reasoning_tokens": 24
+},
+"prompt_time": 0.047218206,
+"prompt_tokens": 1256,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.11648758,
+"total_time": 0.27285844,
+"total_tokens": 1318
+}
+},
+"09bd0373bd39127eba3a4f723114db12d8ae5fa3397f8acde8e2cbe2538afdf1": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_93703442d9",
+"text": "If asthma symptoms do not go away soon after taking your at\u2011home medicines, you should go to the emergency room [P1].  \nIf you have a serious asthma attack, you should also go to the emergency room [P1].  \nIf you are having trouble breathing, you should go to the emergency room [P2].  \nIf you have ketones in your urine, you should go to the emergency room [P2].  \nIf you cannot keep any liquids down for more than 4\u202fhours, you should go to the emergency room [P2].  \nIf you cannot keep food down for more than 24\u202fhours, you should go to the emergency room [P2].",
+"usage": {
+"completion_time": 0.640811718,
+"completion_tokens": 274,
+"completion_tokens_details": {
+"reasoning_tokens": 124
+},
+"prompt_time": 0.027366313,
+"prompt_tokens": 907,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.117132735,
+"total_time": 0.668178031,
+"total_tokens": 1181
+}
+},
+"0dce9c80fe33bcaa43ba859f0de715b47bf196be4f185d803d3447e9b335cee2": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_bb691ea66b",
+"text": "A blood glucose test may show diabetes when an A1C test does not [P1]. An A1C test may indicate diabetes even though a blood glucose test does not [P1]. Blood glucose levels naturally rise and fall with eating, exercise, sickness, and stress, leading to variable glucose test results [P2]. A1C tests are less likely to be affected by short\u2011term changes than fasting glucose or oral\u2011glucose\u2011tolerance tests [P2]. Small changes in temperature, equipment, or sample handling can cause variations in glucose measurements more than in A1C results [P3].",
+"usage": {
+"completion_time": 1.6443495270000001,
+"completion_tokens": 286,
+"completion_tokens_details": {
+"reasoning_tokens": 153
+},
+"prompt_time": 0.028354836,
+"prompt_tokens": 893,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.118356921,
+"total_time": 1.672704363,
+"total_tokens": 1179
+}
+},
+"12112d2e025033a70f57d4281d8e60ca9cf0f9d61ba62c5517688217311b52d4": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_93703442d9",
+"text": "Before a meal, aim for a blood sugar level of 80 to 130\u202fmg/dL [P1].",
+"usage": {
+"completion_time": 0.107420823,
+"completion_tokens": 52,
+"completion_tokens_details": {
+"reasoning_tokens": 19
+},
+"prompt_time": 0.028137265,
+"prompt_tokens": 806,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.117155089,
+"total_time": 0.135558088,
+"total_tokens": 858
+}
+},
+"197e901e2de2d9bff86451fba01b4415da5b72fe70a8802309fbf23c8600e92c": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_86dc843b12",
+"text": "Losing weight can help make asthma easier to control because overweight or obesity can make asthma harder to manage and even a small weight loss can help symptoms [P1].",
+"usage": {
+"completion_time": 0.109303305,
+"completion_tokens": 53,
+"completion_tokens_details": {
+"reasoning_tokens": 11
+},
+"prompt_time": 0.031637338,
+"prompt_tokens": 924,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.16823455,
+"total_time": 0.140940643,
+"total_tokens": 977
+}
+},
+"199796833ad0ea7711fad2bb18d861aacf86f9bfcd30d995f1291bd8df543afa": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_e5b4e54fbb",
+"text": "Blood sugar can drop while you sleep and stay low for several hours, which can cause serious problems [P2]. You may wake up crying out, having nightmares, sweating enough to dampen pajamas or sheets, or feeling tired, irritable, or confused after waking [P2]. Low blood sugar at night may also happen without you noticing any symptoms, but it can still interfere with sleep quality and mood [P2]. A continuous glucose monitor can alert you if your glucose level gets low while you\u2019re sleeping [P1]. Eating regular meals and not skipping them can help you avoid nighttime low blood sugar [P1]. If you think you\u2019re at risk for low blood sugar overnight, having a snack before bed is recommended [P1].",
+"usage": {
+"completion_time": 0.354510642,
+"completion_tokens": 171,
+"completion_tokens_details": {
+"reasoning_tokens": 13
+},
+"prompt_time": 0.039325626,
+"prompt_tokens": 946,
+"queue_time": 0.117349256,
+"total_time": 0.393836268,
+"total_tokens": 1117
+}
+},
+"1e85c0b44c3d2972316ca0783c89cd408ebc1f4b71b3ab29b08eb834fe500bc0": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c3da0d4bb9",
+"text": "Prediabetes means your blood glucose levels are higher than normal but not high enough to be called diabetes [P1].",
+"usage": {
+"completion_time": 0.127496251,
+"completion_tokens": 46,
+"completion_tokens_details": {
+"reasoning_tokens": 13
+},
+"prompt_time": 0.031275656,
+"prompt_tokens": 827,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168658492,
+"total_time": 0.158771907,
+"total_tokens": 873
+}
+},
+"24caeb84e735931f9002ce618ac41feecaad114a6e76d39e3a91f69550b50940": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_fe269835c7",
+"text": "Diabetes medicines can cause hypoglycemia, also called low blood glucose, if you don\u2019t balance your medicines with food and activity [P1]. They may also cause upset stomach [P1]. Weight gain is another possible side effect of diabetes medicines [P1]. INSUFFICIENT_EVIDENCE",
+"usage": {
+"completion_time": 0.228465085,
+"completion_tokens": 110,
+"completion_tokens_details": {
+"reasoning_tokens": 40
+},
+"prompt_time": 0.048668017,
+"prompt_tokens": 984,
+"queue_time": 0.175195381,
+"total_time": 0.277133102,
+"total_tokens": 1094
+}
+},
+"2d0137ccc05b89a7c8c87a0c672eb017cbaf01c68ed1ba7dfb002f0df672a4ca": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8ea50c0161",
+"text": "Type 2 diabetes may be caused by being overweight or having obesity and by not being physically active [P1].  \nGenetics and family history are also listed as causes of type 2 diabetes [P1].  \nOverweight and obesity are mentioned as causes of type 2 diabetes in another source [P2].  \nNot being physically active is also cited as a cause of type 2 diabetes [P2].  \nInsulin resistance, where cells do not respond well to insulin, is a key factor in developing type 2 diabetes [P3].  \nResearchers think lifestyle factors and genes together cause type 2 diabetes [P4].",
+"usage": {
+"completion_time": 0.393557968,
+"completion_tokens": 166,
+"completion_tokens_details": {
+"reasoning_tokens": 28
+},
+"prompt_time": 0.223209824,
+"prompt_tokens": 846,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.174992421,
+"total_time": 0.616767792,
+"total_tokens": 1012
+}
+},
+"3abcab123d8cedd725e36722fc6b0a07678491870199ee9909362f1c69f2fd2d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4a7bb72c24",
+"text": "Exposure to secondhand smoke during pregnancy or early childhood can raise risk [P1].  \nWorking with chemical irritants or industrial dust can raise risk [P1].  \nHaving a parent with asthma, especially a mother, increases risk [P1].  \nBlack, African American, and Puerto Rican people have higher risk [P1].  \nBeing overweight or obese can raise risk of developing asthma [P2].  \nAllergies and occupational exposure to chemicals or industrial dust are risk factors for asthma [P2].",
+"usage": {
+"completion_time": 1.065155256,
+"completion_tokens": 513,
+"completion_tokens_details": {
+"reasoning_tokens": 401
+},
+"prompt_time": 0.046945718,
+"prompt_tokens": 997,
+"queue_time": 0.168721134,
+"total_time": 1.112100974,
+"total_tokens": 1510
+}
+},
+"3b451a9ce5356f5fd3fc2dee36d903f3370813fc6d4ab7de30f4c8fb9edec18c": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4727af4560",
+"text": "The immune system destroys the beta cells in the pancreas that make insulin\u3010P2\u3011.",
+"usage": {
+"completion_time": 0.117631718,
+"completion_tokens": 57,
+"completion_tokens_details": {
+"reasoning_tokens": 30
+},
+"prompt_time": 0.117868883,
+"prompt_tokens": 994,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.169910124,
+"total_time": 0.235500601,
+"total_tokens": 1051
+}
+},
+"3ea346239fb44bbe9dd20909acf57f45a67495fc57e71610fe8f5afce864729c": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8655ddce88",
+"text": "Serious foot problems that require seeing a health care provider right away include a cut, blister, or bruise that does not start to heal in a few days, red, warm, or painful skin, a callus with dried blood inside, and a foot infection that becomes black and smells bad, which could be gangrene [P1].",
+"usage": {
+"completion_time": 0.878334124,
+"completion_tokens": 128,
+"completion_tokens_details": {
+"reasoning_tokens": 50
+},
+"prompt_time": 0.377999074,
+"prompt_tokens": 1008,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.11820617,
+"total_time": 1.256333198,
+"total_tokens": 1136
+}
+},
+"40c8a8579f3def2ef5c58ad944c007f8c8c5ab70cfd63199606c46dac5031d5d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_803c0ba83d",
+"text": "Certain medicines may harm the pancreas or affect how insulin works, and statins can slightly increase the chance you\u2019ll develop diabetes [P3].",
+"usage": {
+"completion_time": 0.122472479,
+"completion_tokens": 59,
+"completion_tokens_details": {
+"reasoning_tokens": 22
+},
+"prompt_time": 0.045509071,
+"prompt_tokens": 866,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.118593841,
+"total_time": 0.16798155,
+"total_tokens": 925
+}
+},
+"454cacc067eb066585936539b2b08b6dcbd4646c32a7ba1695df672a9cc93a1a": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_86dc843b12",
+"text": "Injectable flu vaccine (flu shot) is recommended for people with diabetes\u3010P1\u3011.",
+"usage": {
+"completion_time": 0.172428683,
+"completion_tokens": 52,
+"completion_tokens_details": {
+"reasoning_tokens": 24
+},
+"prompt_time": 0.049985438,
+"prompt_tokens": 884,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168837701,
+"total_time": 0.222414121,
+"total_tokens": 936
+}
+},
+"4757c39dbd93362369382ba074687c3e1b92cbda5584e03a2c16d0a1374d764e": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_86dc843b12",
+"text": "Take a reliever medicine before you exercise to prevent symptoms short term [P1]. If you use inhaled corticosteroids, you may have fewer symptoms when you exercise [P1]. Train regularly and warm up before you exercise to help prevent symptoms [P1]. Aim for a healthy weight, as overweight can make asthma harder to manage [P2]. Get regular physical activity and do not avoid exercise, even if it can be a trigger [P2]. Talk with your provider about the right level of activity and medicines that can help you stay active [P2].",
+"usage": {
+"completion_time": 0.386523887,
+"completion_tokens": 187,
+"completion_tokens_details": {
+"reasoning_tokens": 64
+},
+"prompt_time": 0.201286012,
+"prompt_tokens": 1025,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.167932316,
+"total_time": 0.587809899,
+"total_tokens": 1212
+}
+},
+"5764a7fab0839076011ec25f4fbd0669d86b2d30bf04304e7677ee74e1193d7e": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c15aa9c1b7",
+"text": "A continuous glucose monitor (CGM) uses a sensor inserted under the skin to measure your blood sugar every few minutes [P1]. It shows changes in glucose levels throughout the day and night and can sound an alarm if levels drop too low [P2][P3]. The sensor is placed in the tissue under your skin and provides regular glucose readings [P2].",
+"usage": {
+"completion_time": 0.2514276,
+"completion_tokens": 98,
+"completion_tokens_details": {
+"reasoning_tokens": 15
+},
+"prompt_time": 0.041944482,
+"prompt_tokens": 971,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168688841,
+"total_time": 0.293372082,
+"total_tokens": 1069
+}
+},
+"5bd4fdb1dfd5ffbd5358e331c0a4cf29d2e6f412438e2e754b7fe65776a18991": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_86dc843b12",
+"text": "Asthma is usually a type of allergic reaction and people who have asthma often have other types of allergies, such as food or pollen allergies. [P1]",
+"usage": {
+"completion_time": 0.174976443,
+"completion_tokens": 84,
+"completion_tokens_details": {
+"reasoning_tokens": 43
+},
+"prompt_time": 0.055977683,
+"prompt_tokens": 1065,
+"queue_time": 0.168135451,
+"total_time": 0.230954126,
+"total_tokens": 1149
+}
+},
+"62c74afc13c8c3a813d88d10e34bafdfbfab2f0aed84f8dfff66ab897a65e318": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8ea50c0161",
+"text": "People with diabetes should get an annual flu vaccination, using the injectable flu shot and generally avoiding the nasal spray vaccine. [P2]  \nThey should follow everyday preventive actions such as avoiding people who are sick, covering coughs, washing hands often, and cleaning frequently touched surfaces. [P1]  \nThey should keep at least a two\u2011week supply of their regular medications on hand. [P1]  \nIf they develop flu symptoms, they should contact their health\u2011care provider right away and receive prompt antiviral treatment. [P1]  \nPeople with asthma also need the flu vaccine because they are at higher risk of serious flu complications. [P3]  \nPeople with asthma should practice the same everyday preventive actions, including avoiding sick people, covering coughs, washing hands often, and taking steps for cleaner air and cleaning surfaces. [P4]",
+"usage": {
+"completion_time": 1.137425886,
+"completion_tokens": 544,
+"completion_tokens_details": {
+"reasoning_tokens": 363
+},
+"prompt_time": 0.045419124,
+"prompt_tokens": 789,
+"queue_time": 0.224712665,
+"total_time": 1.18284501,
+"total_tokens": 1333
+}
+},
+"699591dea12254badc53600bdb15475e869c50959596446ae553e392744cea2a": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_df9620fe21",
+"text": "Time in range is the percentage of time that your glucose level stays within your target range, such as 70 to 180\u202fmg/dL for many people with diabetes [P1].",
+"usage": {
+"completion_time": 0.135366154,
+"completion_tokens": 65,
+"completion_tokens_details": {
+"reasoning_tokens": 18
+},
+"prompt_time": 0.080858744,
+"prompt_tokens": 882,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.023876684,
+"total_time": 0.216224898,
+"total_tokens": 947
+}
+},
+"6badd7098fbbc951fd6a638626d37f9dd1acbcac211445a2f8a8949113c76fae": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_64b2f1c926",
+"text": "Yearly flu vaccination is recommended for people with asthma because they are at higher risk of serious flu complications. [P4]",
+"usage": {
+"completion_time": 0.159739764,
+"completion_tokens": 77,
+"completion_tokens_details": {
+"reasoning_tokens": 43
+},
+"prompt_time": 0.033044117,
+"prompt_tokens": 750,
+"queue_time": 0.176009719,
+"total_time": 0.192783881,
+"total_tokens": 827
+}
+},
+"733fafab8f3e4b1deebd4265038c8aae1436de908458e88504e19d3ffc49cc8d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_49bfac06f1",
+"text": "Typical times to check blood sugar are when you first wake up, before you eat or drink anything, before a meal, two hours after a meal, and at bedtime [P1]. If you have type\u202f1 diabetes, type\u202f2 diabetes and take insulin, or often have low blood sugar, your doctor may want you to check more often, such as before and after physical activity [P1].",
+"usage": {
+"completion_time": 0.254997328,
+"completion_tokens": 123,
+"completion_tokens_details": {
+"reasoning_tokens": 33
+},
+"prompt_time": 0.037708684,
+"prompt_tokens": 781,
+"queue_time": 0.170914222,
+"total_time": 0.292706012,
+"total_tokens": 904
+}
+},
+"784f1242ebb1ab43fab868454f682402a303d23d248f7913143f5f6cb0c6f440": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8655ddce88",
+"text": "Diabetic ketoacidosis (DKA) is a medical emergency that needs immediate treatment [P1]. It occurs when the body does not have enough insulin, so it breaks down fat for fuel and produces ketones [P2]. Too many ketones are produced too fast, leading to dangerous levels that can cause DKA [P4]. DKA can cause a coma or death if not treated promptly [P2]. Symptoms may include feeling very tired, trouble breathing, fruity\u2011smelling breath, fainting, nausea, vomiting, abdominal pain, and confusion [P1][P4]. The sources shown do not cover asthma.",
+"usage": {
+"completion_time": 0.387891484,
+"completion_tokens": 185,
+"completion_tokens_details": {
+"reasoning_tokens": 48
+},
+"prompt_time": 0.525772465,
+"prompt_tokens": 942,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.118272831,
+"total_time": 0.913663949,
+"total_tokens": 1127
+}
+},
+"7adbdc5618d8f5889bc8dd2f03801f217f26856c5714d5c2d09ba29f9edcfe75": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4a7bb72c24",
+"text": "Smoking makes asthma harder to treat and can worsen asthma symptoms [P1]. Vaping electronic cigarettes may also worsen asthma symptoms [P1].",
+"usage": {
+"completion_time": 0.140775785,
+"completion_tokens": 68,
+"completion_tokens_details": {
+"reasoning_tokens": 31
+},
+"prompt_time": 0.392989187,
+"prompt_tokens": 1039,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.170013235,
+"total_time": 0.533764972,
+"total_tokens": 1107
+}
+},
+"7aec738063828154559084e2acb63cac6a767acc0bf592e7a84806c69ab564b7": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4727af4560",
+"text": "If your blood glucose drops very low, you won\u2019t be able to treat it by yourself and should have a glucagon emergency kit and tell others to call 911 after giving you glucagon [P1]. Severely low blood glucose can cause serious complications such as passing out, coma, or death [P3].",
+"usage": {
+"completion_time": 0.367717355,
+"completion_tokens": 178,
+"completion_tokens_details": {
+"reasoning_tokens": 105
+},
+"prompt_time": 0.047182266,
+"prompt_tokens": 918,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.169644426,
+"total_time": 0.414899621,
+"total_tokens": 1096
+}
+},
+"8339096a5856ccf692954ba24181bf7e91e19677a247a08905366b57824f41f5": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_df9620fe21",
+"text": "People with asthma should generally not receive the nasal spray flu vaccine, and children 2\u20114\u202fyears old with asthma or recent wheezing should not get it either [P1].",
+"usage": {
+"completion_time": 0.155067719,
+"completion_tokens": 71,
+"completion_tokens_details": {
+"reasoning_tokens": 25
+},
+"prompt_time": 0.146752008,
+"prompt_tokens": 739,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.023709649,
+"total_time": 0.301819727,
+"total_tokens": 810
+}
+},
+"8839baaed24286382d4ef47c8c6b1da5f2c5b33af5e387353b72efce12bfe5e7": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_803c0ba83d",
+"text": "Spirometry measures how much air you breathe out and how fast you can do it\u3010P1\u3011.  \nIt also measures how much air you breathe out after taking a very deep breath, both before and after using asthma medicine\u3010P3\u3011.",
+"usage": {
+"completion_time": 0.254467135,
+"completion_tokens": 103,
+"completion_tokens_details": {
+"reasoning_tokens": 44
+},
+"prompt_time": 0.033645234,
+"prompt_tokens": 1098,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.119147053,
+"total_time": 0.288112369,
+"total_tokens": 1201
+}
+},
+"892d6a61a8b292552942e686bec955039e3b9758532dcd3c525cad9d96c2d730": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_a655021f7d",
+"text": "Type 1 diabetes means the body makes little or no insulin because the immune system destroys insulin\u2011producing cells [P1].  \nType 2 diabetes means the body may still make insulin, but the cells do not respond well to it and cannot easily take up enough glucose [P1].  \nType 2 diabetes is the most common form, while type 1 is less common [P1].",
+"usage": {
+"completion_time": 0.238656537,
+"completion_tokens": 116,
+"completion_tokens_details": {
+"reasoning_tokens": 26
+},
+"prompt_time": 0.554298234,
+"prompt_tokens": 861,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.16931904,
+"total_time": 0.792954771,
+"total_tokens": 977
+}
+},
+"89a147ed1d85e0a8d4679b394237dda0789e290c31919081786be3fea9b3e4dc": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_803c0ba83d",
+"text": "Losing weight can make asthma easier to manage and improve symptoms\u3010P1\u3011.  \nLosing weight can help prevent or improve type\u202f2 diabetes and aid blood\u2011glucose control\u3010P2\u3011.",
+"usage": {
+"completion_time": 0.193469995,
+"completion_tokens": 90,
+"completion_tokens_details": {
+"reasoning_tokens": 39
+},
+"prompt_time": 0.029891882,
+"prompt_tokens": 925,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.117165225,
+"total_time": 0.223361877,
+"total_tokens": 1015
+}
+},
+"913521737e942c319e7e6719f5821425baf040c1713c7c2eb2b1471263560967": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_27194a498a",
+"text": "Inhaled corticosteroids can cause a hoarse voice or a mouth infection called thrush. [P1]",
+"usage": {
+"completion_time": 0.19505139,
+"completion_tokens": 95,
+"completion_tokens_details": {
+"reasoning_tokens": 63
+},
+"prompt_time": 0.032444065,
+"prompt_tokens": 992,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168264851,
+"total_time": 0.227495455,
+"total_tokens": 1087
+}
+},
+"a26e40ba8152a6f66eb648397a2a1da5c9a7c933db42da332fb546ad92080506": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_a655021f7d",
+"text": "If your blood sugar is low, have 15\u202fgrams of carbs, wait 15\u202fminutes, then check your blood sugar again; repeat until it is back in your target range and follow with a balanced snack or meal with protein and carbs [P1].",
+"usage": {
+"completion_time": 0.186801106,
+"completion_tokens": 81,
+"completion_tokens_details": {
+"reasoning_tokens": 19
+},
+"prompt_time": 0.041772492,
+"prompt_tokens": 1254,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.16853467,
+"total_time": 0.228573598,
+"total_tokens": 1335
+}
+},
+"a3cc1f5c3b0003fc8458fe0ec5ad39ad4c84a6d84c7ff3465b47d8efef89d644": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c15aa9c1b7",
+"text": "Symptoms of type 2 diabetes often develop slowly over several years and can be so mild that a person might not even notice them [P2]. Many people with type 2 diabetes have no symptoms at all, so they may not realize they have the condition [P3].",
+"usage": {
+"completion_time": 0.180452836,
+"completion_tokens": 87,
+"completion_tokens_details": {
+"reasoning_tokens": 23
+},
+"prompt_time": 0.034293793,
+"prompt_tokens": 744,
+"queue_time": 0.168122833,
+"total_time": 0.214746629,
+"total_tokens": 831
+}
+},
+"a6a8419d134752e71ef6b3603c23d4eae9ad79b796b094582de54dc0dce75327": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_e1a78f200e",
+"text": "Asthma is a chronic lung disease that affects the airways, the tubes that carry air in and out of your lungs. [P1] When you have asthma, your airways can become inflamed and narrowed. [P1] During an asthma attack the sides of the airways swell and the airways shrink, less air gets in and out, and mucus clogs the airways. [P2] The airways become smaller, like the branches of a tree, reducing airflow. [P2] The narrowed airways make it harder for air to flow out when you breathe out. [P3]",
+"usage": {
+"completion_time": 0.805594662,
+"completion_tokens": 312,
+"completion_tokens_details": {
+"reasoning_tokens": 178
+},
+"prompt_time": 0.031273939,
+"prompt_tokens": 912,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.118155918,
+"total_time": 0.836868601,
+"total_tokens": 1224
+}
+},
+"ab0de13f4a04d87d0badb02d1d5620199a2b04d5061c8e9d2e999b879d3a0046": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4200b3f836",
+"text": "Occupational asthma is asthma that develops or gets worse in the workplace and can happen in an adult who is around allergens, dust, mold, or other sensitizing agents at work [P1]. Occupational asthma is caused by breathing in chemicals or industrial dusts at work [P2].",
+"usage": {
+"completion_time": 0.295932209,
+"completion_tokens": 140,
+"completion_tokens_details": {
+"reasoning_tokens": 74
+},
+"prompt_time": 0.057962962,
+"prompt_tokens": 974,
+"queue_time": 0.175809188,
+"total_time": 0.353895171,
+"total_tokens": 1114
+}
+},
+"abe75a2f5253d207fd1fc4ef28c573daa5c15a682a7d4d7d73025c21f335b2b0": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4200b3f836",
+"text": "A medical alert ID is a bracelet or pendant that tells others you have diabetes and need care right away\u3010P1\u3011.",
+"usage": {
+"completion_time": 0.112754026,
+"completion_tokens": 54,
+"completion_tokens_details": {
+"reasoning_tokens": 20
+},
+"prompt_time": 0.237168686,
+"prompt_tokens": 964,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.181157763,
+"total_time": 0.349922712,
+"total_tokens": 1018
+}
+},
+"b5f01b3ef57abf76971bd0721d42cd07bf0e0ef176b7aaa65d5ad435d81efac1": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_64b2f1c926",
+"text": "Apply the cleaner to a cloth or paper towel and do not spray it into the air; follow the product label instructions.\u202f[P1]  \nBe careful around cleaning agents and disinfectants because some can cause asthma attacks or other adverse reactions.\u202f[P2]  \nHave someone who doesn\u2019t have asthma do the cleaning and disinfecting, and keep people with asthma out of the room while products are used.\u202f[P3]  \nOpen windows or doors and use a fan that blows air outdoors when using cleaning and disinfecting products.\u202f[P3]",
+"usage": {
+"completion_time": 0.541736157,
+"completion_tokens": 181,
+"completion_tokens_details": {
+"reasoning_tokens": 62
+},
+"prompt_time": 0.12091209,
+"prompt_tokens": 884,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.175136861,
+"total_time": 0.662648247,
+"total_tokens": 1065
+}
+},
+"b6800291bedeca09b6cfb6b50c109ac6c1fcb19ac85e168b6504f8c36779700d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_f640395b96",
+"text": "A bronchial provocation test, also called a challenge test, assesses how sensitive your airways are by comparing how fast you can blow air before and after exposure to a challenge agent such as inhaled medicines, allergens, irritants, exercise, or hyperventilation [P1].",
+"usage": {
+"completion_time": 0.176605646,
+"completion_tokens": 84,
+"completion_tokens_details": {
+"reasoning_tokens": 18
+},
+"prompt_time": 0.074957605,
+"prompt_tokens": 956,
+"queue_time": 0.184778555,
+"total_time": 0.251563251,
+"total_tokens": 1040
+}
+},
+"b71ff3d901871bcb3636124193dfd9361f390d08061059aea3089ead5289d45d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4200b3f836",
+"text": "Eye care professionals use eye drops during a dilated eye exam to open the pupils wide so they can look for signs of eye problems and treat them before they harm vision [P1].",
+"usage": {
+"completion_time": 0.197252166,
+"completion_tokens": 95,
+"completion_tokens_details": {
+"reasoning_tokens": 49
+},
+"prompt_time": 0.027744284,
+"prompt_tokens": 838,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.181587093,
+"total_time": 0.22499645,
+"total_tokens": 933
+}
+},
+"bbdd4429de8a312dfc9fe3df6d6a98dbb7c8cddb8b596c3d4019465d437b4e8f": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c800245357",
+"text": "Use your reliever inhaler right away when symptoms begin, and follow your asthma action plan to know what steps to take next. [P1]",
+"usage": {
+"completion_time": 0.180509866,
+"completion_tokens": 83,
+"completion_tokens_details": {
+"reasoning_tokens": 44
+},
+"prompt_time": 0.04023507,
+"prompt_tokens": 877,
+"queue_time": 0.171157712,
+"total_time": 0.220744936,
+"total_tokens": 960
+}
+},
+"c014bdfb69303713d3ef223e6b24fa92def570156ffe01b11cb17d7d371e0be8": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8655ddce88",
+"text": "INSUFFICIENT_EVIDENCE",
+"usage": {
+"completion_time": 0.079302525,
+"completion_tokens": 38,
+"completion_tokens_details": {
+"reasoning_tokens": 22
+},
+"prompt_time": 0.034291989,
+"prompt_tokens": 931,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.123980768,
+"total_time": 0.113594514,
+"total_tokens": 969
+}
+},
+"c0d72091f430d738ab73335fecd0d4fc7a19563c411229d0208249e32be003cb": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_86dc843b12",
+"text": "Common side effects from inhaled corticosteroids include a hoarse voice or a mouth infection called thrush. [P1]",
+"usage": {
+"completion_time": 0.218433722,
+"completion_tokens": 105,
+"completion_tokens_details": {
+"reasoning_tokens": 71
+},
+"prompt_time": 0.096063936,
+"prompt_tokens": 1030,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168316521,
+"total_time": 0.314497658,
+"total_tokens": 1135
+}
+},
+"c3fc22ed28617d74eeed2a45e1172b8d51953729ca3d6d882c7e30c12ad50a1b": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_87b3c396db",
+"text": "Control your blood sugar each day to help keep nerve and blood\u2011vessel damage from getting worse [P1]. Check your feet every day, looking at the tops, bottoms, cuts, redness and any changes in skin or toenails [P1]. Wash your feet with warm water and soap, dry them, then you may use talcum powder or cornstarch between the toes and avoid putting lotion there [P1]. Keep blood flowing by putting your feet up while sitting, wiggling your toes and circling your feet, avoid tight socks and do gentle activity such as walking [P2]. Have your health\u2011care provider look at your feet at regular visits even if you haven\u2019t noticed a problem [P2]. Wear well\u2011fitting shoes and socks, do not walk barefoot, protect your feet from heat and cold, use sunscreen on exposed skin and wear warm socks in cold weather [P3].",
+"usage": {
+"completion_time": 0.808329838,
+"completion_tokens": 379,
+"completion_tokens_details": {
+"reasoning_tokens": 185
+},
+"prompt_time": 0.041469647,
+"prompt_tokens": 993,
+"queue_time": 0.170994609,
+"total_time": 0.849799485,
+"total_tokens": 1372
+}
+},
+"c6cea551f6b0bf8e22bd336e49db048d6662e394755ad4b19c9e148073bee8bf": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_4727af4560",
+"text": "Feeling stressed, sad, or angry can be common for people with diabetes [P1]. Many people with chronic, long\u2011term illnesses such as diabetes develop anxiety or other mental health conditions [P3]. Learning healthy ways to lower your stress and asking for help from your health\u2011care team or a mental\u2011health professional may help [P1]. Sleep problems can raise blood\u2011glucose levels and affect mental health, and diabetes can be stressful [P2]. Talk with your health\u2011care professional or health\u2011care team if you need help [P2]. Ask your health\u2011care team for mental\u2011health resources for people with diabetes [P1].",
+"usage": {
+"completion_time": 0.331500853,
+"completion_tokens": 160,
+"completion_tokens_details": {
+"reasoning_tokens": 19
+},
+"prompt_time": 0.261989114,
+"prompt_tokens": 796,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.169851567,
+"total_time": 0.593489967,
+"total_tokens": 956
+}
+},
+"c79bc07c56dc5ebcb873503650c46297a200e272060aea5b1cc9dc78bb5c97ca": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_90620edd96",
+"text": "Type 2 diabetes is a disease where blood sugar is too high because the body doesn\u2019t make enough insulin or doesn\u2019t use insulin well, so glucose stays in the blood instead of entering cells for energy [P1].",
+"usage": {
+"completion_time": 0.165904438,
+"completion_tokens": 77,
+"completion_tokens_details": {
+"reasoning_tokens": 24
+},
+"prompt_time": 0.048522896,
+"prompt_tokens": 985,
+"queue_time": 0.11834203,
+"total_time": 0.214427334,
+"total_tokens": 1062
+}
+},
+"cd13ae428267bb85859b7ec9046dd2880d9931a5b4283bfa82632a3b3c85ee10": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c3da0d4bb9",
+"text": "You should go to the emergency room if your symptoms do not go away soon after taking your at\u2011home medicines or if you have a serious asthma attack [P1]. If your symptoms do not go away soon after using your reliever inhaler, you may need medical attention and should consider the emergency room [P2].",
+"usage": {
+"completion_time": 0.261721715,
+"completion_tokens": 126,
+"completion_tokens_details": {
+"reasoning_tokens": 52
+},
+"prompt_time": 0.046900384,
+"prompt_tokens": 807,
+"queue_time": 0.168468311,
+"total_time": 0.308622099,
+"total_tokens": 933
+}
+},
+"d5c25bd66a37b76ad737c5a8fb9d45ae7013092bfa2f8c45e489fb0421b1263d": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_27194a498a",
+"text": "Reliever medicines are used as soon as you start to have asthma symptoms and can help a flare\u2011up quickly [P4].  \nController medicines are taken daily to help prevent asthma attacks and keep symptoms under control [P1].",
+"usage": {
+"completion_time": 0.208953755,
+"completion_tokens": 93,
+"completion_tokens_details": {
+"reasoning_tokens": 38
+},
+"prompt_time": 0.047084908,
+"prompt_tokens": 969,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168044948,
+"total_time": 0.256038663,
+"total_tokens": 1062
+}
+},
+"d73108522979d5708015e6b645169f3a9ec7f02c124fa17087c6591f0471cbfe": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_69334c0be3",
+"text": "Be safe during exercise and check your blood glucose before, during, and after activity\u202f[P1].  \nYou may need to eat a snack before physical activity to prevent low blood glucose\u202f[P1].  \nMake sure your regular eating plan includes enough carbohydrates and consider a fast\u2011acting carbohydrate source with you\u202f[P4].",
+"usage": {
+"completion_time": 0.19135247,
+"completion_tokens": 92,
+"completion_tokens_details": {
+"reasoning_tokens": 19
+},
+"prompt_time": 0.033158984,
+"prompt_tokens": 1000,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.168986489,
+"total_time": 0.224511454,
+"total_tokens": 1092
+}
+},
+"d85e4bdbeb120fa5746402b9e443c4f0ede2a31d819dd3082323d379e526aa62": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_df9620fe21",
+"text": "Inflammation of the pancreas, also called pancreatitis, can damage the pancreas and lead to diabetes [P1].",
+"usage": {
+"completion_time": 0.115771278,
+"completion_tokens": 56,
+"completion_tokens_details": {
+"reasoning_tokens": 23
+},
+"prompt_time": 0.045252179,
+"prompt_tokens": 832,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.023590716,
+"total_time": 0.161023457,
+"total_tokens": 888
+}
+},
+"dc51d8eae48e8b35c8ddcb7e43222949d9ea63820bd5a5e2dffe726231b0d9a2": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_02b0d31eca",
+"text": "The plate method divides a 9\u2011inch plate into three sections to help choose the types and amounts of foods for each meal [P1]. Half of the plate should be nonstarchy vegetables such as leafy greens, peppers, carrots, or green beans [P2]. One\u2011quarter of the plate should be carbohydrate foods high in fiber, like brown rice, whole grains, beans, or fruits [P2]. The remaining quarter should be protein foods such as lean meats, fish, dairy, tofu, or other soy products [P2].",
+"usage": {
+"completion_time": 0.573360049,
+"completion_tokens": 274,
+"completion_tokens_details": {
+"reasoning_tokens": 155
+},
+"prompt_time": 0.046684095,
+"prompt_tokens": 1163,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.175079394,
+"total_time": 0.620044144,
+"total_tokens": 1437
+}
+},
+"e6135264c687faf3f827794523a36ae2caa94ca1522ebaa05d543188b30639d6": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_19b184c447",
+"text": "Needle and syringe, insulin pen, and insulin pump are common ways to take insulin [P1]. Inhalers and insulin jet injectors are less common ways to take insulin [P1]. Artificial pancreas systems are now approved by the U.S. Food and Drug Administration for insulin delivery [P1].",
+"usage": {
+"completion_time": 0.440422498,
+"completion_tokens": 211,
+"completion_tokens_details": {
+"reasoning_tokens": 140
+},
+"prompt_time": 0.036734826,
+"prompt_tokens": 922,
+"queue_time": 0.119151966,
+"total_time": 0.477157324,
+"total_tokens": 1133
+}
+},
+"e9fb753cf45995d1b588131aa053a2b4fab5a71264348df409983c7153083bc2": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_02b0d31eca",
+"text": "Indoor allergens such as dust mites, mold, and pet dander or fur can set off asthma symptoms [P2].  \nOutdoor allergens like pollens and mold are common triggers for asthma [P2].  \nEmotional stress, physical activity, and infections such as colds, the flu, or COVID\u201119 may worsen asthma [P2].  \nCertain medicines, for example aspirin, can cause serious breathing problems in people with asthma [P2].  \nBreathing in very cold air or poor air quality can trigger asthma symptoms [P4].  \nHousehold chemicals, tobacco smoke, and outdoor air pollution are also everyday triggers for asthma [P4].",
+"usage": {
+"completion_time": 0.892632519,
+"completion_tokens": 292,
+"completion_tokens_details": {
+"reasoning_tokens": 151
+},
+"prompt_time": 0.033142031,
+"prompt_tokens": 1045,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.175349648,
+"total_time": 0.92577455,
+"total_tokens": 1337
+}
+},
+"f3dc40fce66bb1fa5c70a540dd9e152cd15b28df39adbb23794cb015cfb625d5": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_dee443f41b",
+"text": "Carbs in food make your blood sugar levels go higher after you eat them than when you eat proteins or fats [P1]. The more carbs you eat, the higher your blood glucose level will be [P2]. Counting carbs in foods and drinks is an important tool for managing blood sugar levels [P1]. When you eat foods or drink beverages that contain carbohydrates, your digestive system breaks down the sugars and starches into glucose, which then enters your bloodstream and raises your blood glucose level [P3].",
+"usage": {
+"completion_time": 0.312316704,
+"completion_tokens": 131,
+"completion_tokens_details": {
+"reasoning_tokens": 20
+},
+"prompt_time": 0.036427992,
+"prompt_tokens": 971,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.17644714,
+"total_time": 0.348744696,
+"total_tokens": 1102
+}
+},
+"f97450b72e66e524318888bf0fdd10faba4318fb1bb5e1fcac6cd938c3a388b4": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_8655ddce88",
+"text": "Your asthma action plan should explain how to tell if your asthma is getting worse [P4]. Symptoms that make it difficult to stay physically active may indicate that your asthma is not well controlled or is getting worse [P1]. Waking up at night because of symptoms can be a sign that your asthma is not well controlled [P3]. INSUFFICIENT_EVIDENCE",
+"usage": {
+"completion_time": 0.422973462,
+"completion_tokens": 156,
+"completion_tokens_details": {
+"reasoning_tokens": 72
+},
+"prompt_time": 0.037586356,
+"prompt_tokens": 868,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.11833404,
+"total_time": 0.460559818,
+"total_tokens": 1024
+}
+},
+"fb868cbe8488664d23a8d416603d973dea577791d917eaa746f0f00598077c31": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_e1a78f200e",
+"text": "Measuring peak flow at home lets you see how much air you can push out of your lungs\u202f[ P1 ].  \nYour provider may show you how to track your asthma using a peak flow meter as part of your asthma action plan\u202f[ P4 ].  \nKeeping a record of your results lets you compare numbers over time to check that your asthma is controlled\u202f[ P4 ].",
+"usage": {
+"completion_time": 0.219643942,
+"completion_tokens": 105,
+"completion_tokens_details": {
+"reasoning_tokens": 19
+},
+"prompt_time": 0.182862099,
+"prompt_tokens": 904,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.11898782,
+"total_time": 0.402506041,
+"total_tokens": 1009
+}
+},
+"fc64cbdd9a19f35423eaca6be7453378581e23b3ba88cc67a8bd46ac69affa70": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_df9620fe21",
+"text": "If you get sick with flu symptoms, call your health care provider right away.\u202fThere are antiviral drugs that can treat flu illness and help prevent serious flu complications.\u202fPeople with asthma should not use the antiviral drug zanamivir (Relenza\u00ae) because it may cause wheezing in people with asthma or other lung problems.\u202f[P3]\u202fPeople with asthma who get flu symptoms should call their health care provider right away.\u202f[P4]",
+"usage": {
+"completion_time": 0.295525211,
+"completion_tokens": 142,
+"completion_tokens_details": {
+"reasoning_tokens": 39
+},
+"prompt_time": 0.051489916,
+"prompt_tokens": 812,
+"queue_time": 0.023098086,
+"total_time": 0.347015127,
+"total_tokens": 954
+}
+},
+"fd42ce936d1145fe84f7a25e74e6f5eb72127219b591b127feeba98e7f385205": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_19b184c447",
+"text": "Quick-absorbing foods such as 4\u202founces of juice or regular soda, 1\u202ftablespoon of sugar, honey or syrup, hard candies, jellybeans, gumdrops, glucose tablets or glucose gel can raise low blood sugar fast [P1].",
+"usage": {
+"completion_time": 0.329504582,
+"completion_tokens": 119,
+"completion_tokens_details": {
+"reasoning_tokens": 57
+},
+"prompt_time": 0.035552811,
+"prompt_tokens": 1051,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.117340113,
+"total_time": 0.365057393,
+"total_tokens": 1170
+}
+},
+"febafe2013c28962918388a11e2e72873f8ed7b83c018b96bd3cb6b508a9a1b3": {
+"finish_reason": "stop",
+"model": "openai/gpt-oss-120b",
+"system_fingerprint": "fp_c3da0d4bb9",
+"text": "Sleeping too much or too little may raise your blood glucose levels [P3]. Getting enough sleep may improve your blood glucose level [P4].",
+"usage": {
+"completion_time": 0.120507842,
+"completion_tokens": 58,
+"completion_tokens_details": {
+"reasoning_tokens": 20
+},
+"prompt_time": 0.046797976,
+"prompt_tokens": 808,
+"prompt_tokens_details": {
+"cached_tokens": 256
+},
+"queue_time": 0.169386595,
+"total_time": 0.167305818,
+"total_tokens": 866
+}
+}
+}

@@ -1,0 +1,9 @@
+numpy
+scipy
+requests
+beautifulsoup4
+lxml
+huggingface_hub
+sentence-transformers
+matplotlib
+pytest

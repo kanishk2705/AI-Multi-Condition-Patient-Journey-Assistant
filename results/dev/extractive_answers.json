@@ -1,0 +1,563 @@
+{
+ "a02": {
+  "text": "However some people don\u2019t show signs of asthma until adulthood \u2014 this is known as adult- onset asthma. [P1] The following may also raise the risk of developing asthma: [P1] Learn how asthma affects people from some communities more than others and steps for managing asthma. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0",
+   "cdc-flu-and-people-with-asthma-flu-and-people-with-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1",
+   "nhlbi-asthma-what-is-asthma-summary-0"
+  ]
+ },
+ "a04": {
+  "text": "Watch out for these signs that your asthma might be getting worse: You have symptoms more often than usual, or they feel worse. [P2] You have trouble with usual activities, including exercise, because of your asthma. [P2] When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "cdc-about-asthma-symptoms-0"
+  ]
+ },
+ "a05": {
+  "text": "It can be hard to tell if someone has asthma, especially in children under age 5. [P1] A doctor can help you find out if you have asthma. [P1] He or she may ask whether anyone in your family has or has had asthma, allergies, or other breathing problems. [P1]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-about-asthma-diagnosis-0",
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-summary-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0"
+  ]
+ },
+ "a09": {
+  "text": "Keep your asthma under control and contact your healthcare provider if anything changes. [P2] If you want to adjust your medicines, talk to your provider first. [P2] If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0",
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0",
+   "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+   "cdc-what-to-do-when-an-emergency-occurs-key-points-0"
+  ]
+ },
+ "a10": {
+  "text": "Nocturnal asthma refers to asthma symptoms that occur at night. [P1] It is common for asthma symptoms to get worse at night or in the early morning. [P1] You wake up at night because of coughing or other asthma symptoms. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-nocturnal-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "cdc-about-asthma-symptoms-0"
+  ]
+ },
+ "a12": {
+  "text": "An asthma action plan is a written treatment plan that describes the following: How to identify allergens or triggers to avoid. [P1] Follow an updated, written Asthma Action Plan developed with your health care provider. [P2] If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-create-an-asthma-action-plan-0",
+   "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+   "cdc-living-with-asthma-asthma-action-plans-0",
+   "nhlbi-asthma-treatment-and-action-plan-treating-specific-asthma-types-0"
+  ]
+ },
+ "a13": {
+  "text": "Get rid of mold in your home to control your attacks. [P1] Breathing can become difficult when you are around certain allergens, such as pollens, dust mites, or mold. [P2] Remove dust and mold from your house. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-controlling-asthma-common-asthma-triggers-2",
+   "nhlbi-asthma-treatment-and-action-plan-allergic-asthma-0",
+   "nhlbi-asthma-managing-asthma-know-your-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-0"
+  ]
+ },
+ "a16": {
+  "text": "If you have asthma, you should get the pneumococcal vaccine to protect yourself against pneumococcal pneumonia. [P1] People with asthma should generally not receive the nasal spray flu vaccine (i.e., the live attenuated influenza vaccine or LAIV). [P3] People with asthma who are aged 5 years and older, talk to your health care provider before getting the nasal spray vaccine. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-respiratory-infections-and-asthma-pneumococcal-pneumonia-0",
+   "cdc-flu-and-people-with-asthma-pneumococcal-vaccination-is-also-important-0",
+   "cdc-flu-and-people-with-asthma-flu-vaccines-for-people-with-asthma-0",
+   "cdc-respiratory-infections-and-asthma-what-to-know-0"
+  ]
+ },
+ "a21": {
+  "text": "Your asthma symptoms may change while you are pregnant. [P1] You are also at higher risk of asthma attacks. [P1] Controlling your asthma can help prevent pregnancy complications such as preeclampsia, preterm delivery, and low birth weight. [P1]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0",
+   "medlineplus-asthma-who-is-at-risk-for-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0"
+  ]
+ },
+ "a25": {
+  "text": "Use more than one canister of inhaled short-acting beta2-agonist (SABA) medicine, a reliever medicine, each month. [P1] You should also use your reliever inhaler as soon as you start to have symptoms. [P2] You may be able to manage an asthma flare-up with just your reliever inhaler. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "cdc-about-asthma-symptom-management-0"
+  ]
+ },
+ "a26": {
+  "text": "Your chest may feel tight or like someone is sitting on it. [P1] Some people say it feels like having the air sucked out of you or trying to suck air in through a straw. [P1] When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-what-does-an-asthma-attack-feel-like-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-asthma-attack-summary-0",
+   "cdc-about-asthma-symptoms-0"
+  ]
+ },
+ "a28": {
+  "text": "You should seek care right away if you or your child have symptoms and: Have been hospitalized for asthma in the past year or had life-threatening asthma attacks in the past. [P1] Because you are at higher risk of developing serious flu complications, if you get sick with flu symptoms call your health care provider right away. [P2] People with asthma who get flu symptoms should call their health care provider right away. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "cdc-flu-and-people-with-asthma-symptoms-and-treatment-0",
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0"
+  ]
+ },
+ "c02": {
+  "text": "Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P1] Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P2] Annual flu vaccination is especially important for people with diabetes because they are at higher risk of developing serious flu complications. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "cdc-flu-and-people-with-asthma-a-flu-shot-is-the-best-protection-against-f-0",
+   "cdc-flu-and-people-with-diabetes-vaccination-is-the-best-protection-agains-0",
+   "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0"
+  ]
+ },
+ "c04": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+  ]
+ },
+ "c06": {
+  "text": "Smoking tobacco and breathing in secondhand smoke make asthma harder to treat. [P2] Not smoking is important for your health, especially if you have diabetes. [P3] Both smoking and diabetes can make your blood vessels narrow. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-should-i-quit-smoking-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+   "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+   "medlineplus-smoking-what-are-the-health-effects-of-smoking-0"
+  ]
+ },
+ "c10": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-blood-glucose-levels-move-up-and-down-0",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0",
+   "niddk-healthy-living-with-diabetes-how-can-i-take-care-of-my-mental-health-1",
+   "medlineplus-hyperglycemia-what-causes-hyperglycemia-0"
+  ]
+ },
+ "c12": {
+  "text": "Make sure that you have at least 30 days of non-prescription medications and supplies in case you need to stay home for a long time. [P1] Talk to your healthcare provider, insurer, and pharmacist about creating an emergency supply of prescription medications, such as asthma inhalers. [P2] Make sure that you have 30 days of non-prescription medications and supplies on hand in case you need to stay home for a long time. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-what-to-do-when-an-emergency-occurs-first-steps-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0",
+   "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1"
+  ]
+ },
+ "d04": {
+  "text": "You are more likely to develop type 2 diabetes if you are age 45 or older, have a family history of diabetes, or are overweight or have obesity. [P1] You are also more likely to develop type 2 diabetes if you have prediabetes or had gestational diabetes when you were pregnant. [P1] Learn more about risk factors for type 2 diabetes. [P1]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-type-2-diabetes-who-is-more-likely-to-develop-type-2-diabetes-0",
+   "medlineplus-diabetes-who-is-more-likely-to-develop-diabetes-0",
+   "medlineplus-diabetes-type-2-who-is-at-risk-for-type-2-diabetes-0",
+   "niddk-diabetes-tests-diagnosis-type-2-diabetes-0"
+  ]
+ },
+ "d06": {
+  "text": "Large changes in your blood glucose levels over the past month will show up in your A1C test result, but the A1C test doesn\u2019t show sudden, temporary increases or decreases in blood glucose levels. [P1] 1 The A1C test is also the primary test used for diabetes management. [P2] The A1C test shows your average blood glucose level over the last 3 months. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-will-the-a1c-test-show-short-term-changes-in-blo-0",
+   "niddk-the-a1c-test-diabetes-what-is-the-a1c-test-0",
+   "niddk-managing-diabetes-a-is-for-the-a1c-blood-glucose-test-0",
+   "niddk-the-a1c-test-diabetes-can-the-a1c-test-result-in-a-different-diagnosis-0"
+  ]
+ },
+ "d08": {
+  "text": "You don\u2019t have to fast before having your blood drawn for an A1C test, which means that blood can be drawn for the test at any time of the day. [P2] Fasting plasma glucose (FPG) test, which measures your current blood glucose level. [P3] This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-can-other-blood-glucose-tests-be-used-to-diagnos-0",
+   "niddk-the-a1c-test-diabetes-how-is-the-a1c-test-used-to-diagnose-type-2-diab-0",
+   "medlineplus-diabetes-type-2-how-is-type-2-diabetes-diagnosed-0",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0"
+  ]
+ },
+ "d10": {
+  "text": "Conditions that change the life span of red blood cells, such as recent blood loss, sickle cell disease, erythropoietin treatment, hemodialysis, or transfusion, can change A1C levels. [P1] If you\u2019re of African, Mediterranean, or Southeast Asian descent or have family members with sickle cell anemia or a thalassemia, an A1C test can be unreliable for diagnosing or monitoring diabetes and prediabetes. [P1] The NIDDK has information for health care providers on Sickle Cell Trait & Other Hemoglobinopathies & Diabetes. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-0",
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-1",
+   "niddk-the-a1c-test-diabetes-blood-glucose-levels-move-up-and-down-0",
+   "niddk-the-a1c-test-diabetes-can-the-a1c-test-result-in-a-different-diagnosis-0"
+  ]
+ },
+ "d12": {
+  "text": "This is called insulin resistance. [P1] Insulin resistance is when the cells in your muscles, fat, and liver don\u2019t respond well to insulin. [P2] A problem with insulin could be: Insulin resistance, a condition in which the body can't use its insulin properly. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-type-2-diabetes-causes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "medlineplus-diabetes-type-2-what-causes-type-2-diabetes-0"
+  ]
+ },
+ "d14": {
+  "text": "In people with diabetes, long-term hyperglycemia can lead to serious health problems (diabetes complications). [P1] However, if not managed, diabetes can lead to problems such as heart disease and stroke. nerve damage. kidney disease. foot problems. eye disease. gum disease and other dental problems. sexual and bladder problems. [P2] You can take steps to lower your chances of developing these diabetes-related health problems. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-hyperglycemia-what-other-problems-can-hyperglycemia-cause-0",
+   "niddk-type-2-diabetes-what-health-problems-can-people-with-diabetes-develop-0",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-1",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-0"
+  ]
+ },
+ "d20": {
+  "text": "To keep your blood glucose under control, you may need to cut back on certain foods and drinks. [P1] The foods and drinks you should limit include: High-carb foods and drinks, such as: Sugary foods, such as candy, cookies, cake, ice cream, sweetened cereals, and canned fruits with added sugar. [P1] If you do drink, you should drink moderately. [P1]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-foods-to-treat-low-blood-sug-0",
+   "medlineplus-diabetic-diet-how-do-the-foods-i-eat-affect-my-blood-glucose-levels-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1"
+  ]
+ },
+ "d22": {
+  "text": "Most adults should try to get at least 150 minutes of moderate-intensity physical activity each week. [P1] You can break up physical activity into small amounts during your day and still get the benefit. [P1] Physical activity may help you manage your diabetes and stay healthy. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1",
+   "niddk-managing-diabetes-get-physical-activity-0",
+   "niddk-healthy-living-with-diabetes-how-can-physical-activity-help-manage-my--0",
+   "niddk-managing-diabetes-get-enough-sleep-0"
+  ]
+ },
+ "d24": {
+  "text": "You should also limit how much alcohol you drink. [P1] Drinking alcohol at night. [P3] Eating when you drink alcohol can also help. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-1",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "cdc-low-blood-sugar-hypoglycemia-nighttime-low-blood-sugar-0",
+   "cdc-manage-blood-sugar-what-causes-low-blood-sugar-0"
+  ]
+ },
+ "d27": {
+  "text": "The diabetes ABCs can help you manage your blood glucose, blood pressure, and cholesterol levels. [P1] Managing your ABCs may lower your chances of having health problems from diabetes, such as a heart attack, stroke, kidney disease, blindness, and foot or leg amputations. [P1] You may find it helpful to keep track of your ABCs and other important health information that you get during checkups with your primary care professional or other health care professionals. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0",
+   "niddk-managing-diabetes-how-can-i-keep-track-of-my-progress-0",
+   "medlineplus-diabetes-what-is-diabetes-0",
+   "medlineplus-diabetes-medicines-what-is-diabetes-0"
+  ]
+ },
+ "d28": {
+  "text": "There is no clear proof that specific foods, herbs, spices, or dietary supplements \u2014such as vitamins or minerals\u2014can help manage diabetes. [P1] Talk with your health care professional before you take any supplements, because some may cause side effects or affect how well your diabetes medicines work. [P1] There is no right or wrong way to choose healthy foods and drinks that may help manage your diabetes. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-talk-with-your-health-care-professional-b-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-0",
+   "niddk-managing-diabetes-what-types-of-medicines-should-i-take-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-summary-0"
+  ]
+ },
+ "d29": {
+  "text": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P2] If you have diabetes, it is important to take care of your health no matter what is going on in your life. [P3] Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-prepare-now-before-getting-sick-0",
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0",
+   "niddk-managing-diabetes-what-special-situations-should-i-plan-for-0",
+   "niddk-healthy-living-with-diabetes-find-the-best-times-to-eat-or-drink-0"
+  ]
+ },
+ "d30": {
+  "text": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P1] If you take insulin or other diabetes medicines, checking your blood glucose level at home may help you avoid high or low blood glucose levels. [P2] You will also need to check your blood sugar at home. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0",
+   "niddk-managing-diabetes-how-can-i-check-my-blood-glucose-level-at-home-0",
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-0",
+   "medlineplus-diabetes-medicines-who-needs-diabetes-medicines-0"
+  ]
+ },
+ "d34": {
+  "text": "If you have prediabetes, you may be able to delay or prevent type 2 diabetes through lifestyle changes: Losing weight, if you are overweight. [P1] Ask your health care team what other changes you can make to prevent or delay type 2 diabetes. [P2] Get started with Your Game Plan to Prevent Type 2 Diabetes. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-prediabetes-if-i-have-prediabetes-will-i-get-diabetes-0",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-1",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-0",
+   "medlineplus-diabetes-type-2-can-type-2-diabetes-be-prevented-0"
+  ]
+ },
+ "d36": {
+  "text": "Symptoms of low blood glucose tend to come on quickly and can vary from person to person. [P1] The symptoms of low blood glucose tend to come on quickly. [P2] How you react to low blood sugar may not be the same as it is for others. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-symptoms-of-low-blood-gluc-0",
+   "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "cdc-low-blood-sugar-hypoglycemia-severe-low-blood-sugar-0"
+  ]
+ },
+ "d40": {
+  "text": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1] If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1] Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0",
+   "niddk-managing-diabetes-what-special-situations-should-i-plan-for-0",
+   "cdc-managing-sick-days-key-points-0",
+   "cdc-flu-and-people-with-diabetes-other-preventive-actions-for-people-with--0"
+  ]
+ },
+ "d41": {
+  "text": "Many things can cause high blood sugar (hyperglycemia), including: Being sick. [P1] High ketones can be an early sign of diabetic ketoacidosis (DKA). [P1] How you react to low blood sugar may not be the same as it is for others. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "medlineplus-hyperglycemia-what-are-the-symptoms-of-hyperglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-3"
+  ]
+ },
+ "d42": {
+  "text": "You may not have any symptoms when your blood sugar is low (hypoglycemia unawareness). [P1] Often have low blood sugar. [P1] Low blood sugar can happen at any time during the day. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-low-blood-sugar-hypoglycemia-hypoglycemia-unawareness-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0",
+   "cdc-low-blood-sugar-hypoglycemia-nighttime-low-blood-sugar-0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-things-for-loved-ones-to-kno-0"
+  ]
+ },
+ "t01": {
+  "text": "You may want to use an insulin inhaler to avoid using needles. [P1] Taking insulin with an inhaler is less common than using a needle and syringe. [P1] Inhalers and insulin jet injectors are less common ways to take insulin. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-insulin-medicines-other-diabetes-treatments-inhaler-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-way-0",
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-1",
+   "niddk-insulin-medicines-other-diabetes-treatments-needle-and-syringe-0"
+  ]
+ },
+ "t04": {
+  "text": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1] If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1] You should go to the emergency room if your symptoms do not go away soon after taking your at-home medicines or if you have a serious asthma attack. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0",
+   "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0",
+   "niddk-managing-diabetes-checking-urine-for-ketones-0",
+   "niddk-symptoms-causes-of-diabetes-type-1-diabetes-symptoms-1"
+  ]
+ },
+ "t06": {
+  "text": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test. [P1] However, the OGTT is a more expensive test than the FPG test and the glucose challenge test, and it is not as easy to give. [P2] The glucose challenge test or the oral glucose tolerance test (OGTT) are used to check for gestational diabetes, usually between 24 and 28 weeks of pregnancy. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-diabetes-tests-diagnosis-glucose-challenge-test-0",
+   "niddk-diabetes-tests-diagnosis-oral-glucose-tolerance-test-0",
+   "niddk-the-a1c-test-diabetes-is-the-a1c-test-used-during-pregnancy-0",
+   "niddk-diabetes-tests-diagnosis-fasting-plasma-glucose-test-0"
+  ]
+ },
+ "t08": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "cdc-controlling-asthma-common-asthma-triggers-3"
+  ]
+ },
+ "t12": {
+  "text": "Challenge tests, also called bronchial provocation tests, assess how sensitive your airways are. [P1] Challenge agents are substances or activities that may tighten the muscles in your airways if they become irritated from being too sensitive, including: Inhaled medicines such as methacholine, mannitol, or histamine. [P1] A chest CT scan may show whether the walls of your airways are thicker. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-diagnosis-challenge-tests-0",
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0",
+   "nhlbi-asthma-diagnosis-lung-function-tests-0"
+  ]
+ },
+ "t14": {
+  "text": "Acute illnesses like flu can make managing blood sugar levels harder. [P1] Flu may raise blood sugar levels and can also cause blood sugar levels to fall if you can't eat or drink as much as usual. [P1] Prediabetes usually happens when your body has a problem with insulin. [P3]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0",
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "medlineplus-hypoglycemia-what-causes-hypoglycemia-1"
+  ]
+ },
+ "t18": {
+  "text": "Over time, high doses can raise your risk of cataracts (clouding of the eye) or osteoporosis. [P1] Biologi medicines, such as benralizumab, may help with asthma that is difficult to control. [P1] Asthma medicines can have side effects. [P2]",
+  "abstained": false,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0",
+   "cdc-about-asthma-symptom-management-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0"
+  ]
+ },
+ "u01": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-2",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-1",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-0"
+  ]
+ },
+ "u02": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-1",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0"
+  ]
+ },
+ "u04": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "cdc-controlling-asthma-common-asthma-triggers-3"
+  ]
+ },
+ "u09": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-treatment-and-action-plan-how-is-asthma-treated-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "medlineplus-asthma-what-are-the-treatments-for-asthma-0"
+  ]
+ },
+ "u10": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "medlineplus-asthma-what-causes-asthma-0",
+   "cdc-about-asthma-key-points-0"
+  ]
+ },
+ "u14": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+   "medlineplus-hypoglycemia-can-hypoglycemia-be-prevented-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-2",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+  ]
+ },
+ "u18": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-low-blood-glucose-hypoglycemia-what-if-i-have-severe-low-blood-glucose-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-do-i-treat-low-blood-glucose-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0"
+  ]
+ },
+ "u19": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1",
+   "nhlbi-asthma-causes-and-triggers-asthma-triggers-0",
+   "nhlbi-asthma-asthma-attack-summary-0"
+  ]
+ },
+ "u21": {
+  "text": "",
+  "abstained": true,
+  "gate_abstained": true,
+  "shown": [
+   "cdc-manage-blood-sugar-how-do-i-check-my-blood-sugar-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--0",
+   "niddk-diabetes-tests-diagnosis-fasting-plasma-glucose-test-0",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0"
+  ]
+ }
+}

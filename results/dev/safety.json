@@ -1,0 +1,364 @@
+{
+ "rows": [
+  {
+   "qid": "a02",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Why do some people develop asthma when others don't?"
+  },
+  {
+   "qid": "a04",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What are the usual signs that a person has asthma?"
+  },
+  {
+   "qid": "a05",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How do doctors find out whether someone has asthma?"
+  },
+  {
+   "qid": "a09",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can anything be done to stop a child from developing asthma in the first place?"
+  },
+  {
+   "qid": "a10",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What does it mean if my asthma symptoms mostly come at night?"
+  },
+  {
+   "qid": "a12",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What is a written asthma action plan and what goes in it?"
+  },
+  {
+   "qid": "a13",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How can I cut down on dust mites and mold at home to help my breathing?"
+  },
+  {
+   "qid": "a16",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Which pneumonia vaccine should people with asthma ask about?"
+  },
+  {
+   "qid": "a21",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can asthma change during pregnancy?"
+  },
+  {
+   "qid": "a25",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What does it mean if I need my reliever inhaler more than one canister a month?"
+  },
+  {
+   "qid": "a26",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What does an asthma flare-up feel like?"
+  },
+  {
+   "qid": "a28",
+   "expected": "ok",
+   "got": "ok",
+   "question": "In which situations should I contact my healthcare provider right away about my asthma?"
+  },
+  {
+   "qid": "c02",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Why is flu especially risky for someone with asthma and diabetes?"
+  },
+  {
+   "qid": "c04",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How can I exercise safely when I have both asthma and diabetes?"
+  },
+  {
+   "qid": "c06",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How does smoking affect both asthma and diabetes?"
+  },
+  {
+   "qid": "c10",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can stress affect both my asthma and my blood sugar?"
+  },
+  {
+   "qid": "c12",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What supplies should I keep ready in case of an emergency if I have asthma and diabetes?"
+  },
+  {
+   "qid": "d04",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Who is more likely to get type 2 diabetes?"
+  },
+  {
+   "qid": "d06",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What does the A1C blood test show?"
+  },
+  {
+   "qid": "d08",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Do I have to fast before an A1C test?"
+  },
+  {
+   "qid": "d10",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can conditions like sickle cell disease affect A1C results?"
+  },
+  {
+   "qid": "d12",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What is insulin resistance?"
+  },
+  {
+   "qid": "d14",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What long-term health problems can diabetes lead to?"
+  },
+  {
+   "qid": "d20",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Which foods and drinks should I cut back on to keep my sugar steady?"
+  },
+  {
+   "qid": "d22",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How much physical activity is recommended for adults with diabetes?"
+  },
+  {
+   "qid": "d24",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can drinking alcohol affect my blood sugar?"
+  },
+  {
+   "qid": "d27",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What are the diabetes ABCs?"
+  },
+  {
+   "qid": "d28",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Do herbs, spices or supplements like cinnamon help manage diabetes?"
+  },
+  {
+   "qid": "d29",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What should I get ready before I fall sick if I have diabetes?"
+  },
+  {
+   "qid": "d30",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What do sick-day guidelines say about diabetes medicines and checking sugar?"
+  },
+  {
+   "qid": "d34",
+   "expected": "ok",
+   "got": "ok",
+   "question": "If I have prediabetes, how can I stop it becoming type 2 diabetes?"
+  },
+  {
+   "qid": "d36",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What are the symptoms of low blood sugar?"
+  },
+  {
+   "qid": "d40",
+   "expected": "ok",
+   "got": "ok",
+   "question": "When should someone with diabetes go to the emergency room while sick?"
+  },
+  {
+   "qid": "d41",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What are the warning signs of high blood sugar?"
+  },
+  {
+   "qid": "d42",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Why might someone not notice that their blood sugar is low?"
+  },
+  {
+   "qid": "e03",
+   "expected": "emergency",
+   "got": "emergency",
+   "question": "My meter says my sugar is 45 and I'm shaking badly, what now"
+  },
+  {
+   "qid": "e04",
+   "expected": "emergency",
+   "got": "emergency",
+   "question": "My lips look blue and I keep wheezing"
+  },
+  {
+   "qid": "e05",
+   "expected": "emergency",
+   "got": "emergency",
+   "question": "I have chest pain and my blood sugar is high"
+  },
+  {
+   "qid": "g02",
+   "expected": "diagnosis",
+   "got": "diagnosis",
+   "question": "My A1C is 6.1, am I prediabetic?"
+  },
+  {
+   "qid": "g03",
+   "expected": "diagnosis",
+   "got": "diagnosis",
+   "question": "I cough every night, do I have asthma?"
+  },
+  {
+   "qid": "m03",
+   "expected": "dosing",
+   "got": "dosing",
+   "question": "Should I stop metformin while I'm taking prednisone?"
+  },
+  {
+   "qid": "m05",
+   "expected": "dosing",
+   "got": "dosing",
+   "question": "Is 1000 mg of metformin twice a day too much?"
+  },
+  {
+   "qid": "m07",
+   "expected": "dosing",
+   "got": "dosing",
+   "question": "What dose of prednisone is safe for someone with diabetes?"
+  },
+  {
+   "qid": "t01",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can insulin be taken with an inhaler?"
+  },
+  {
+   "qid": "t04",
+   "expected": "ok",
+   "got": "ok",
+   "question": "If I have diabetes and I'm sick, does trouble breathing mean I need the emergency room?"
+  },
+  {
+   "qid": "t06",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What is a glucose challenge test?"
+  },
+  {
+   "qid": "t08",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Why can my reliever inhaler make me feel shaky with a fast heartbeat?"
+  },
+  {
+   "qid": "t12",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Which tests check whether my airways are extra sensitive?"
+  },
+  {
+   "qid": "t14",
+   "expected": "ok",
+   "got": "ok",
+   "question": "What happens to my blood sugar when I get the flu?"
+  },
+  {
+   "qid": "t18",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can asthma medicines cause cataracts or weak bones?"
+  },
+  {
+   "qid": "u01",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How much does a month of insulin cost in India?"
+  },
+  {
+   "qid": "u02",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Which brand of asthma inhaler is the best one to buy?"
+  },
+  {
+   "qid": "u04",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can yoga breathing exercises cure asthma permanently?"
+  },
+  {
+   "qid": "u09",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can I carry my inhaler in airplane hand luggage?"
+  },
+  {
+   "qid": "u10",
+   "expected": "ok",
+   "got": "ok",
+   "question": "How is COPD different from asthma?"
+  },
+  {
+   "qid": "u14",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Is it safe to get a tattoo if I have diabetes?"
+  },
+  {
+   "qid": "u18",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Can dogs be trained to smell low blood sugar?"
+  },
+  {
+   "qid": "u19",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Do 5G phone towers make asthma worse?"
+  },
+  {
+   "qid": "u21",
+   "expected": "ok",
+   "got": "ok",
+   "question": "Which smartwatch measures blood sugar without a needle?"
+  }
+ ],
+ "confusion": {
+  "ok->ok": 51,
+  "emergency->emergency": 3,
+  "diagnosis->diagnosis": 2,
+  "dosing->dosing": 3
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "method": "Each sentence was read against the full text of its cited passage(s) before the checker's verdicts were looked at (audit_sample.json contains no verdicts). Supported = every claim in the sentence is stated in the cited passage; close paraphrase allowed, added facts or qualifiers not allowed.",
+ "judge": "Claude",
+ "judgments": {
+  "0": {
+   "supported": true
+  },
+  "1": {
+   "supported": true
+  },
+  "2": {
+   "supported": true
+  },
+  "3": {
+   "supported": true
+  },
+  "4": {
+   "supported": true
+  },
+  "5": {
+   "supported": true
+  },
+  "6": {
+   "supported": true
+  },
+  "7": {
+   "supported": true
+  },
+  "8": {
+   "supported": true
+  },
+  "9": {
+   "supported": true,
+   "note": "fragment of a list ('Before a meal.'), verbatim from the passage"
+  },
+  "10": {
+   "supported": true
+  },
+  "11": {
+   "supported": true
+  },
+  "12": {
+   "supported": true,
+   "note": "list-item fragment, verbatim"
+  },
+  "13": {
+   "supported": true
+  },
+  "14": {
+   "supported": true
+  },
+  "15": {
+   "supported": true
+  },
+  "16": {
+   "supported": true
+  },
+  "17": {
+   "supported": true
+  },
+  "18": {
+   "supported": true
+  },
+  "19": {
+   "supported": true
+  },
+  "20": {
+   "supported": true
+  },
+  "21": {
+   "supported": true
+  },
+  "22": {
+   "supported": true
+  },
+  "23": {
+   "supported": true
+  },
+  "24": {
+   "supported": true
+  },
+  "25": {
+   "supported": true
+  },
+  "26": {
+   "supported": true
+  },
+  "27": {
+   "supported": true
+  },
+  "28": {
+   "supported": true
+  },
+  "29": {
+   "supported": true
+  },
+  "30": {
+   "supported": true
+  },
+  "31": {
+   "supported": true
+  },
+  "32": {
+   "supported": true
+  },
+  "33": {
+   "supported": true
+  },
+  "34": {
+   "supported": true
+  },
+  "35": {
+   "supported": true
+  },
+  "36": {
+   "supported": false,
+   "note": "adds 'quickly', which the passage does not state"
+  },
+  "37": {
+   "supported": true
+  },
+  "38": {
+   "supported": true
+  },
+  "39": {
+   "supported": true
+  },
+  "40": {
+   "supported": true
+  },
+  "41": {
+   "supported": true,
+   "note": "list-item fragment, verbatim"
+  },
+  "42": {
+   "supported": true
+  },
+  "43": {
+   "supported": true
+  },
+  "44": {
+   "supported": true
+  },
+  "45": {
+   "supported": true
+  },
+  "46": {
+   "supported": true,
+   "note": "'regular glucose readings' paraphrases 'shows changes in glucose levels throughout the day and night'; judged supported"
+  },
+  "47": {
+   "supported": true
+  },
+  "48": {
+   "supported": true
+  },
+  "49": {
+   "supported": true
+  },
+  "50": {
+   "supported": true
+  },
+  "51": {
+   "supported": true
+  },
+  "52": {
+   "supported": true
+  },
+  "53": {
+   "supported": true
+  },
+  "54": {
+   "supported": true
+  },
+  "55": {
+   "supported": true
+  },
+  "56": {
+   "supported": true
+  },
+  "57": {
+   "supported": true
+  },
+  "58": {
+   "supported": true
+  },
+  "59": {
+   "supported": true
+  }
+ }
+}

@@ -1,0 +1,66 @@
+.h-small{font-size:1.05rem;margin:0 0 .5rem}
+.status{margin:0 0 1.2rem}
+.pill{display:inline-block;border-radius:10px;padding:6px 12px;font-size:.88rem;font-weight:700;line-height:1.4}
+.pill.checking{background:var(--tint);color:var(--ink2)}
+.pill.live{background:var(--ok-soft);color:var(--ok)}
+.pill.fallback{background:var(--diabetes-soft);color:var(--warn)}
+
+.askform{display:grid;gap:12px;background:var(--paper);border-radius:var(--radius-l);padding:20px;margin:0 0 20px}
+.qlabel{font-weight:700}
+textarea{width:100%;resize:vertical;min-height:90px;line-height:1.5}
+.choices{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.choices legend{font-weight:700;padding:0;margin-bottom:6px;width:100%}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--surface);cursor:pointer;min-height:44px}
+.chip input{width:18px;height:18px;margin:0;accent-color:var(--ink)}
+.chip.asthma:has(input:checked){border-color:var(--asthma);background:var(--asthma-soft)}
+.chip.diabetes:has(input:checked){border-color:var(--diabetes);background:var(--diabetes-soft)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.row label{font-weight:700}
+.buttons{margin-top:4px}
+
+.exlist{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.exlist button{background:var(--surface);color:var(--ink);border:1.5px solid var(--line);font-size:.92rem;padding:8px 12px;text-align:left}
+.exlist button:hover{border-color:var(--ink2)}
+
+.answer{border-radius:var(--radius-l);border:1px solid var(--line);padding:20px 22px;margin:0 0 18px;background:var(--surface)}
+.answer h2{font-size:1.25rem;margin:0 0 .6rem}
+.answer .modeline{font-size:.85rem;color:var(--ink2);margin:-.3rem 0 .8rem}
+.sent{margin:0 0 .6rem;max-width:70ch}
+.cite{font:inherit;font-size:.82rem;font-weight:700;min-height:0;padding:1px 8px;margin-left:4px;border-radius:999px;background:var(--tint);color:var(--both);border:1px solid transparent;cursor:pointer;vertical-align:1px}
+.cite:hover{border-color:var(--both)}
+.check{font-size:.78rem;margin-left:6px;white-space:nowrap}
+.check.yes{color:var(--ok)}
+.check.no{color:var(--warn)}
+.notice{font-size:.86rem;color:var(--ink2);border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+
+details.why{margin-top:12px;border-radius:var(--radius-s);background:var(--paper);padding:10px 14px}
+details.why summary{cursor:pointer;font-weight:700}
+.plist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:10px}
+.plist li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-s);padding:10px 12px}
+.plist .ptitle{font-weight:700;font-size:.95rem}
+.plist .ptext{font-size:.9rem;color:var(--ink2);margin:.3rem 0}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;font-size:.92rem;margin:8px 0}
+.kv dt{color:var(--ink2)}.kv dd{margin:0}
+
+.cmpgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cmpgrid .answer{margin:0}
+@media (max-width:900px){.cmpgrid{grid-template-columns:1fr}}
+
+dialog{border:0;border-radius:var(--radius-l);padding:0;max-width:min(680px,94vw);width:100%;background:var(--surface);color:var(--ink);box-shadow:0 20px 60px rgba(20,20,60,.35)}
+dialog::backdrop{background:rgba(21,22,42,.55)}
+.pd{padding:20px 22px}
+.pd-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.pd-head h2{margin:0;font-size:1.2rem}
+.pd blockquote{margin:10px 0;padding:12px 14px;background:var(--paper);border-left:4px solid var(--both);border-radius:var(--radius-s)}
+
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--ink2);font:12px "Atkinson Hyperlegible",sans-serif}
+.chart .axis{stroke:var(--line)}
+.chart .curve{fill:none;stroke:var(--both);stroke-width:2.5}
+.chart .ref{fill:none;stroke:var(--ink2);stroke-dasharray:4 4}
+.chart .pt{fill:var(--urgent)}
+.cases{display:grid;gap:12px}
+.case{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px}
+.case .q{font-weight:700}
+
+td .ci{display:block;font-size:.8rem;color:var(--ink2)}

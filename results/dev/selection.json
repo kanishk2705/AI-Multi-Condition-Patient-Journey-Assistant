@@ -1,0 +1,42 @@
+{
+ "retrieval_system": "meta_ce",
+ "params": {
+  "meta": {
+   "cand": 30,
+   "wc": 0.005,
+   "ws": 0.0,
+   "wboth": 0.0,
+   "ce_top": 20,
+   "ce_meta_scale": 1.0
+  },
+  "meta_ce": {
+   "cand": 30,
+   "wc": 0.005,
+   "ws": 0.0,
+   "wboth": 0.0,
+   "ce_top": 20,
+   "ce_meta_scale": 0.0
+  }
+ },
+ "k_shown": 4,
+ "gate_tau": 0.3691120781004429,
+ "models": {
+  "embedding": "BAAI/bge-small-en-v1.5",
+  "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "nli": "cross-encoder/nli-deberta-v3-base",
+  "llm": "openai/gpt-oss-120b",
+  "llm_settings": {
+   "temperature": 0.0,
+   "max_tokens": 700,
+   "reasoning_effort": "low",
+   "seed": 7
+  }
+ },
+ "extractive": {
+  "max_sents": 3,
+  "top_passages": 3
+ },
+ "llm_prompt": "SYSTEM_PROMPT (v2, deviation D10)",
+ "llm_prompt_sha256": "038b86db59ff4c5ad55927de28fbebd92e58c1327bf73a073d0b9d99b8e57d23",
+ "dev_prompt_comparison": "v1: 0.493 sentences supported, 0.410 fully grounded; v2: see results/dev/summary.json"
+}

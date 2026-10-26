@@ -1,0 +1,18 @@
+{
+ "split": "dev",
+ "embedding_cosine_passages_min": 0.9955973625183105,
+ "embedding_cosine_queries_min": 0.9952661395072937,
+ "reranker_score_correlation": 0.9992459466947773,
+ "selected_system_dev": {
+  "evaluated_mrr": 0.9246031746031745,
+  "live_mrr": 0.9246031746031745,
+  "evaluated_success5": 1.0,
+  "live_success5": 1.0,
+  "same_top4_share": 0.5490196078431373
+ },
+ "checker_agreement_live_vs_evaluated": {
+  "sentences": 126,
+  "agree": 116,
+  "rate": 0.9206349206349206
+ }
+}

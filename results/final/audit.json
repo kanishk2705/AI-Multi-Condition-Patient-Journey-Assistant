@@ -1,0 +1,442 @@
+{
+ "n": 60,
+ "agree": 54,
+ "kappa": 0.2274678111587993,
+ "checker_too_strict": 6,
+ "checker_too_lenient": 0,
+ "by_answerer": {
+  "llm": {
+   "n": 30,
+   "agree": 24,
+   "human_supported": 29
+  },
+  "extractive": {
+   "n": 30,
+   "agree": 30,
+   "human_supported": 30
+  }
+ },
+ "auditor": "Claude (not independent of the author; independent of gpt-oss-120b and the NLI model)",
+ "rows": [
+  {
+   "n": 0,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 1,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 2,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 3,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 4,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 5,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 6,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 7,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 8,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 9,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": "fragment of a list ('Before a meal.'), verbatim from the passage"
+  },
+  {
+   "n": 10,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 11,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 12,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": "list-item fragment, verbatim"
+  },
+  {
+   "n": 13,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 14,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 15,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 16,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 17,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 18,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 19,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 20,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 21,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 22,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 23,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 24,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 25,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 26,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 27,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 28,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 29,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 30,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 31,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 32,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 33,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 34,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 35,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 36,
+   "answerer": "llm",
+   "human": false,
+   "checker": false,
+   "note": "adds 'quickly', which the passage does not state"
+  },
+  {
+   "n": 37,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 38,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 39,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 40,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 41,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": "list-item fragment, verbatim"
+  },
+  {
+   "n": 42,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 43,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 44,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 45,
+   "answerer": "llm",
+   "human": true,
+   "checker": false,
+   "note": ""
+  },
+  {
+   "n": 46,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": "'regular glucose readings' paraphrases 'shows changes in glucose levels throughout the day and night'; judged supported"
+  },
+  {
+   "n": 47,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 48,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 49,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 50,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 51,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 52,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 53,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 54,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 55,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 56,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 57,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 58,
+   "answerer": "extractive",
+   "human": true,
+   "checker": true,
+   "note": ""
+  },
+  {
+   "n": 59,
+   "answerer": "llm",
+   "human": true,
+   "checker": true,
+   "note": ""
+  }
+ ]
+}

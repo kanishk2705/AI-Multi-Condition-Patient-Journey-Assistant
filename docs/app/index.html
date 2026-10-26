@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patient Journey Assistant</title>
+<meta name="description" content="Ask questions about living with asthma and type 2 diabetes. Answers come only from public health sources, cite every sentence, and decline when the sources do not cover the question. Not medical advice.">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="../assets/site.css?v=202610241629">
+<link rel="stylesheet" href="app.css?v=202610241629">
+</head>
+<body>
+<a class="skip" href="#ask">Skip to the question box</a>
+<div class="banner" role="note"><strong>Not medical advice.</strong> Educational information from public health sources only. In an emergency, call your local emergency number.</div>
+<div class="shell">
+  <nav class="rail" aria-label="Assistant sections">
+    <a class="brand" href="../">Patient Journey Assistant</a>
+    <ol class="journey">
+      <li><a href="#ask" data-view="ask" aria-current="true">Ask a question</a></li>
+      <li><a href="#compare" data-view="compare">Compare retrieval</a></li>
+      <li><a href="#results" data-view="results">Evaluation results</a></li>
+      <li><a href="#about" data-view="about">About this tool</a></li>
+    </ol>
+    <div class="legend" aria-label="Colour key">
+      <span><span class="dot asthma"></span>Asthma</span>
+      <span><span class="dot diabetes"></span>Type 2 diabetes</span>
+    </div>
+    <div class="tools">
+      <a href="../">How this was built and tested</a>
+      <a href="https://github.com/kanishk2705/AI-Multi-Condition-Patient-Journey-Assistant">Source code</a>
+    </div>
+  </nav>
+
+  <main class="main" id="main">
+    <section class="view" id="view-ask" aria-labelledby="h-ask">
+      <h1 id="h-ask">Ask about asthma and type 2 diabetes</h1>
+      <p class="lede">Answers are written only from public pages by MedlinePlus, NIDDK, NHLBI and CDC. Every sentence links to the passage it came from, and the assistant says so when those pages don't cover your question.</p>
+      <p id="status" class="status" role="status" aria-live="polite"><span class="pill checking">Checking the answer service…</span></p>
+
+      <form id="ask" class="askform" autocomplete="off">
+        <label for="q" class="qlabel">Your question</label>
+        <textarea id="q" name="q" rows="3" maxlength="300" required placeholder="For example: Which vaccines are recommended if I have asthma and diabetes?"></textarea>
+        <div class="count small muted"><span id="qcount">0</span>/300 characters. Please don't include your name or other personal details.</div>
+        <fieldset class="choices">
+          <legend>Which condition is this about?</legend>
+          <label class="chip asthma"><input type="checkbox" name="cond" value="asthma"> Asthma</label>
+          <label class="chip diabetes"><input type="checkbox" name="cond" value="diabetes"> Type 2 diabetes</label>
+          <span class="small muted">Leave both unticked to let the assistant work it out.</span>
+        </fieldset>
+        <div class="row">
+          <label for="stage">Part of the journey</label>
+          <select id="stage" name="stage">
+            <option value="">Let the assistant decide</option>
+            <option value="understand">Understanding the condition</option>
+            <option value="manage">Day-to-day management</option>
+            <option value="warning">Warning signs and when to get care</option>
+          </select>
+        </div>
+        <div class="row buttons">
+          <button type="submit" id="askbtn">Get answer</button>
+          <button type="button" class="secondary" id="cmpbtn">Compare plain and journey-aware retrieval</button>
+        </div>
+      </form>
+
+      <div class="examples" aria-labelledby="h-ex">
+        <h2 id="h-ex" class="h-small">Try an example</h2>
+        <div class="exlist" id="examples"></div>
+      </div>
+
+      <div id="out" class="out" aria-live="polite"></div>
+    </section>
+
+    <section class="view" id="view-compare" hidden aria-labelledby="h-cmp">
+      <h1 id="h-cmp">Compare retrieval</h1>
+      <p class="lede">The same question goes through plain semantic search and through the system chosen in the evaluation (hybrid search with condition matching and a re-ranker). Each side shows the passages it found and the answer written from them.</p>
+      <p class="small muted">Type a question in <a href="#ask">Ask a question</a> and press “Compare”, or pick an example there.</p>
+      <div id="cmpout"></div>
+    </section>
+
+    <section class="view" id="view-results" hidden aria-labelledby="h-res">
+      <h1 id="h-res">Evaluation results</h1>
+      <p class="lede">These numbers were computed once, before this website was built, on 89 held-out test questions. They are precomputed and do not change when you use the assistant.</p>
+      <div id="resout"><p class="muted">Loading results…</p></div>
+    </section>
+
+    <section class="view" id="view-about" hidden aria-labelledby="h-about">
+      <h1 id="h-about">About this tool</h1>
+      <h2>What it is for</h2>
+      <p>Reliable patient information is usually written one condition at a time. People living with both asthma and type 2 diabetes have to piece answers together across many pages. This tool searches a fixed set of 373 passages from four U.S. government health websites, writes a short answer only from the passages it found, and shows exactly where each sentence came from.</p>
+      <h2>What it will not do</h2>
+      <p>It does not give medicine doses, does not tell you to start, stop or change a medicine, and cannot tell you whether you have a condition. If a question sounds like an emergency it shows an urgent-care message instead of an answer. It was tested on questions written by its developer, not by patients or clinicians, and no clinician has reviewed it.</p>
+      <h2>Privacy</h2>
+      <p>No cookies, analytics or tracking. Your question is sent to the answer service and to the language model provider (Groq) to write the answer; it is not stored by this project. Fonts are served from this site.</p>
+      <h2>Sources and credit</h2>
+      <p class="small" id="credit">Source passages: MedlinePlus (National Library of Medicine); National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK); National Heart, Lung, and Blood Institute (NHLBI), National Institutes of Health; Centers for Disease Control and Prevention (CDC). These materials are available free of charge on medlineplus.gov, niddk.nih.gov, nhlbi.nih.gov and cdc.gov. Their use here does not imply endorsement by NLM, NIH, CDC, HHS or the U.S. Government. Text retrieved 24 October 2026 and may since have been updated at the source.</p>
+    </section>
+  </main>
+</div>
+
+<dialog id="passage" aria-labelledby="pd-title">
+  <form method="dialog" class="pd">
+    <div class="pd-head"><h2 id="pd-title">Source passage</h2><button class="secondary" value="close" aria-label="Close source passage">Close</button></div>
+    <div id="pd-body"></div>
+  </form>
+</dialog>
+
+<script src="lexical.js?v=202610241627"></script>
+<script src="app.js?v=202610241627"></script>
+</body>
+</html>

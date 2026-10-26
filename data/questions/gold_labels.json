@@ -1,0 +1,589 @@
+{
+ "note": "Gold passages chosen by Claude by reading candidate passages found with keyword searches (scripts/questions_draft.py hints); no retrieval system was run before labelling.",
+ "single": {
+  "a01": [
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "nhlbi-asthma-causes-and-triggers-how-asthma-affects-the-lungs-0",
+   "cdc-about-asthma-symptoms-0",
+   "cdc-flu-and-people-with-asthma-about-asthma-0"
+  ],
+  "a02": [
+   "medlineplus-asthma-what-causes-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0"
+  ],
+  "a03": [
+   "medlineplus-asthma-who-is-at-risk-for-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1"
+  ],
+  "a04": [
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "cdc-about-asthma-key-points-0",
+   "cdc-about-asthma-symptoms-0"
+  ],
+  "a05": [
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-lung-function-tests-0",
+   "nhlbi-asthma-diagnosis-challenge-tests-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0",
+   "cdc-about-asthma-diagnosis-0"
+  ],
+  "a06": [
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-lung-function-tests-0",
+   "cdc-about-asthma-diagnosis-0"
+  ],
+  "a07": [
+   "nhlbi-asthma-diagnosis-challenge-tests-0"
+  ],
+  "a08": [
+   "medlineplus-asthma-what-causes-asthma-0",
+   "medlineplus-asthma-who-is-at-risk-for-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1",
+   "nhlbi-asthma-treatment-and-action-plan-allergic-asthma-0"
+  ],
+  "a09": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0"
+  ],
+  "a10": [
+   "nhlbi-asthma-treatment-and-action-plan-nocturnal-asthma-0",
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0"
+  ],
+  "a11": [
+   "medlineplus-asthma-what-are-the-treatments-for-asthma-0",
+   "nhlbi-asthma-treatment-and-action-plan-how-is-asthma-treated-0",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0",
+   "cdc-about-asthma-symptom-management-0"
+  ],
+  "a12": [
+   "nhlbi-asthma-treatment-and-action-plan-create-an-asthma-action-plan-0",
+   "cdc-living-with-asthma-key-points-0",
+   "cdc-living-with-asthma-asthma-action-plans-0"
+  ],
+  "a13": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0",
+   "nhlbi-asthma-managing-asthma-know-your-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-2"
+  ],
+  "a14": [
+   "medlineplus-asthma-what-causes-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "nhlbi-asthma-causes-and-triggers-asthma-triggers-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "cdc-controlling-asthma-common-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-1",
+   "cdc-controlling-asthma-common-asthma-triggers-2",
+   "cdc-controlling-asthma-common-asthma-triggers-3",
+   "cdc-flu-and-people-with-asthma-about-asthma-0"
+  ],
+  "a15": [
+   "medlineplus-flu-shot-who-needs-a-flu-shot-0",
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "cdc-flu-and-people-with-asthma-a-flu-shot-is-the-best-protection-against-f-0",
+   "cdc-flu-and-people-with-asthma-flu-vaccines-for-people-with-asthma-0",
+   "cdc-respiratory-infections-and-asthma-flu-0"
+  ],
+  "a16": [
+   "cdc-flu-and-people-with-asthma-pneumococcal-vaccination-is-also-important-0",
+   "cdc-respiratory-infections-and-asthma-pneumococcal-pneumonia-0"
+  ],
+  "a17": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+  ],
+  "a18": [
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+  ],
+  "a19": [
+   "nhlbi-asthma-managing-asthma-know-your-asthma-triggers-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+   "cdc-controlling-asthma-common-asthma-triggers-0"
+  ],
+  "a20": [
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "cdc-flu-and-people-with-asthma-symptoms-and-treatment-0"
+  ],
+  "a21": [
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0"
+  ],
+  "a22": [
+   "medlineplus-asthma-what-causes-asthma-0",
+   "nhlbi-asthma-treatment-and-action-plan-occupational-asthma-0"
+  ],
+  "a23": [
+   "nhlbi-asthma-managing-asthma-how-to-manage-your-asthma-at-home-0",
+   "cdc-living-with-asthma-if-i-m-doing-well-0",
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0",
+   "cdc-living-with-asthma-if-i-m-having-a-medical-alert-0"
+  ],
+  "a24": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0"
+  ],
+  "a25": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0"
+  ],
+  "a26": [
+   "nhlbi-asthma-asthma-attack-summary-0",
+   "nhlbi-asthma-asthma-attack-what-does-an-asthma-attack-feel-like-0"
+  ],
+  "a27": [
+   "nhlbi-asthma-asthma-attack-summary-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0"
+  ],
+  "a28": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0"
+  ],
+  "a29": [
+   "nhlbi-asthma-symptoms-summary-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0"
+  ],
+  "a30": [
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0"
+  ],
+  "a31": [
+   "cdc-living-with-asthma-if-i-m-having-a-medical-alert-0"
+  ],
+  "d01": [
+   "medlineplus-diabetes-type-2-what-is-type-2-diabetes-0",
+   "niddk-type-2-diabetes-what-is-type-2-diabetes-0"
+  ],
+  "d02": [
+   "medlineplus-diabetes-what-are-the-types-of-diabetes-0",
+   "medlineplus-diabetes-what-causes-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-1-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0"
+  ],
+  "d03": [
+   "medlineplus-diabetes-what-causes-diabetes-0",
+   "medlineplus-diabetes-type-2-what-causes-type-2-diabetes-0",
+   "niddk-type-2-diabetes-what-causes-type-2-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "cdc-type-2-diabetes-causes-0"
+  ],
+  "d04": [
+   "medlineplus-diabetes-who-is-more-likely-to-develop-diabetes-0",
+   "medlineplus-diabetes-type-2-who-is-at-risk-for-type-2-diabetes-0",
+   "niddk-type-2-diabetes-who-is-more-likely-to-develop-type-2-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-1",
+   "niddk-diabetes-tests-diagnosis-type-2-diabetes-0",
+   "cdc-type-2-diabetes-risk-factors-0"
+  ],
+  "d05": [
+   "medlineplus-diabetes-what-are-the-symptoms-of-diabetes-0",
+   "medlineplus-diabetes-type-2-what-are-the-symptoms-of-type-2-diabetes-0",
+   "niddk-type-2-diabetes-what-are-the-symptoms-of-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-type-2-diabetes-symptoms-0",
+   "cdc-type-2-diabetes-symptoms-0",
+   "cdc-symptoms-of-diabetes-key-points-0"
+  ],
+  "d06": [
+   "medlineplus-diabetes-type-2-how-is-type-2-diabetes-diagnosed-0",
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-diabetes-tests-diagnosis-a1c-test-1",
+   "niddk-managing-diabetes-a-is-for-the-a1c-blood-glucose-test-0",
+   "niddk-the-a1c-test-diabetes-what-is-the-a1c-test-0"
+  ],
+  "d07": [
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0",
+   "niddk-diabetes-tests-diagnosis-test-results-for-diagnosis-of-prediabetes-and-0",
+   "niddk-the-a1c-test-diabetes-a1c-results-and-what-the-numbers-mean-0"
+  ],
+  "d08": [
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-the-a1c-test-diabetes-how-is-the-a1c-test-used-to-diagnose-type-2-diab-0"
+  ],
+  "d09": [
+   "niddk-the-a1c-test-diabetes-can-the-a1c-test-result-in-a-different-diagnosis-0",
+   "niddk-the-a1c-test-diabetes-why-do-diabetes-blood-test-results-vary-0",
+   "niddk-the-a1c-test-diabetes-blood-glucose-levels-move-up-and-down-0"
+  ],
+  "d10": [
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-0"
+  ],
+  "d11": [
+   "medlineplus-diabetic-diet-what-is-diabetes-0",
+   "medlineplus-prediabetes-what-is-prediabetes-0",
+   "niddk-diabetes-tests-diagnosis-type-2-diabetes-1"
+  ],
+  "d12": [
+   "medlineplus-diabetes-type-2-what-causes-type-2-diabetes-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "cdc-type-2-diabetes-causes-0"
+  ],
+  "d13": [
+   "medlineplus-hyperglycemia-what-other-problems-can-hyperglycemia-cause-0",
+   "niddk-symptoms-causes-of-diabetes-type-1-diabetes-symptoms-2",
+   "niddk-managing-diabetes-checking-urine-for-ketones-0",
+   "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-2",
+   "cdc-managing-sick-days-diabetic-ketoacidosis-dka-0",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0"
+  ],
+  "d14": [
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-0",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-1",
+   "niddk-type-2-diabetes-what-health-problems-can-people-with-diabetes-develop-0",
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0"
+  ],
+  "d15": [
+   "niddk-symptoms-causes-of-diabetes-what-else-can-cause-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-taking-certain-medicines-0"
+  ],
+  "d16": [
+   "cdc-manage-blood-sugar-when-should-i-check-my-blood-sugar-0"
+  ],
+  "d17": [
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-0",
+   "cdc-manage-blood-sugar-your-blood-sugar-target-0"
+  ],
+  "d18": [
+   "niddk-managing-diabetes-devices-to-help-manage-diabetes-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--0",
+   "cdc-manage-blood-sugar-how-do-i-check-my-blood-sugar-0"
+  ],
+  "d19": [
+   "niddk-healthy-living-with-diabetes-plan-how-much-to-eat-or-drink-0",
+   "niddk-healthy-living-with-diabetes-plan-how-much-to-eat-or-drink-1"
+  ],
+  "d20": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-0"
+  ],
+  "d21": [
+   "medlineplus-diabetic-diet-how-do-the-foods-i-eat-affect-my-blood-glucose-levels-0",
+   "cdc-manage-blood-sugar-how-do-carbohydrates-carbs-affect-blood-sugar-0"
+  ],
+  "d22": [
+   "niddk-managing-diabetes-get-physical-activity-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1"
+  ],
+  "d23": [
+   "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+  ],
+  "d24": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "medlineplus-hypoglycemia-what-causes-hypoglycemia-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-1",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--0"
+  ],
+  "d25": [
+   "medlineplus-diabetic-foot-how-can-i-protect-my-feet-if-i-have-diabetes-0",
+   "medlineplus-diabetic-foot-how-can-i-protect-my-feet-if-i-have-diabetes-1",
+   "medlineplus-diabetic-foot-how-can-i-protect-my-feet-if-i-have-diabetes-2",
+   "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-2"
+  ],
+  "d26": [
+   "niddk-managing-diabetes-get-enough-sleep-0",
+   "niddk-healthy-living-with-diabetes-how-can-i-take-care-of-my-mental-health-1"
+  ],
+  "d27": [
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0"
+  ],
+  "d28": [
+   "niddk-healthy-living-with-diabetes-talk-with-your-health-care-professional-b-0"
+  ],
+  "d29": [
+   "cdc-managing-sick-days-prepare-now-before-getting-sick-0"
+  ],
+  "d30": [
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0"
+  ],
+  "d31": [
+   "cdc-flu-and-people-with-diabetes-what-to-know-0",
+   "cdc-flu-and-people-with-diabetes-flu-vaccines-for-people-with-diabetes-0"
+  ],
+  "d32": [
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-1",
+   "niddk-insulin-medicines-other-diabetes-treatments-type-1-diabetes-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-way-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-needle-and-syringe-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-pen-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-pump-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-inhaler-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-jet-injector-0"
+  ],
+  "d33": [
+   "niddk-insulin-medicines-other-diabetes-treatments-what-should-i-know-about-s-0"
+  ],
+  "d34": [
+   "medlineplus-diabetes-can-diabetes-be-prevented-0",
+   "medlineplus-prediabetes-what-is-prediabetes-0",
+   "medlineplus-prediabetes-if-i-have-prediabetes-will-i-get-diabetes-0",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-0"
+  ],
+  "d35": [
+   "niddk-managing-diabetes-take-care-of-your-mental-health-0",
+   "niddk-healthy-living-with-diabetes-how-can-i-take-care-of-my-mental-health-0",
+   "niddk-preventing-diabetes-problems-depression-diabetes-0",
+   "cdc-type-2-diabetes-managing-diabetes-0"
+  ],
+  "d36": [
+   "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-1",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-symptoms-of-low-blood-gluc-0"
+  ],
+  "d37": [
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-the-15-15-rule-0"
+  ],
+  "d38": [
+   "niddk-low-blood-glucose-hypoglycemia-how-do-i-treat-low-blood-glucose-0",
+   "niddk-low-blood-glucose-hypoglycemia-treating-low-blood-glucose-if-you-take--0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-foods-to-treat-low-blood-sug-0"
+  ],
+  "d39": [
+   "medlineplus-hypoglycemia-what-are-the-treatments-for-hypoglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-2",
+   "niddk-low-blood-glucose-hypoglycemia-what-if-i-have-severe-low-blood-glucose-0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-treating-severely-low-blood--0"
+  ],
+  "d40": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0"
+  ],
+  "d41": [
+   "medlineplus-hyperglycemia-what-are-the-symptoms-of-hyperglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-2"
+  ],
+  "d42": [
+   "cdc-low-blood-sugar-hypoglycemia-hypoglycemia-unawareness-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0"
+  ],
+  "d43": [
+   "medlineplus-diabetic-foot-when-should-i-see-my-health-care-provider-about-diabetic-0"
+  ],
+  "d44": [
+   "cdc-low-blood-sugar-hypoglycemia-nighttime-low-blood-sugar-0",
+   "niddk-low-blood-glucose-hypoglycemia-low-blood-glucose-during-sleep-0"
+  ],
+  "t01": [
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-1",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-way-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-inhaler-0"
+  ],
+  "t02": [
+   "medlineplus-diabetes-what-are-the-types-of-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-1-diabetes-0"
+  ],
+  "t03": [
+   "cdc-what-to-do-when-an-emergency-occurs-key-points-0",
+   "cdc-what-to-do-when-an-emergency-occurs-first-steps-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0"
+  ],
+  "t04": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0"
+  ],
+  "t05": [
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0",
+   "cdc-living-with-asthma-if-i-m-having-a-medical-alert-0"
+  ],
+  "t06": [
+   "niddk-diabetes-tests-diagnosis-glucose-challenge-test-0"
+  ],
+  "t07": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0"
+  ],
+  "t08": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0"
+  ],
+  "t09": [
+   "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "cdc-manage-blood-sugar-what-causes-low-blood-sugar-0"
+  ],
+  "t10": [
+   "niddk-symptoms-causes-of-diabetes-damage-to-or-removal-of-the-pancreas-0"
+  ],
+  "t11": [
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-1"
+  ],
+  "t12": [
+   "nhlbi-asthma-diagnosis-challenge-tests-0"
+  ],
+  "t13": [
+   "medlineplus-diabetic-eye-problems-how-are-diabetic-eye-problems-diagnosed-0"
+  ],
+  "t14": [
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0"
+  ],
+  "t15": [
+   "cdc-flu-and-people-with-asthma-flu-vaccines-for-people-with-asthma-0"
+  ],
+  "t16": [
+   "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0"
+  ],
+  "t17": [
+   "niddk-low-blood-glucose-hypoglycemia-what-if-i-have-severe-low-blood-glucose-1"
+  ],
+  "t18": [
+   "medlineplus-steroids-summary-0",
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0"
+  ]
+ },
+ "cross": {
+  "c01": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-at-a-glance-0",
+    "cdc-flu-and-people-with-asthma-a-flu-shot-is-the-best-protection-against-f-0",
+    "cdc-flu-and-people-with-asthma-flu-vaccines-for-people-with-asthma-0",
+    "cdc-flu-and-people-with-asthma-pneumococcal-vaccination-is-also-important-0",
+    "cdc-respiratory-infections-and-asthma-flu-0",
+    "cdc-respiratory-infections-and-asthma-pneumococcal-pneumonia-0"
+   ],
+   "diabetes": [
+    "cdc-flu-and-people-with-diabetes-what-to-know-0",
+    "cdc-flu-and-people-with-diabetes-vaccination-is-the-best-protection-agains-0",
+    "cdc-flu-and-people-with-diabetes-flu-vaccines-for-people-with-diabetes-0"
+   ]
+  },
+  "c02": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-at-a-glance-0",
+    "cdc-flu-and-people-with-asthma-flu-and-people-with-asthma-0",
+    "cdc-respiratory-infections-and-asthma-flu-0"
+   ],
+   "diabetes": [
+    "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0"
+   ]
+  },
+  "c03": {
+   "asthma": [
+    "medlineplus-steroids-summary-0",
+    "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+    "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0"
+   ],
+   "diabetes": [
+    "niddk-symptoms-causes-of-diabetes-taking-certain-medicines-0"
+   ]
+  },
+  "c04": {
+   "asthma": [
+    "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+    "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+   ],
+   "diabetes": [
+    "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-0",
+    "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-1",
+    "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+   ]
+  },
+  "c05": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-at-a-glance-0",
+    "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+    "cdc-flu-and-people-with-asthma-symptoms-and-treatment-0"
+   ],
+   "diabetes": [
+    "cdc-managing-sick-days-prepare-now-before-getting-sick-0",
+    "cdc-managing-sick-days-if-you-get-sick-0",
+    "cdc-managing-sick-days-more-tips-if-you-get-sick-0"
+   ]
+  },
+  "c06": {
+   "asthma": [
+    "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+    "cdc-controlling-asthma-common-asthma-triggers-0"
+   ],
+   "diabetes": [
+    "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+    "niddk-healthy-living-with-diabetes-should-i-quit-smoking-0"
+   ]
+  },
+  "c07": {
+   "asthma": [
+    "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+   ],
+   "diabetes": [
+    "niddk-managing-diabetes-reach-and-maintain-a-healthy-weight-0",
+    "niddk-healthy-living-with-diabetes-what-can-i-do-to-reach-or-maintain-a-heal-0"
+   ]
+  },
+  "c08": {
+   "asthma": [
+    "nhlbi-asthma-asthma-attack-summary-0",
+    "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0"
+   ],
+   "diabetes": [
+    "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0"
+   ]
+  },
+  "c09": {
+   "asthma": [
+    "nhlbi-asthma-asthma-attack-summary-0",
+    "nhlbi-asthma-asthma-attack-what-does-an-asthma-attack-feel-like-0"
+   ],
+   "diabetes": [
+    "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+    "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+    "niddk-low-blood-glucose-hypoglycemia-what-are-the-symptoms-of-low-blood-gluc-0"
+   ]
+  },
+  "c10": {
+   "asthma": [
+    "nhlbi-asthma-causes-and-triggers-asthma-triggers-0",
+    "cdc-controlling-asthma-common-asthma-triggers-3",
+    "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1"
+   ],
+   "diabetes": [
+    "medlineplus-hyperglycemia-what-causes-hyperglycemia-0",
+    "cdc-type-2-diabetes-managing-diabetes-0",
+    "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0"
+   ]
+  },
+  "c11": {
+   "asthma": [
+    "nhlbi-asthma-treatment-and-action-plan-nocturnal-asthma-0"
+   ],
+   "diabetes": [
+    "niddk-managing-diabetes-get-enough-sleep-0",
+    "niddk-healthy-living-with-diabetes-how-can-i-take-care-of-my-mental-health-1"
+   ]
+  },
+  "c12": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+    "cdc-what-to-do-when-an-emergency-occurs-first-steps-0"
+   ],
+   "diabetes": [
+    "cdc-managing-sick-days-prepare-now-before-getting-sick-0"
+   ]
+  }
+ },
+ "partial": {
+  "c03": "No source states that steroid tablets raise blood glucose in people with diabetes; the link needs two hops (corticosteroids are used for asthma; NIDDK lists glucocorticoids among medicines that may affect how insulin works)."
+ },
+ "trap_note": {
+  "t01": "inhaler suggests asthma; it is about insulin",
+  "t02": "'attack' suggests an asthma attack / warning stage",
+  "t03": "'disaster/emergency' suggests the warning stage; it is everyday preparedness",
+  "t04": "'trouble breathing' suggests asthma",
+  "t05": "colour-zone wording appears in only one passage",
+  "t06": "'challenge test' is also an asthma test",
+  "t07": "'steroids' make the classifier add diabetes",
+  "t08": "'shaky, fast heartbeat' are low-blood-sugar words",
+  "t09": "same symptom words as t08 but about diabetes",
+  "t10": "'inflammation' is an asthma word",
+  "t11": "'range' and 'monitor' are generic",
+  "t12": "'sensitive' and 'tests' are generic; needs the right asthma test",
+  "t13": "'eye drops' could match medicines",
+  "t14": "'flu' pulls the flu-vaccine pages",
+  "t15": "'nasal spray' also appears for glucagon and diabetes flu pages",
+  "t16": "'cleaning' appears in hygiene advice",
+  "t17": "'medical alert' is also an asthma action-plan zone",
+  "t18": "'cataracts' also appears under smoking"
+ }
+}

@@ -1,0 +1,250 @@
+[
+ {
+  "url": "https://medlineplus.gov/xml/mplus_topics_2026-10-24.xml",
+  "final_url": "https://medlineplus.gov/xml/mplus_topics_2026-10-24.xml",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:20+00:00",
+  "sha256": "be4c72d83bd9bda0144319b52e7c9410cc275df2d692b3e7812d5e3b46801577",
+  "bytes": 30151121
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:23+00:00",
+  "sha256": "edf3abbada90b5f36bb7c8b58fed900391eba1c7b2397dbc80a84aa6e156b6d2",
+  "bytes": 49905
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:25+00:00",
+  "sha256": "ea9a8e75b8ad67fac7b2904dde820fb5a94a9ec5781d3899bfeaecc5955e3f68",
+  "bytes": 65138
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:28+00:00",
+  "sha256": "c15b220d57cec9a69253b0bae1ba4f25e89e3f20dd780b5addad713786b14586",
+  "bytes": 57143
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:30+00:00",
+  "sha256": "7f899231bfe93ed5c75b5ca073c435bb8ac236f7ce72eeb4503795cf0060a902",
+  "bytes": 71462
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/diet-eating-physical-activity",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes?dkrd=/health-information/diabetes/overview/diet-eating-physical-activity",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:34+00:00",
+  "sha256": "01fb579744461ab2e0b254bc5f02c8d489968080e9c92d98f08ea0a2e8b98529",
+  "bytes": 72083
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:37+00:00",
+  "sha256": "2833ca09d7ebcdc25d51abbbf4e08c09cf532fe6b6c509f75a306023ce97e359",
+  "bytes": 68886
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:39+00:00",
+  "sha256": "f9d34e220d33acef9cc9a3e78921a335c0de4ae9acd5aac6aaeeb65ed393c9ce",
+  "bytes": 48123
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:41+00:00",
+  "sha256": "d3be4875b72ea2f0cd04c74b3b8e83135f53a7b3c9a4db66fbea802ecf1e7510",
+  "bytes": 70108
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/causes",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/causes",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:44+00:00",
+  "sha256": "e7ae97281fe87a2f2f9d0c63731de6840afcffa01b5f077bd165a961f7d45966",
+  "bytes": 82489
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/symptoms",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/symptoms",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:46+00:00",
+  "sha256": "f1afb8ef8d3d2d552db89350e3e65e925e0e5b118d9d2bebbceecf906b953cdf",
+  "bytes": 68318
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/diagnosis",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/diagnosis",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:49+00:00",
+  "sha256": "a8ac801351195ad75dc9ae789b9b28eac98d5aeabdaab884742aab9f627f1889",
+  "bytes": 72051
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/treatment-action-plan",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/treatment-action-plan",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:51+00:00",
+  "sha256": "21545fa496937fe6d1ac0ae23de5c76686b6a6a1498154f7387194ab0ea59d90",
+  "bytes": 93242
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/living-with",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/living-with",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:54+00:00",
+  "sha256": "f182ef56829d4256b8ba912d5ec80f299b586a2d87c53b3017d375b55dcb4378",
+  "bytes": 83413
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/health/asthma/attacks",
+  "final_url": "https://www.nhlbi.nih.gov/health/asthma/attacks",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:56+00:00",
+  "sha256": "859bf094582308db2a64a81dee3ea050983253c9534abdd4fadfd18dcfa3532f",
+  "bytes": 68809
+ },
+ {
+  "url": "https://www.cdc.gov/asthma/about/index.html",
+  "final_url": "https://www.cdc.gov/asthma/about/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:18:59+00:00",
+  "sha256": "c2c9bc04ba7dfd9926a9d6c5a982c3fd5a9aada073c631c72d079cffd5573bb3",
+  "bytes": 59952
+ },
+ {
+  "url": "https://www.cdc.gov/asthma/control/index.html",
+  "final_url": "https://www.cdc.gov/asthma/control/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:01+00:00",
+  "sha256": "54b6582254c34610a98c94ced7bf103611e419f71b74fed060aa05e9ba21c59f",
+  "bytes": 49283
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/about/about-type-2-diabetes.html",
+  "final_url": "https://www.cdc.gov/diabetes/about/about-type-2-diabetes.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:03+00:00",
+  "sha256": "32b05385dfd1ed10fd8b4475e5839345185be776016f3f225a30a235f3e7ef44",
+  "bytes": 62121
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/about/low-blood-sugar-hypoglycemia.html",
+  "final_url": "https://www.cdc.gov/diabetes/about/low-blood-sugar-hypoglycemia.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:05+00:00",
+  "sha256": "eeeac9f2cecdfa61741f4bbb32f75a787c6ea94c3d378debb3902f52dcacb3cd",
+  "bytes": 61303
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/signs-symptoms/index.html",
+  "final_url": "https://www.cdc.gov/diabetes/signs-symptoms/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:08+00:00",
+  "sha256": "ade155718810507d6d521f3febeb91d22faf3f66a0974462ebb1ffcb77aca2e2",
+  "bytes": 58575
+ },
+ {
+  "url": "https://www.cdc.gov/flu/highrisk/asthma.html",
+  "final_url": "https://www.cdc.gov/flu/highrisk/asthma.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:11+00:00",
+  "sha256": "5665ac45ec9cc87e8d560fac9eab24011b36355c22301c65bc36a0a0014cfa4c",
+  "bytes": 64883
+ },
+ {
+  "url": "https://www.cdc.gov/flu/highrisk/diabetes.html",
+  "final_url": "https://www.cdc.gov/flu/highrisk/diabetes.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:14+00:00",
+  "sha256": "fa1cc4e2aa4799fbb22f040f90d49a9c4c721ac3e29a48c0fdc4192278afed17",
+  "bytes": 70580
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia",
+  "final_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:16+00:00",
+  "sha256": "295804fb34638877a7264aca0f58120a46313af2d9ba0996f27cd9083d7bb124",
+  "bytes": 60299
+ },
+ {
+  "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+  "final_url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:18+00:00",
+  "sha256": "f34b323a31431769597f99089ea60ebe3e8999c51db7fca87aeaf1974940a583",
+  "bytes": 59932
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+  "final_url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:21+00:00",
+  "sha256": "e62a5e048c8eead52b8e5bbf6d387ade9a5b5a886d02504052614907fdda4b47",
+  "bytes": 59952
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/treatment/treatment-low-blood-sugar-hypoglycemia.html",
+  "final_url": "https://www.cdc.gov/diabetes/treatment/treatment-low-blood-sugar-hypoglycemia.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:23+00:00",
+  "sha256": "052ea38ff9eff19acedce43b944aa52530e2e271fd5abc632111f908afe71640",
+  "bytes": 60649
+ },
+ {
+  "url": "https://www.cdc.gov/diabetes/treatment/index.html",
+  "final_url": "https://www.cdc.gov/diabetes/treatment/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:25+00:00",
+  "sha256": "bc9fccb0cb107704b371b3bd21edc0f948865805f2a93359e91697cc47580268",
+  "bytes": 61235
+ },
+ {
+  "url": "https://www.cdc.gov/asthma/emergency/index.html",
+  "final_url": "https://www.cdc.gov/asthma/emergency/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:27+00:00",
+  "sha256": "be5d243ccf19d763ed3e97c2f8d02ba6a492f0adfb40806fc927b0c689ad8789",
+  "bytes": 50603
+ },
+ {
+  "url": "https://www.cdc.gov/asthma/living-with/index.html",
+  "final_url": "https://www.cdc.gov/asthma/living-with/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:30+00:00",
+  "sha256": "145594b8814c4a959098c7fa93892cca0d99559182927174e56cbbccdc79abce",
+  "bytes": 49796
+ },
+ {
+  "url": "https://www.cdc.gov/asthma/respiratory-infections/index.html",
+  "final_url": "https://www.cdc.gov/asthma/respiratory-infections/index.html",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:32+00:00",
+  "sha256": "571b39f165a8ae14a2e47a2f0362563d8e5b5e655098e7430f2ad80a4fd42495",
+  "bytes": 54072
+ },
+ {
+  "url": "https://www.nhlbi.nih.gov/resources/lmbb-monitoring-your-asthma-fact-sheet",
+  "final_url": "https://www.nhlbi.nih.gov/resources/lmbb-monitoring-your-asthma-fact-sheet",
+  "status": 200,
+  "retrieved_utc": "2026-10-24T14:19:35+00:00",
+  "sha256": "4a9850834f1c97cc2377c1fedc7a5373b25b77fefc2eee90989369c24b4f2739",
+  "bytes": 63269
+ }
+]

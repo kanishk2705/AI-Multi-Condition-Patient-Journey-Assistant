@@ -1,0 +1,4321 @@
+{
+ "a02": {
+  "gate_score": 5.769925117492676,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0",
+   "cdc-flu-and-people-with-asthma-flu-and-people-with-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1",
+   "nhlbi-asthma-what-is-asthma-summary-0"
+  ],
+  "extractive": {
+   "text": "However some people don’t show signs of asthma until adulthood — this is known as adult- onset asthma. [P1] The following may also raise the risk of developing asthma: [P1] Learn how asthma affects people from some communities more than others and steps for managing asthma. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "However some people don’t show signs of asthma until adulthood — this is known as adult- onset asthma. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968350529670715,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The following may also raise the risk of developing asthma: [P1] Learn how asthma affects people from some communities more than others and steps for managing asthma. [P3]",
+      "cited": [
+       "P1",
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.008215759880840778,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Asthma develops when a combination of factors such as early‑life environmental exposures (like cigarette smoke or germs), viral infections, and family history interact, but the exact cause varies between individuals[P1]. Additional influences that can raise risk include allergies, obesity, certain racial or ethnic backgrounds, sex differences, occupational exposures, and climate‑related air pollution, all of which may affect people differently[P3].",
+   "raw": "Asthma develops when a combination of factors such as early‑life environmental exposures (like cigarette smoke or germs), viral infections, and family history interact, but the exact cause varies between individuals[P1]. Additional influences that can raise risk include allergies, obesity, certain racial or ethnic backgrounds, sex differences, occupational exposures, and climate‑related air pollution, all of which may affect people differently[P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.234067639,
+    "completion_tokens": 112,
+    "completion_tokens_details": {
+     "reasoning_tokens": 19
+    },
+    "prompt_time": 0.042257408,
+    "prompt_tokens": 1025,
+    "queue_time": 0.076813506,
+    "total_time": 0.276325047,
+    "total_tokens": 1137
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Asthma develops when a combination of factors such as early‑life environmental exposures (like cigarette smoke or germs), viral infections, and family history interact, but the exact cause varies between individuals[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5714285714285714,
+      "nli": 0.0011148903286084533,
+      "supported": false,
+      "reason": "nli+lexical"
+     },
+     {
+      "sentence": "Additional influences that can raise risk include allergies, obesity, certain racial or ethnic backgrounds, sex differences, occupational exposures, and climate‑related air pollution, all of which may affect people differently[P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5909090909090909,
+      "nli": 0.0011203374015167356,
+      "supported": false,
+      "reason": "nli+lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a04": {
+  "gate_score": 6.7025370597839355,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "cdc-about-asthma-symptoms-0"
+  ],
+  "extractive": {
+   "text": "Watch out for these signs that your asthma might be getting worse: You have symptoms more often than usual, or they feel worse. [P2] You have trouble with usual activities, including exercise, because of your asthma. [P2] When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Watch out for these signs that your asthma might be getting worse: You have symptoms more often than usual, or they feel worse. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9949873685836792,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You have trouble with usual activities, including exercise, because of your asthma. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9951262474060059,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9952971339225769,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Typical signs of asthma include wheezing, a whistling sound when breathing out, coughing especially at night or early morning, shortness of breath, and chest tightness [P1][P2][P4].",
+   "raw": "Typical signs of asthma include wheezing, a whistling sound when breathing out, coughing especially at night or early morning, shortness of breath, and chest tightness [P1][P2][P4].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.13624566,
+    "completion_tokens": 66,
+    "completion_tokens_details": {
+     "reasoning_tokens": 13
+    },
+    "prompt_time": 0.09467891,
+    "prompt_tokens": 960,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.223690872,
+    "total_time": 0.23092457,
+    "total_tokens": 1026
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Typical signs of asthma include wheezing, a whistling sound when breathing out, coughing especially at night or early morning, shortness of breath, and chest tightness [P1][P2][P4].",
+      "cited": [
+       "P1",
+       "P2",
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9375,
+      "nli": 0.9980728626251221,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a05": {
+  "gate_score": 8.483247756958008,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-about-asthma-diagnosis-0",
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-summary-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0"
+  ],
+  "extractive": {
+   "text": "It can be hard to tell if someone has asthma, especially in children under age 5. [P1] A doctor can help you find out if you have asthma. [P1] He or she may ask whether anyone in your family has or has had asthma, allergies, or other breathing problems. [P1]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "It can be hard to tell if someone has asthma, especially in children under age 5. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9967928528785706,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "A doctor can help you find out if you have asthma. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9979174733161926,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "He or she may ask whether anyone in your family has or has had asthma, allergies, or other breathing problems. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9934312701225281,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Doctors determine if someone has asthma by taking a medical history and asking about symptoms such as coughing, especially at night, wheezing, chest tightness, triggers like exercise or seasonal changes, and family history of asthma or allergies [P1]. They also perform a physical exam and may use lung‑function tests, most commonly spirometry, which measures how much air you can exhale before and after using asthma medication [P1][P2]. Additional tests can include peak expiratory flow measurements, fractional exhaled nitric oxide (FeNO) testing to assess airway inflammation, and allergy skin or blood tests to identify specific triggers [P2][P4]. If needed, specialists such as an asthma or allergy doctor may be consulted for further evaluation [P3].",
+   "raw": "Doctors determine if someone has asthma by taking a medical history and asking about symptoms such as coughing, especially at night, wheezing, chest tightness, triggers like exercise or seasonal changes, and family history of asthma or allergies [P1]. They also perform a physical exam and may use lung‑function tests, most commonly spirometry, which measures how much air you can exhale before and after using asthma medication [P1][P2]. Additional tests can include peak expiratory flow measurements, fractional exhaled nitric oxide (FeNO) testing to assess airway inflammation, and allergy skin or blood tests to identify specific triggers [P2][P4]. If needed, specialists such as an asthma or allergy doctor may be consulted for further evaluation [P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.507407018,
+    "completion_tokens": 187,
+    "completion_tokens_details": {
+     "reasoning_tokens": 25
+    },
+    "prompt_time": 0.196356634,
+    "prompt_tokens": 972,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.076608635,
+    "total_time": 0.703763652,
+    "total_tokens": 1159
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 4,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Doctors determine if someone has asthma by taking a medical history and asking about symptoms such as coughing, especially at night, wheezing, chest tightness, triggers like exercise or seasonal changes, and family history of asthma or allergies [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5909090909090909,
+      "nli": 0.013909995555877686,
+      "supported": false,
+      "reason": "nli+lexical"
+     },
+     {
+      "sentence": "They also perform a physical exam and may use lung‑function tests, most commonly spirometry, which measures how much air you can exhale before and after using asthma medication [P1][P2].",
+      "cited": [
+       "P1",
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.6666666666666666,
+      "nli": 0.3135175108909607,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Additional tests can include peak expiratory flow measurements, fractional exhaled nitric oxide (FeNO) testing to assess airway inflammation, and allergy skin or blood tests to identify specific triggers [P2][P4].",
+      "cited": [
+       "P2",
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7619047619047619,
+      "nli": 0.0006173383444547653,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "If needed, specialists such as an asthma or allergy doctor may be consulted for further evaluation [P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5714285714285714,
+      "nli": 0.9970364570617676,
+      "supported": false,
+      "reason": "lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a09": {
+  "gate_score": 5.5917158126831055,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0",
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0",
+   "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+   "cdc-what-to-do-when-an-emergency-occurs-key-points-0"
+  ],
+  "extractive": {
+   "text": "Keep your asthma under control and contact your healthcare provider if anything changes. [P2] If you want to adjust your medicines, talk to your provider first. [P2] If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Keep your asthma under control and contact your healthcare provider if anything changes. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9947551488876343,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If you want to adjust your medicines, talk to your provider first. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9963692426681519,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968339800834656,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Because the exact cause of asthma is unknown, you may not be able to prevent it completely, but you can try to reduce risk by keeping the home free of dampness and mold, avoiding air pollution as much as possible, and prioritizing a healthy lifestyle such as adding more fruits and vegetables to the diet [P1]. The sources shown do not cover diabetes.",
+   "raw": "Because the exact cause of asthma is unknown, you may not be able to prevent it completely, but you can try to reduce risk by keeping the home free of dampness and mold, avoiding air pollution as much as possible, and prioritizing a healthy lifestyle such as adding more fruits and vegetables to the diet [P1]. The sources shown do not cover diabetes.",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.252316839,
+    "completion_tokens": 122,
+    "completion_tokens_details": {
+     "reasoning_tokens": 40
+    },
+    "prompt_time": 0.023948481,
+    "prompt_tokens": 761,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.076339856,
+    "total_time": 0.27626532,
+    "total_tokens": 883
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Because the exact cause of asthma is unknown, you may not be able to prevent it completely, but you can try to reduce risk by keeping the home free of dampness and mold, avoiding air pollution as much as possible, and prioritizing a healthy lifestyle such as adding more fruits and vegetables to the diet [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8076923076923077,
+      "nli": 0.9976703524589539,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": [
+     "The sources shown do not cover diabetes."
+    ]
+   }
+  }
+ },
+ "a10": {
+  "gate_score": 7.189243316650391,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-nocturnal-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "cdc-about-asthma-symptoms-0"
+  ],
+  "extractive": {
+   "text": "Nocturnal asthma refers to asthma symptoms that occur at night. [P1] It is common for asthma symptoms to get worse at night or in the early morning. [P1] You wake up at night because of coughing or other asthma symptoms. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Nocturnal asthma refers to asthma symptoms that occur at night. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9942948222160339,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "It is common for asthma symptoms to get worse at night or in the early morning. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9978523254394531,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You wake up at night because of coughing or other asthma symptoms. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9942899942398071,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Nighttime asthma symptoms suggest that your asthma may not be well controlled and could be a sign of worsening control. [P1] Nighttime symptoms are a common sign that asthma is not well controlled. [P2] Asthma symptoms often get worse at night or in the early morning. [P2]",
+   "raw": "Nighttime asthma symptoms suggest that your asthma may not be well controlled and could be a sign of worsening control. [P1] Nighttime symptoms are a common sign that asthma is not well controlled. [P2] Asthma symptoms often get worse at night or in the early morning. [P2]",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.20184023,
+    "completion_tokens": 97,
+    "completion_tokens_details": {
+     "reasoning_tokens": 26
+    },
+    "prompt_time": 0.047150726,
+    "prompt_tokens": 999,
+    "queue_time": 0.34751917,
+    "total_time": 0.248990956,
+    "total_tokens": 1096
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 2,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Nighttime asthma symptoms suggest that your asthma may not be well controlled and could be a sign of worsening control. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7777777777777778,
+      "nli": 0.9963996410369873,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Nighttime symptoms are a common sign that asthma is not well controlled. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.42857142857142855,
+      "nli": 0.15655003488063812,
+      "supported": false,
+      "reason": "nli+lexical"
+     },
+     {
+      "sentence": "Asthma symptoms often get worse at night or in the early morning. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9421570897102356,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a12": {
+  "gate_score": 7.587109565734863,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-create-an-asthma-action-plan-0",
+   "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+   "cdc-living-with-asthma-asthma-action-plans-0",
+   "nhlbi-asthma-treatment-and-action-plan-treating-specific-asthma-types-0"
+  ],
+  "extractive": {
+   "text": "An asthma action plan is a written treatment plan that describes the following: How to identify allergens or triggers to avoid. [P1] Follow an updated, written Asthma Action Plan developed with your health care provider. [P2] If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "An asthma action plan is a written treatment plan that describes the following: How to identify allergens or triggers to avoid. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9938083291053772,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Follow an updated, written Asthma Action Plan developed with your health care provider. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9846028089523315,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If your child has asthma, make sure that their up-to-date written Asthma Action Plan is on file at school and/or at the daycare center. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968339800834656,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "A written Asthma Action Plan is a personalized, written treatment plan created with your health‑care provider that outlines how to identify allergens or triggers to avoid, how to recognize when you are having an asthma attack and what steps to take, which medicines to take and when to take them, and when to call your provider or go to the emergency room, including emergency contacts[P1]. It should be an updated document that you follow for daily treatment to control asthma long‑term and to manage worsening symptoms or attacks[P2]. Everyone with asthma needs their own plan, developed together with a health‑care provider, to help prevent and control attacks[P3].",
+   "raw": "A written Asthma Action Plan is a personalized, written treatment plan created with your health‑care provider that outlines how to identify allergens or triggers to avoid, how to recognize when you are having an asthma attack and what steps to take, which medicines to take and when to take them, and when to call your provider or go to the emergency room, including emergency contacts[P1]. It should be an updated document that you follow for daily treatment to control asthma long‑term and to manage worsening symptoms or attacks[P2]. Everyone with asthma needs their own plan, developed together with a health‑care provider, to help prevent and control attacks[P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.446441919,
+    "completion_tokens": 214,
+    "completion_tokens_details": {
+     "reasoning_tokens": 69
+    },
+    "prompt_time": 0.030229189,
+    "prompt_tokens": 737,
+    "queue_time": 0.243659976,
+    "total_time": 0.476671108,
+    "total_tokens": 951
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "A written Asthma Action Plan is a personalized, written treatment plan created with your health‑care provider that outlines how to identify allergens or triggers to avoid, how to recognize when you are having an asthma attack and what steps to take, which medicines to take and when to take them, and when to call your provider or go to the emergency room, including emergency contacts[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.6923076923076923,
+      "nli": 0.9249413013458252,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "It should be an updated document that you follow for daily treatment to control asthma long‑term and to manage worsening symptoms or attacks[P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7692307692307693,
+      "nli": 0.9968948364257812,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Everyone with asthma needs their own plan, developed together with a health‑care provider, to help prevent and control attacks[P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7692307692307693,
+      "nli": 0.9885299801826477,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a13": {
+  "gate_score": 0.8734992742538452,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-controlling-asthma-common-asthma-triggers-2",
+   "nhlbi-asthma-treatment-and-action-plan-allergic-asthma-0",
+   "nhlbi-asthma-managing-asthma-know-your-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-0"
+  ],
+  "extractive": {
+   "text": "Get rid of mold in your home to control your attacks. [P1] Breathing can become difficult when you are around certain allergens, such as pollens, dust mites, or mold. [P2] Remove dust and mold from your house. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Get rid of mold in your home to control your attacks. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968786239624023,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Breathing can become difficult when you are around certain allergens, such as pollens, dust mites, or mold. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9947720170021057,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Remove dust and mold from your house. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9960311055183411,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "To reduce mold, dry damp items within 24–48 hours, fix leaks promptly, keep indoor humidity below 50 % with a dehumidifier or AC, and scrub hard surfaces with detergent and water, then dry them completely [P1]. Replace any mold‑affected ceiling tiles or carpet, and run bathroom exhaust fans or open windows while showering [P1]. To lower dust‑mite exposure, use allergen‑proof mattress and pillowcase covers, wash bedding weekly and dry it fully, and vacuum regularly with a HEPA‑filter vacuum [P4]. Keep home humidity between 30–50 % and remove water and food sources that attract pests, cleaning crumbs and spills right away [P4]. These steps can help improve your breathing.",
+   "raw": "To reduce mold, dry damp items within 24–48 hours, fix leaks promptly, keep indoor humidity below 50 % with a dehumidifier or AC, and scrub hard surfaces with detergent and water, then dry them completely [P1]. Replace any mold‑affected ceiling tiles or carpet, and run bathroom exhaust fans or open windows while showering [P1]. To lower dust‑mite exposure, use allergen‑proof mattress and pillowcase covers, wash bedding weekly and dry it fully, and vacuum regularly with a HEPA‑filter vacuum [P4]. Keep home humidity between 30–50 % and remove water and food sources that attract pests, cleaning crumbs and spills right away [P4]. These steps can help improve your breathing.",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.393993951,
+    "completion_tokens": 189,
+    "completion_tokens_details": {
+     "reasoning_tokens": 25
+    },
+    "prompt_time": 0.056645209,
+    "prompt_tokens": 1148,
+    "queue_time": 0.083640835,
+    "total_time": 0.45063916,
+    "total_tokens": 1337
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 5,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "To reduce mold, dry damp items within 24–48 hours, fix leaks promptly, keep indoor humidity below 50 % with a dehumidifier or AC, and scrub hard surfaces with detergent and water, then dry them completely [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9166666666666666,
+      "nli": 0.004866923205554485,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Replace any mold‑affected ceiling tiles or carpet, and run bathroom exhaust fans or open windows while showering [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9230769230769231,
+      "nli": 0.004452195484191179,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "To lower dust‑mite exposure, use allergen‑proof mattress and pillowcase covers, wash bedding weekly and dry it fully, and vacuum regularly with a HEPA‑filter vacuum [P4].",
+      "cited": [
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7894736842105263,
+      "nli": 0.9947354197502136,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Keep home humidity between 30–50 % and remove water and food sources that attract pests, cleaning crumbs and spills right away [P4].",
+      "cited": [
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9375,
+      "nli": 0.003166785230860114,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "These steps can help improve your breathing.",
+      "cited": [],
+      "invalid_cites": [],
+      "lexical": 0.0,
+      "nli": 0.0,
+      "supported": false,
+      "reason": "uncited"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a16": {
+  "gate_score": 6.592123985290527,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-respiratory-infections-and-asthma-pneumococcal-pneumonia-0",
+   "cdc-flu-and-people-with-asthma-pneumococcal-vaccination-is-also-important-0",
+   "cdc-flu-and-people-with-asthma-flu-vaccines-for-people-with-asthma-0",
+   "cdc-respiratory-infections-and-asthma-what-to-know-0"
+  ],
+  "extractive": {
+   "text": "If you have asthma, you should get the pneumococcal vaccine to protect yourself against pneumococcal pneumonia. [P1] People with asthma should generally not receive the nasal spray flu vaccine (i.e., the live attenuated influenza vaccine or LAIV). [P3] People with asthma who are aged 5 years and older, talk to your health care provider before getting the nasal spray vaccine. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "If you have asthma, you should get the pneumococcal vaccine to protect yourself against pneumococcal pneumonia. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9942514896392822,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "People with asthma should generally not receive the nasal spray flu vaccine (i.e., the live attenuated influenza vaccine or LAIV). [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968425035476685,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "People with asthma who are aged 5 years and older, talk to your health care provider before getting the nasal spray vaccine. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9899373054504395,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "People with asthma should ask their health‑care provider about the pneumococcal vaccine [P1].",
+   "raw": "People with asthma should ask their health‑care provider about the pneumococcal vaccine [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.142570426,
+    "completion_tokens": 68,
+    "completion_tokens_details": {
+     "reasoning_tokens": 38
+    },
+    "prompt_time": 0.031433598,
+    "prompt_tokens": 761,
+    "queue_time": 0.085640784,
+    "total_time": 0.174004024,
+    "total_tokens": 829
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "People with asthma should ask their health‑care provider about the pneumococcal vaccine [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5,
+      "nli": 0.9976041913032532,
+      "supported": false,
+      "reason": "lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a21": {
+  "gate_score": 8.947402954101562,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0",
+   "medlineplus-asthma-who-is-at-risk-for-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0"
+  ],
+  "extractive": {
+   "text": "Your asthma symptoms may change while you are pregnant. [P1] You are also at higher risk of asthma attacks. [P1] Controlling your asthma can help prevent pregnancy complications such as preeclampsia, preterm delivery, and low birth weight. [P1]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Your asthma symptoms may change while you are pregnant. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9970478415489197,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You are also at higher risk of asthma attacks. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9979686141014099,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Controlling your asthma can help prevent pregnancy complications such as preeclampsia, preterm delivery, and low birth weight. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9967256784439087,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Asthma symptoms may change while you are pregnant, and you are at higher risk of asthma attacks during pregnancy [P1].",
+   "raw": "Asthma symptoms may change while you are pregnant, and you are at higher risk of asthma attacks during pregnancy [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.093473834,
+    "completion_tokens": 45,
+    "completion_tokens_details": {
+     "reasoning_tokens": 11
+    },
+    "prompt_time": 0.157327921,
+    "prompt_tokens": 992,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.085911785,
+    "total_time": 0.250801755,
+    "total_tokens": 1037
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Asthma symptoms may change while you are pregnant, and you are at higher risk of asthma attacks during pregnancy [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9978316426277161,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a25": {
+  "gate_score": 0.7390729188919067,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "cdc-about-asthma-symptom-management-0"
+  ],
+  "extractive": {
+   "text": "Use more than one canister of inhaled short-acting beta2-agonist (SABA) medicine, a reliever medicine, each month. [P1] You should also use your reliever inhaler as soon as you start to have symptoms. [P2] You may be able to manage an asthma flare-up with just your reliever inhaler. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Use more than one canister of inhaled short-acting beta2-agonist (SABA) medicine, a reliever medicine, each month. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9862707853317261,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You should also use your reliever inhaler as soon as you start to have symptoms. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.997992992401123,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You may be able to manage an asthma flare-up with just your reliever inhaler. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9972698092460632,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Needing more than one canister of your reliever inhaler each month suggests your asthma may not be well‑controlled and you should contact your healthcare provider for further evaluation. [P1]",
+   "raw": "Needing more than one canister of your reliever inhaler each month suggests your asthma may not be well‑controlled and you should contact your healthcare provider for further evaluation. [P1]",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.310345813,
+    "completion_tokens": 106,
+    "completion_tokens_details": {
+     "reasoning_tokens": 58
+    },
+    "prompt_time": 0.035317593,
+    "prompt_tokens": 1000,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.129841088,
+    "total_time": 0.345663406,
+    "total_tokens": 1106
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Needing more than one canister of your reliever inhaler each month suggests your asthma may not be well‑controlled and you should contact your healthcare provider for further evaluation. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.46153846153846156,
+      "nli": 0.0012792132329195738,
+      "supported": false,
+      "reason": "nli+lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a26": {
+  "gate_score": 6.979112148284912,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-what-does-an-asthma-attack-feel-like-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-asthma-attack-summary-0",
+   "cdc-about-asthma-symptoms-0"
+  ],
+  "extractive": {
+   "text": "Your chest may feel tight or like someone is sitting on it. [P1] Some people say it feels like having the air sucked out of you or trying to suck air in through a straw. [P1] When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Your chest may feel tight or like someone is sitting on it. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.996978759765625,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Some people say it feels like having the air sucked out of you or trying to suck air in through a straw. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9946880340576172,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "When these symptoms get worse than usual, it is called an asthma attack or flare-up. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9952971339225769,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "An asthma flare‑up can feel like a tight chest, sometimes described as someone sitting on it, and you may start coughing, wheezing, or feel like you are trying to suck air in through a straw or having the air sucked out of you [P1]. It is when the usual asthma symptoms such as wheezing, coughing, and chest tightness become much worse [P2].",
+   "raw": "An asthma flare‑up can feel like a tight chest, sometimes described as someone sitting on it, and you may start coughing, wheezing, or feel like you are trying to suck air in through a straw or having the air sucked out of you [P1]. It is when the usual asthma symptoms such as wheezing, coughing, and chest tightness become much worse [P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.218059353,
+    "completion_tokens": 105,
+    "completion_tokens_details": {
+     "reasoning_tokens": 17
+    },
+    "prompt_time": 0.034703926,
+    "prompt_tokens": 795,
+    "queue_time": 0.223600954,
+    "total_time": 0.252763279,
+    "total_tokens": 900
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "An asthma flare‑up can feel like a tight chest, sometimes described as someone sitting on it, and you may start coughing, wheezing, or feel like you are trying to suck air in through a straw or having the air sucked out of you [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7647058823529411,
+      "nli": 0.02460070699453354,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "It is when the usual asthma symptoms such as wheezing, coughing, and chest tightness become much worse [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9974337220191956,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "a28": {
+  "gate_score": 6.803790092468262,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "cdc-flu-and-people-with-asthma-symptoms-and-treatment-0",
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0"
+  ],
+  "extractive": {
+   "text": "You should seek care right away if you or your child have symptoms and: Have been hospitalized for asthma in the past year or had life-threatening asthma attacks in the past. [P1] Because you are at higher risk of developing serious flu complications, if you get sick with flu symptoms call your health care provider right away. [P2] People with asthma who get flu symptoms should call their health care provider right away. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You should seek care right away if you or your child have symptoms and: Have been hospitalized for asthma in the past year or had life-threatening asthma attacks in the past. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9941855072975159,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Because you are at higher risk of developing serious flu complications, if you get sick with flu symptoms call your health care provider right away. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9951786994934082,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "People with asthma who get flu symptoms should call their health care provider right away. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9952345490455627,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "You should call your healthcare provider right away if you have an asthma attack that is not relieved by your medicines or if your peak flow reading is low [P1]. You should also contact them promptly if you have been hospitalized for asthma in the past year, have had a life‑threatening attack, recently needed oral corticosteroids, are not using inhaled corticosteroids, or are using more than one SABA canister each month [P1]. If you have a mental health condition, an alcohol or drug use disorder, or do not closely follow your asthma action plan, you should seek care right away [P1]. For young children, call 9‑1‑1 immediately if they seem drowsy, confused, have a blue tint to the skin or lips, or have a fast heartbeat [P1]. People with asthma who develop flu symptoms should also call their healthcare provider right away because they are at higher risk of serious flu complications [P3].",
+   "raw": "You should call your healthcare provider right away if you have an asthma attack that is not relieved by your medicines or if your peak flow reading is low [P1]. You should also contact them promptly if you have been hospitalized for asthma in the past year, have had a life‑threatening attack, recently needed oral corticosteroids, are not using inhaled corticosteroids, or are using more than one SABA canister each month [P1]. If you have a mental health condition, an alcohol or drug use disorder, or do not closely follow your asthma action plan, you should seek care right away [P1]. For young children, call 9‑1‑1 immediately if they seem drowsy, confused, have a blue tint to the skin or lips, or have a fast heartbeat [P1]. People with asthma who develop flu symptoms should also call their healthcare provider right away because they are at higher risk of serious flu complications [P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.469927702,
+    "completion_tokens": 226,
+    "completion_tokens_details": {
+     "reasoning_tokens": 22
+    },
+    "prompt_time": 0.02718013,
+    "prompt_tokens": 863,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.085571452,
+    "total_time": 0.497107832,
+    "total_tokens": 1089
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 5,
+    "n_supported": 2,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "You should call your healthcare provider right away if you have an asthma attack that is not relieved by your medicines or if your peak flow reading is low [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7692307692307693,
+      "nli": 0.9920915365219116,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You should also contact them promptly if you have been hospitalized for asthma in the past year, have had a life‑threatening attack, recently needed oral corticosteroids, are not using inhaled corticosteroids, or are using more than one SABA canister each month [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8333333333333334,
+      "nli": 0.0030269171111285686,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "If you have a mental health condition, an alcohol or drug use disorder, or do not closely follow your asthma action plan, you should seek care right away [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.0009886100888252258,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "For young children, call 9‑1‑1 immediately if they seem drowsy, confused, have a blue tint to the skin or lips, or have a fast heartbeat [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9230769230769231,
+      "nli": 0.9876575469970703,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "People with asthma who develop flu symptoms should also call their healthcare provider right away because they are at higher risk of serious flu complications [P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9285714285714286,
+      "nli": 0.38229769468307495,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "c02": {
+  "gate_score": 6.167568206787109,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "cdc-flu-and-people-with-asthma-a-flu-shot-is-the-best-protection-against-f-0",
+   "cdc-flu-and-people-with-diabetes-vaccination-is-the-best-protection-agains-0",
+   "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0"
+  ],
+  "extractive": {
+   "text": "Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P1] Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P2] Annual flu vaccination is especially important for people with diabetes because they are at higher risk of developing serious flu complications. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9976636171340942,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Flu vaccination is especially important for people with asthma because they are at higher risk of developing serious flu complications. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9975036978721619,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Annual flu vaccination is especially important for people with diabetes because they are at higher risk of developing serious flu complications. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9966621398925781,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "People with asthma are at higher risk of serious flu complications because the disease causes chronic airway inflammation, and flu can worsen these problems [P1]. People with diabetes are also at higher risk of serious flu complications, and flu can make blood‑sugar control harder and increase the chance of hospitalization or death [P4]. The sources shown do not cover any additional combined risk beyond these separate statements.",
+   "raw": "People with asthma are at higher risk of serious flu complications because the disease causes chronic airway inflammation, and flu can worsen these problems [P1]. People with diabetes are also at higher risk of serious flu complications, and flu can make blood‑sugar control harder and increase the chance of hospitalization or death [P4]. The sources shown do not cover any additional combined risk beyond these separate statements.",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.25758926,
+    "completion_tokens": 124,
+    "completion_tokens_details": {
+     "reasoning_tokens": 36
+    },
+    "prompt_time": 0.036666115,
+    "prompt_tokens": 676,
+    "queue_time": 0.140603255,
+    "total_time": 0.294255375,
+    "total_tokens": 800
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "People with asthma are at higher risk of serious flu complications because the disease causes chronic airway inflammation, and flu can worsen these problems [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7857142857142857,
+      "nli": 0.008206106722354889,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "People with diabetes are also at higher risk of serious flu complications, and flu can make blood‑sugar control harder and increase the chance of hospitalization or death [P4].",
+      "cited": [
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8125,
+      "nli": 0.0021160272881388664,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": [
+     "The sources shown do not cover any additional combined risk beyond these separate statements."
+    ]
+   }
+  }
+ },
+ "c04": {
+  "gate_score": -0.42740142345428467,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "c06": {
+  "gate_score": 4.72999382019043,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-should-i-quit-smoking-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+   "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+   "medlineplus-smoking-what-are-the-health-effects-of-smoking-0"
+  ],
+  "extractive": {
+   "text": "Smoking tobacco and breathing in secondhand smoke make asthma harder to treat. [P2] Not smoking is important for your health, especially if you have diabetes. [P3] Both smoking and diabetes can make your blood vessels narrow. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Smoking tobacco and breathing in secondhand smoke make asthma harder to treat. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9963845014572144,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Not smoking is important for your health, especially if you have diabetes. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9949784874916077,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Both smoking and diabetes can make your blood vessels narrow. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9975438714027405,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Smoking narrows blood vessels, increasing risks such as heart attack, stroke, nerve, kidney, and eye problems for people with diabetes [P1]. Smoking and secondhand smoke also make asthma harder to treat and can worsen asthma symptoms [P2].",
+   "raw": "Smoking narrows blood vessels, increasing risks such as heart attack, stroke, nerve, kidney, and eye problems for people with diabetes [P1]. Smoking and secondhand smoke also make asthma harder to treat and can worsen asthma symptoms [P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.196390441,
+    "completion_tokens": 82,
+    "completion_tokens_details": {
+     "reasoning_tokens": 23
+    },
+    "prompt_time": 0.078934985,
+    "prompt_tokens": 872,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.138823689,
+    "total_time": 0.275325426,
+    "total_tokens": 954
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 2,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Smoking narrows blood vessels, increasing risks such as heart attack, stroke, nerve, kidney, and eye problems for people with diabetes [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8,
+      "nli": 0.997545063495636,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Smoking and secondhand smoke also make asthma harder to treat and can worsen asthma symptoms [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.995318591594696,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "c10": {
+  "gate_score": -1.1360591650009155,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-blood-glucose-levels-move-up-and-down-0",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0",
+   "niddk-healthy-living-with-diabetes-how-can-i-take-care-of-my-mental-health-1",
+   "medlineplus-hyperglycemia-what-causes-hyperglycemia-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "c12": {
+  "gate_score": 2.556912422180176,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-what-to-do-when-an-emergency-occurs-first-steps-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0",
+   "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1"
+  ],
+  "extractive": {
+   "text": "Make sure that you have at least 30 days of non-prescription medications and supplies in case you need to stay home for a long time. [P1] Talk to your healthcare provider, insurer, and pharmacist about creating an emergency supply of prescription medications, such as asthma inhalers. [P2] Make sure that you have 30 days of non-prescription medications and supplies on hand in case you need to stay home for a long time. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Make sure that you have at least 30 days of non-prescription medications and supplies in case you need to stay home for a long time. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9973717927932739,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Talk to your healthcare provider, insurer, and pharmacist about creating an emergency supply of prescription medications, such as asthma inhalers. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9957356452941895,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Make sure that you have 30 days of non-prescription medications and supplies on hand in case you need to stay home for a long time. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9942002296447754,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Keep at least 30 days of non‑prescription asthma medications and related supplies on hand in case you need to stay home for a long time. The sources shown do not cover diabetes supplies.",
+   "raw": "Keep at least 30 days of non‑prescription asthma medications and related supplies on hand in case you need to stay home for a long time. The sources shown do not cover diabetes supplies.",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.199209773,
+    "completion_tokens": 93,
+    "completion_tokens_details": {
+     "reasoning_tokens": 44
+    },
+    "prompt_time": 0.024183597,
+    "prompt_tokens": 744,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.140421387,
+    "total_time": 0.22339337,
+    "total_tokens": 837
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Keep at least 30 days of non‑prescription asthma medications and related supplies on hand in case you need to stay home for a long time.",
+      "cited": [],
+      "invalid_cites": [],
+      "lexical": 0.0,
+      "nli": 0.0,
+      "supported": false,
+      "reason": "uncited"
+     }
+    ],
+    "scope_notes": [
+     "The sources shown do not cover diabetes supplies."
+    ]
+   }
+  }
+ },
+ "d04": {
+  "gate_score": 10.217314720153809,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-type-2-diabetes-who-is-more-likely-to-develop-type-2-diabetes-0",
+   "medlineplus-diabetes-who-is-more-likely-to-develop-diabetes-0",
+   "medlineplus-diabetes-type-2-who-is-at-risk-for-type-2-diabetes-0",
+   "niddk-diabetes-tests-diagnosis-type-2-diabetes-0"
+  ],
+  "extractive": {
+   "text": "You are more likely to develop type 2 diabetes if you are age 45 or older, have a family history of diabetes, or are overweight or have obesity. [P1] You are also more likely to develop type 2 diabetes if you have prediabetes or had gestational diabetes when you were pregnant. [P1] Learn more about risk factors for type 2 diabetes. [P1]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You are more likely to develop type 2 diabetes if you are age 45 or older, have a family history of diabetes, or are overweight or have obesity. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9963634610176086,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You are also more likely to develop type 2 diabetes if you have prediabetes or had gestational diabetes when you were pregnant. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9972968697547913,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Learn more about risk factors for type 2 diabetes. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9931621551513672,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "You are more likely to develop type 2 diabetes if you are age 45 or older, are overweight or have obesity, or have a family history of diabetes[P1]. Being African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander also increases your risk[P1]. Physical inactivity and having other health problems such as high blood pressure raise your chances[P1]. Having prediabetes or a history of gestational diabetes also makes you more likely to develop type 2 diabetes[P1]. The sources do not provide information about asthma risk.",
+   "raw": "You are more likely to develop type 2 diabetes if you are age 45 or older, are overweight or have obesity, or have a family history of diabetes[P1]. Being African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander also increases your risk[P1]. Physical inactivity and having other health problems such as high blood pressure raise your chances[P1]. Having prediabetes or a history of gestational diabetes also makes you more likely to develop type 2 diabetes[P1]. The sources do not provide information about asthma risk.",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.318779402,
+    "completion_tokens": 154,
+    "completion_tokens_details": {
+     "reasoning_tokens": 18
+    },
+    "prompt_time": 0.051339143,
+    "prompt_tokens": 1164,
+    "queue_time": 0.076841378,
+    "total_time": 0.370118545,
+    "total_tokens": 1318
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 5,
+    "n_supported": 3,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "You are more likely to develop type 2 diabetes if you are age 45 or older, are overweight or have obesity, or have a family history of diabetes[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9964806437492371,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Being African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander also increases your risk[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9,
+      "nli": 0.001379237393848598,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Physical inactivity and having other health problems such as high blood pressure raise your chances[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8888888888888888,
+      "nli": 0.9916623830795288,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Having prediabetes or a history of gestational diabetes also makes you more likely to develop type 2 diabetes[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.875,
+      "nli": 0.9982944130897522,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The sources do not provide information about asthma risk.",
+      "cited": [],
+      "invalid_cites": [],
+      "lexical": 0.0,
+      "nli": 0.0,
+      "supported": false,
+      "reason": "uncited"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d06": {
+  "gate_score": 8.909114837646484,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-will-the-a1c-test-show-short-term-changes-in-blo-0",
+   "niddk-the-a1c-test-diabetes-what-is-the-a1c-test-0",
+   "niddk-managing-diabetes-a-is-for-the-a1c-blood-glucose-test-0",
+   "niddk-the-a1c-test-diabetes-can-the-a1c-test-result-in-a-different-diagnosis-0"
+  ],
+  "extractive": {
+   "text": "Large changes in your blood glucose levels over the past month will show up in your A1C test result, but the A1C test doesn’t show sudden, temporary increases or decreases in blood glucose levels. [P1] 1 The A1C test is also the primary test used for diabetes management. [P2] The A1C test shows your average blood glucose level over the last 3 months. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Large changes in your blood glucose levels over the past month will show up in your A1C test result, but the A1C test doesn’t show sudden, temporary increases or decreases in blood glucose levels. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.996542751789093,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "1 The A1C test is also the primary test used for diabetes management. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9978489875793457,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The A1C test shows your average blood glucose level over the last 3 months. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9961769580841064,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "The A1C blood test measures how much glucose is attached to hemoglobin and reflects your average blood‑glucose level over the past three months[P2]. It is used to diagnose type 2 diabetes, prediabetes, and to manage diabetes by tracking long‑term glucose control[P2]. For most people with diabetes, the goal is an A1C below 7 percent, though individual targets may vary[P3]. Large changes in glucose during the most recent month influence the A1C result more than older changes[P1].",
+   "raw": "The A1C blood test measures how much glucose is attached to hemoglobin and reflects your average blood‑glucose level over the past three months[P2]. It is used to diagnose type 2 diabetes, prediabetes, and to manage diabetes by tracking long‑term glucose control[P2]. For most people with diabetes, the goal is an A1C below 7 percent, though individual targets may vary[P3]. Large changes in glucose during the most recent month influence the A1C result more than older changes[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.369876066,
+    "completion_tokens": 178,
+    "completion_tokens_details": {
+     "reasoning_tokens": 52
+    },
+    "prompt_time": 0.039053208,
+    "prompt_tokens": 894,
+    "queue_time": 0.24368316,
+    "total_time": 0.408929274,
+    "total_tokens": 1072
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 4,
+    "n_supported": 2,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "The A1C blood test measures how much glucose is attached to hemoglobin and reflects your average blood‑glucose level over the past three months[P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9230769230769231,
+      "nli": 0.9981173276901245,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "It is used to diagnose type 2 diabetes, prediabetes, and to manage diabetes by tracking long‑term glucose control[P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5454545454545454,
+      "nli": 0.001022030715830624,
+      "supported": false,
+      "reason": "nli+lexical"
+     },
+     {
+      "sentence": "For most people with diabetes, the goal is an A1C below 7 percent, though individual targets may vary[P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.4444444444444444,
+      "nli": 0.12499918788671494,
+      "supported": false,
+      "reason": "nli+lexical"
+     },
+     {
+      "sentence": "Large changes in glucose during the most recent month influence the A1C result more than older changes[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.6666666666666666,
+      "nli": 0.9961782693862915,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d08": {
+  "gate_score": 8.216809272766113,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-can-other-blood-glucose-tests-be-used-to-diagnos-0",
+   "niddk-the-a1c-test-diabetes-how-is-the-a1c-test-used-to-diagnose-type-2-diab-0",
+   "medlineplus-diabetes-type-2-how-is-type-2-diabetes-diagnosed-0",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0"
+  ],
+  "extractive": {
+   "text": "You don’t have to fast before having your blood drawn for an A1C test, which means that blood can be drawn for the test at any time of the day. [P2] Fasting plasma glucose (FPG) test, which measures your current blood glucose level. [P3] This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You don’t have to fast before having your blood drawn for an A1C test, which means that blood can be drawn for the test at any time of the day. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9967227578163147,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Fasting plasma glucose (FPG) test, which measures your current blood glucose level. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9923296570777893,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9963451027870178,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "You do not have to fast before having an A1C test; blood can be drawn at any time of day without fasting [P2].",
+   "raw": "You do not have to fast before having an A1C test; blood can be drawn at any time of day without fasting [P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.147024346,
+    "completion_tokens": 71,
+    "completion_tokens_details": {
+     "reasoning_tokens": 33
+    },
+    "prompt_time": 0.047451965,
+    "prompt_tokens": 949,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.243817447,
+    "total_time": 0.194476311,
+    "total_tokens": 1020
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You do not have to fast before having an A1C test; blood can be drawn at any time of day without fasting [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.875,
+      "nli": 0.9980462789535522,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d10": {
+  "gate_score": 7.88990592956543,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-0",
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-1",
+   "niddk-the-a1c-test-diabetes-blood-glucose-levels-move-up-and-down-0",
+   "niddk-the-a1c-test-diabetes-can-the-a1c-test-result-in-a-different-diagnosis-0"
+  ],
+  "extractive": {
+   "text": "Conditions that change the life span of red blood cells, such as recent blood loss, sickle cell disease, erythropoietin treatment, hemodialysis, or transfusion, can change A1C levels. [P1] If you’re of African, Mediterranean, or Southeast Asian descent or have family members with sickle cell anemia or a thalassemia, an A1C test can be unreliable for diagnosing or monitoring diabetes and prediabetes. [P1] The NIDDK has information for health care providers on Sickle Cell Trait & Other Hemoglobinopathies & Diabetes. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Conditions that change the life span of red blood cells, such as recent blood loss, sickle cell disease, erythropoietin treatment, hemodialysis, or transfusion, can change A1C levels. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9904093742370605,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If you’re of African, Mediterranean, or Southeast Asian descent or have family members with sickle cell anemia or a thalassemia, an A1C test can be unreliable for diagnosing or monitoring diabetes and prediabetes. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9933672547340393,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The NIDDK has information for health care providers on Sickle Cell Trait & Other Hemoglobinopathies & Diabetes. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9935606718063354,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Yes, conditions that change the life span of red blood cells—such as sickle cell disease—can alter A1C levels and make the test less reliable[P1].",
+   "raw": "Yes, conditions that change the life span of red blood cells—such as sickle cell disease—can alter A1C levels and make the test less reliable[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.202993894,
+    "completion_tokens": 93,
+    "completion_tokens_details": {
+     "reasoning_tokens": 47
+    },
+    "prompt_time": 0.064477219,
+    "prompt_tokens": 1007,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.230406642,
+    "total_time": 0.267471113,
+    "total_tokens": 1100
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Yes, conditions that change the life span of red blood cells—such as sickle cell disease—can alter A1C levels and make the test less reliable[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7058823529411765,
+      "nli": 0.9938001036643982,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d12": {
+  "gate_score": 5.023397445678711,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-type-2-diabetes-causes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "medlineplus-diabetes-type-2-what-causes-type-2-diabetes-0"
+  ],
+  "extractive": {
+   "text": "This is called insulin resistance. [P1] Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. [P2] A problem with insulin could be: Insulin resistance, a condition in which the body can't use its insulin properly. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "This is called insulin resistance. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.99683678150177,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Insulin resistance is when the cells in your muscles, fat, and liver don’t respond well to insulin. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9974440336227417,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "A problem with insulin could be: Insulin resistance, a condition in which the body can't use its insulin properly. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9974939823150635,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Insulin resistance is a condition in which the cells in your muscles, fat, liver, or other tissues do not respond well to insulin, making it harder for glucose to enter the cells and leading to higher blood sugar levels [P2][P4].",
+   "raw": "Insulin resistance is a condition in which the cells in your muscles, fat, liver, or other tissues do not respond well to insulin, making it harder for glucose to enter the cells and leading to higher blood sugar levels [P2][P4].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.149552262,
+    "completion_tokens": 70,
+    "completion_tokens_details": {
+     "reasoning_tokens": 10
+    },
+    "prompt_time": 0.045302676,
+    "prompt_tokens": 914,
+    "queue_time": 0.099525612,
+    "total_time": 0.194854938,
+    "total_tokens": 984
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Insulin resistance is a condition in which the cells in your muscles, fat, liver, or other tissues do not respond well to insulin, making it harder for glucose to enter the cells and leading to higher blood sugar levels [P2][P4].",
+      "cited": [
+       "P2",
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7894736842105263,
+      "nli": 0.0026062342803925276,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d14": {
+  "gate_score": 6.9392194747924805,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-hyperglycemia-what-other-problems-can-hyperglycemia-cause-0",
+   "niddk-type-2-diabetes-what-health-problems-can-people-with-diabetes-develop-0",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-1",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-0"
+  ],
+  "extractive": {
+   "text": "In people with diabetes, long-term hyperglycemia can lead to serious health problems (diabetes complications). [P1] However, if not managed, diabetes can lead to problems such as heart disease and stroke. nerve damage. kidney disease. foot problems. eye disease. gum disease and other dental problems. sexual and bladder problems. [P2] You can take steps to lower your chances of developing these diabetes-related health problems. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "In people with diabetes, long-term hyperglycemia can lead to serious health problems (diabetes complications). [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.99726402759552,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "However, if not managed, diabetes can lead to problems such as heart disease and stroke. nerve damage. kidney disease. foot problems. eye disease. gum disease and other dental problems. sexual and bladder problems. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9943933486938477,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You can take steps to lower your chances of developing these diabetes-related health problems. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9960665106773376,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Diabetes can lead to long‑term health problems such as heart disease, stroke, nerve damage (neuropathy), kidney disease, eye disease, foot problems, gum and dental disease, skin conditions, infections, and may be associated with non‑alcoholic fatty liver disease, sleep apnea, depression, certain cancers, and dementia [P2][P3][P4].",
+   "raw": "Diabetes can lead to long‑term health problems such as heart disease, stroke, nerve damage (neuropathy), kidney disease, eye disease, foot problems, gum and dental disease, skin conditions, infections, and may be associated with non‑alcoholic fatty liver disease, sleep apnea, depression, certain cancers, and dementia [P2][P3][P4].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.255309103,
+    "completion_tokens": 113,
+    "completion_tokens_details": {
+     "reasoning_tokens": 27
+    },
+    "prompt_time": 0.085082835,
+    "prompt_tokens": 944,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.076610496,
+    "total_time": 0.340391938,
+    "total_tokens": 1057
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Diabetes can lead to long‑term health problems such as heart disease, stroke, nerve damage (neuropathy), kidney disease, eye disease, foot problems, gum and dental disease, skin conditions, infections, and may be associated with non‑alcoholic fatty liver disease, sleep apnea, depression, certain cancers, and dementia [P2][P3][P4].",
+      "cited": [
+       "P2",
+       "P3",
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8064516129032258,
+      "nli": 0.0010985484113916755,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d20": {
+  "gate_score": 7.514108180999756,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-foods-to-treat-low-blood-sug-0",
+   "medlineplus-diabetic-diet-how-do-the-foods-i-eat-affect-my-blood-glucose-levels-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1"
+  ],
+  "extractive": {
+   "text": "To keep your blood glucose under control, you may need to cut back on certain foods and drinks. [P1] The foods and drinks you should limit include: High-carb foods and drinks, such as: Sugary foods, such as candy, cookies, cake, ice cream, sweetened cereals, and canned fruits with added sugar. [P1] If you do drink, you should drink moderately. [P1]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "To keep your blood glucose under control, you may need to cut back on certain foods and drinks. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9967637062072754,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The foods and drinks you should limit include: High-carb foods and drinks, such as: Sugary foods, such as candy, cookies, cake, ice cream, sweetened cereals, and canned fruits with added sugar. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9895443320274353,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If you do drink, you should drink moderately. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9970929622650146,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "You should limit high‑carb foods and drinks such as candy, cookies, cake, ice cream, sweetened cereals, canned fruits with added sugar, juice, regular soda, regular sports or energy drinks, white rice, tortillas, breads, pasta made with white flour, starchy vegetables like white potatoes, corn and peas, fried foods, foods high in saturated and trans fats, foods high in sodium, and alcohol (if you drink, only moderately) [P1].",
+   "raw": "You should limit high‑carb foods and drinks such as candy, cookies, cake, ice cream, sweetened cereals, canned fruits with added sugar, juice, regular soda, regular sports or energy drinks, white rice, tortillas, breads, pasta made with white flour, starchy vegetables like white potatoes, corn and peas, fried foods, foods high in saturated and trans fats, foods high in sodium, and alcohol (if you drink, only moderately) [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.244935884,
+    "completion_tokens": 118,
+    "completion_tokens_details": {
+     "reasoning_tokens": 13
+    },
+    "prompt_time": 0.045767983,
+    "prompt_tokens": 1049,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.130640353,
+    "total_time": 0.290703867,
+    "total_tokens": 1167
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You should limit high‑carb foods and drinks such as candy, cookies, cake, ice cream, sweetened cereals, canned fruits with added sugar, juice, regular soda, regular sports or energy drinks, white rice, tortillas, breads, pasta made with white flour, starchy vegetables like white potatoes, corn and peas, fried foods, foods high in saturated and trans fats, foods high in sodium, and alcohol (if you drink, only moderately) [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.975609756097561,
+      "nli": 0.9945053458213806,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d22": {
+  "gate_score": 7.433773040771484,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1",
+   "niddk-managing-diabetes-get-physical-activity-0",
+   "niddk-healthy-living-with-diabetes-how-can-physical-activity-help-manage-my--0",
+   "niddk-managing-diabetes-get-enough-sleep-0"
+  ],
+  "extractive": {
+   "text": "Most adults should try to get at least 150 minutes of moderate-intensity physical activity each week. [P1] You can break up physical activity into small amounts during your day and still get the benefit. [P1] Physical activity may help you manage your diabetes and stay healthy. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Most adults should try to get at least 150 minutes of moderate-intensity physical activity each week. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9954078793525696,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You can break up physical activity into small amounts during your day and still get the benefit. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9947060942649841,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Physical activity may help you manage your diabetes and stay healthy. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9977153539657593,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Adults with diabetes should aim for at least 150 minutes of moderate‑intensity physical activity each week, such as brisk walking, which can be broken into 30‑minute sessions on most days [P1][P2].",
+   "raw": "Adults with diabetes should aim for at least 150 minutes of moderate‑intensity physical activity each week, such as brisk walking, which can be broken into 30‑minute sessions on most days [P1][P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.273215525,
+    "completion_tokens": 89,
+    "completion_tokens_details": {
+     "reasoning_tokens": 33
+    },
+    "prompt_time": 0.02803445,
+    "prompt_tokens": 834,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.076794496,
+    "total_time": 0.301249975,
+    "total_tokens": 923
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Adults with diabetes should aim for at least 150 minutes of moderate‑intensity physical activity each week, such as brisk walking, which can be broken into 30‑minute sessions on most days [P1][P2].",
+      "cited": [
+       "P1",
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7777777777777778,
+      "nli": 0.0014465796994045377,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d24": {
+  "gate_score": 7.429290771484375,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-1",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "cdc-low-blood-sugar-hypoglycemia-nighttime-low-blood-sugar-0",
+   "cdc-manage-blood-sugar-what-causes-low-blood-sugar-0"
+  ],
+  "extractive": {
+   "text": "You should also limit how much alcohol you drink. [P1] Drinking alcohol at night. [P3] Eating when you drink alcohol can also help. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You should also limit how much alcohol you drink. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9975557327270508,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Drinking alcohol at night. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9931846261024475,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Eating when you drink alcohol can also help. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9969985485076904,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Yes, drinking alcohol can make your blood glucose level drop too low, especially if you take insulin or certain diabetes medicines, so you should eat food when you drink and check your blood glucose afterward [P1]. Alcohol also makes it harder for your body to keep blood glucose steady, particularly if you haven’t eaten, and it can mask early low‑blood‑sugar symptoms [P2]. Drinking alcohol at night can contribute to nighttime low blood sugar, and having a snack before bed can help avoid it [P3].",
+   "raw": "Yes, drinking alcohol can make your blood glucose level drop too low, especially if you take insulin or certain diabetes medicines, so you should eat food when you drink and check your blood glucose afterward [P1]. Alcohol also makes it harder for your body to keep blood glucose steady, particularly if you haven’t eaten, and it can mask early low‑blood‑sugar symptoms [P2]. Drinking alcohol at night can contribute to nighttime low blood sugar, and having a snack before bed can help avoid it [P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.328980456,
+    "completion_tokens": 157,
+    "completion_tokens_details": {
+     "reasoning_tokens": 43
+    },
+    "prompt_time": 0.169835317,
+    "prompt_tokens": 791,
+    "queue_time": 0.099992272,
+    "total_time": 0.498815773,
+    "total_tokens": 948
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Yes, drinking alcohol can make your blood glucose level drop too low, especially if you take insulin or certain diabetes medicines, so you should eat food when you drink and check your blood glucose afterward [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8421052631578947,
+      "nli": 0.9975996613502502,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Alcohol also makes it harder for your body to keep blood glucose steady, particularly if you haven’t eaten, and it can mask early low‑blood‑sugar symptoms [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.75,
+      "nli": 0.9921369552612305,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Drinking alcohol at night can contribute to nighttime low blood sugar, and having a snack before bed can help avoid it [P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9166666666666666,
+      "nli": 0.9966732263565063,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d27": {
+  "gate_score": 8.8534574508667,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0",
+   "niddk-managing-diabetes-how-can-i-keep-track-of-my-progress-0",
+   "medlineplus-diabetes-what-is-diabetes-0",
+   "medlineplus-diabetes-medicines-what-is-diabetes-0"
+  ],
+  "extractive": {
+   "text": "The diabetes ABCs can help you manage your blood glucose, blood pressure, and cholesterol levels. [P1] Managing your ABCs may lower your chances of having health problems from diabetes, such as a heart attack, stroke, kidney disease, blindness, and foot or leg amputations. [P1] You may find it helpful to keep track of your ABCs and other important health information that you get during checkups with your primary care professional or other health care professionals. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "The diabetes ABCs can help you manage your blood glucose, blood pressure, and cholesterol levels. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9944714307785034,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Managing your ABCs may lower your chances of having health problems from diabetes, such as a heart attack, stroke, kidney disease, blindness, and foot or leg amputations. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9953163862228394,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You may find it helpful to keep track of your ABCs and other important health information that you get during checkups with your primary care professional or other health care professionals. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9945763349533081,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "The diabetes ABCs are a set of targets for blood glucose, blood pressure, and cholesterol that help manage diabetes and reduce the risk of complications such as heart attack, stroke, kidney disease, blindness, and foot or leg amputations [P1].",
+   "raw": "The diabetes ABCs are a set of targets for blood glucose, blood pressure, and cholesterol that help manage diabetes and reduce the risk of complications such as heart attack, stroke, kidney disease, blindness, and foot or leg amputations [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.152917204,
+    "completion_tokens": 73,
+    "completion_tokens_details": {
+     "reasoning_tokens": 14
+    },
+    "prompt_time": 0.030799557,
+    "prompt_tokens": 741,
+    "queue_time": 0.131631789,
+    "total_time": 0.183716761,
+    "total_tokens": 814
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "The diabetes ABCs are a set of targets for blood glucose, blood pressure, and cholesterol that help manage diabetes and reduce the risk of complications such as heart attack, stroke, kidney disease, blindness, and foot or leg amputations [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7727272727272727,
+      "nli": 0.9870500564575195,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d28": {
+  "gate_score": 5.9573750495910645,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-healthy-living-with-diabetes-talk-with-your-health-care-professional-b-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-0",
+   "niddk-managing-diabetes-what-types-of-medicines-should-i-take-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-summary-0"
+  ],
+  "extractive": {
+   "text": "There is no clear proof that specific foods, herbs, spices, or dietary supplements —such as vitamins or minerals—can help manage diabetes. [P1] Talk with your health care professional before you take any supplements, because some may cause side effects or affect how well your diabetes medicines work. [P1] There is no right or wrong way to choose healthy foods and drinks that may help manage your diabetes. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "There is no clear proof that specific foods, herbs, spices, or dietary supplements —such as vitamins or minerals—can help manage diabetes. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9969843029975891,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Talk with your health care professional before you take any supplements, because some may cause side effects or affect how well your diabetes medicines work. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9969708919525146,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "There is no right or wrong way to choose healthy foods and drinks that may help manage your diabetes. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9971417784690857,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "There is no clear proof that specific foods, herbs, spices or dietary supplements such as cinnamon can help manage diabetes[P1].",
+   "raw": "There is no clear proof that specific foods, herbs, spices or dietary supplements such as cinnamon can help manage diabetes[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.24180192,
+    "completion_tokens": 81,
+    "completion_tokens_details": {
+     "reasoning_tokens": 45
+    },
+    "prompt_time": 0.035766876,
+    "prompt_tokens": 875,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.230343183,
+    "total_time": 0.277568796,
+    "total_tokens": 956
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "There is no clear proof that specific foods, herbs, spices or dietary supplements such as cinnamon can help manage diabetes[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9166666666666666,
+      "nli": 0.0024773296900093555,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d29": {
+  "gate_score": 4.189427375793457,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-prepare-now-before-getting-sick-0",
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0",
+   "niddk-managing-diabetes-what-special-situations-should-i-plan-for-0",
+   "niddk-healthy-living-with-diabetes-find-the-best-times-to-eat-or-drink-0"
+  ],
+  "extractive": {
+   "text": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P2] If you have diabetes, it is important to take care of your health no matter what is going on in your life. [P3] Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9856062531471252,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If you have diabetes, it is important to take care of your health no matter what is going on in your life. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9972911477088928,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9658275246620178,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Make sure you have enough insulin and other diabetes medicines to last several weeks or longer, along with easy‑to‑make foods such as sports drinks, canned soup, fruit juice or regular soda, instant cooked cereals, crackers, instant pudding, and unsweetened applesauce [P1]. Keep supplies like milk of magnesia, medicine to control diarrhea, antacid, a pain reliever, a thermometer, and suppositories for vomiting on hand [P1]. If you cannot eat meals, plan to consume about 50 g of carbohydrates every 4 hours, for example 1½ cup of unsweetened applesauce or 1½ cup of fruit juice [P1].",
+   "raw": "Make sure you have enough insulin and other diabetes medicines to last several weeks or longer, along with easy‑to‑make foods such as sports drinks, canned soup, fruit juice or regular soda, instant cooked cereals, crackers, instant pudding, and unsweetened applesauce [P1]. Keep supplies like milk of magnesia, medicine to control diarrhea, antacid, a pain reliever, a thermometer, and suppositories for vomiting on hand [P1]. If you cannot eat meals, plan to consume about 50 g of carbohydrates every 4 hours, for example 1½ cup of unsweetened applesauce or 1½ cup of fruit juice [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.332449589,
+    "completion_tokens": 162,
+    "completion_tokens_details": {
+     "reasoning_tokens": 12
+    },
+    "prompt_time": 0.027784366,
+    "prompt_tokens": 803,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.223838023,
+    "total_time": 0.360233955,
+    "total_tokens": 965
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Make sure you have enough insulin and other diabetes medicines to last several weeks or longer, along with easy‑to‑make foods such as sports drinks, canned soup, fruit juice or regular soda, instant cooked cereals, crackers, instant pudding, and unsweetened applesauce [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9285714285714286,
+      "nli": 0.2304290533065796,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Keep supplies like milk of magnesia, medicine to control diarrhea, antacid, a pain reliever, a thermometer, and suppositories for vomiting on hand [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8666666666666667,
+      "nli": 0.05331248790025711,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "If you cannot eat meals, plan to consume about 50 g of carbohydrates every 4 hours, for example 1½ cup of unsweetened applesauce or 1½ cup of fruit juice [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7333333333333333,
+      "nli": 0.9986022114753723,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d30": {
+  "gate_score": 4.084498882293701,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0",
+   "niddk-managing-diabetes-how-can-i-check-my-blood-glucose-level-at-home-0",
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-0",
+   "medlineplus-diabetes-medicines-who-needs-diabetes-medicines-0"
+  ],
+  "extractive": {
+   "text": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P1] If you take insulin or other diabetes medicines, checking your blood glucose level at home may help you avoid high or low blood glucose levels. [P2] You will also need to check your blood sugar at home. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Follow these additional steps when you're sick even if your blood sugar is within your target range: Continue taking your insulin and diabetes pills as usual. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9856062531471252,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If you take insulin or other diabetes medicines, checking your blood glucose level at home may help you avoid high or low blood glucose levels. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.996679425239563,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You will also need to check your blood sugar at home. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.998275876045227,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Sick‑day guidance advises you to keep taking your insulin and any diabetes pills just as you normally would and to check your blood sugar about every four hours while you’re ill [P1].",
+   "raw": "Sick‑day guidance advises you to keep taking your insulin and any diabetes pills just as you normally would and to check your blood sugar about every four hours while you’re ill [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.185869972,
+    "completion_tokens": 89,
+    "completion_tokens_details": {
+     "reasoning_tokens": 41
+    },
+    "prompt_time": 0.026790919,
+    "prompt_tokens": 821,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.175787904,
+    "total_time": 0.212660891,
+    "total_tokens": 910
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Sick‑day guidance advises you to keep taking your insulin and any diabetes pills just as you normally would and to check your blood sugar about every four hours while you’re ill [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7777777777777778,
+      "nli": 0.9967513084411621,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d34": {
+  "gate_score": 8.198400497436523,
+  "gate_abstained": false,
+  "shown": [
+   "medlineplus-prediabetes-if-i-have-prediabetes-will-i-get-diabetes-0",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-1",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-0",
+   "medlineplus-diabetes-type-2-can-type-2-diabetes-be-prevented-0"
+  ],
+  "extractive": {
+   "text": "If you have prediabetes, you may be able to delay or prevent type 2 diabetes through lifestyle changes: Losing weight, if you are overweight. [P1] Ask your health care team what other changes you can make to prevent or delay type 2 diabetes. [P2] Get started with Your Game Plan to Prevent Type 2 Diabetes. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "If you have prediabetes, you may be able to delay or prevent type 2 diabetes through lifestyle changes: Losing weight, if you are overweight. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9905608296394348,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Ask your health care team what other changes you can make to prevent or delay type 2 diabetes. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9842011332511902,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Get started with Your Game Plan to Prevent Type 2 Diabetes. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.991863489151001,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "You can delay or prevent type 2 diabetes by losing weight if you are overweight, getting regular physical activity, and following a healthy, reduced‑calorie eating plan [P1]. Eating healthy foods, choosing smaller portions, and drinking water instead of sweetened beverages can help you lose weight and lower your risk [P2]. Losing 5–7 % of your current weight and moving at least 30 minutes a day, five days a week, are specific steps shown to reduce the chance of developing type 2 diabetes [P3]. Managing any other condition that raises your risk may also lower your risk [P4].",
+   "raw": "You can delay or prevent type 2 diabetes by losing weight if you are overweight, getting regular physical activity, and following a healthy, reduced‑calorie eating plan [P1]. Eating healthy foods, choosing smaller portions, and drinking water instead of sweetened beverages can help you lose weight and lower your risk [P2]. Losing 5–7 % of your current weight and moving at least 30 minutes a day, five days a week, are specific steps shown to reduce the chance of developing type 2 diabetes [P3]. Managing any other condition that raises your risk may also lower your risk [P4].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.52207317,
+    "completion_tokens": 164,
+    "completion_tokens_details": {
+     "reasoning_tokens": 27
+    },
+    "prompt_time": 0.411367269,
+    "prompt_tokens": 812,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.1180542,
+    "total_time": 0.933440439,
+    "total_tokens": 976
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 4,
+    "n_supported": 2,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "You can delay or prevent type 2 diabetes by losing weight if you are overweight, getting regular physical activity, and following a healthy, reduced‑calorie eating plan [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9974299073219299,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Eating healthy foods, choosing smaller portions, and drinking water instead of sweetened beverages can help you lose weight and lower your risk [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.875,
+      "nli": 0.9883307218551636,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Losing 5–7 % of your current weight and moving at least 30 minutes a day, five days a week, are specific steps shown to reduce the chance of developing type 2 diabetes [P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7777777777777778,
+      "nli": 0.004641869105398655,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Managing any other condition that raises your risk may also lower your risk [P4].",
+      "cited": [
+       "P4"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.0001794434356270358,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d36": {
+  "gate_score": 10.056447982788086,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-symptoms-of-low-blood-gluc-0",
+   "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "cdc-low-blood-sugar-hypoglycemia-severe-low-blood-sugar-0"
+  ],
+  "extractive": {
+   "text": "Symptoms of low blood glucose tend to come on quickly and can vary from person to person. [P1] The symptoms of low blood glucose tend to come on quickly. [P2] How you react to low blood sugar may not be the same as it is for others. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Symptoms of low blood glucose tend to come on quickly and can vary from person to person. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9974466562271118,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The symptoms of low blood glucose tend to come on quickly. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9981027245521545,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "How you react to low blood sugar may not be the same as it is for others. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9981887936592102,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Low blood sugar can cause shaking, sweating, nervousness or anxiety, irritability or confusion, dizziness, and hunger, and you may also feel a fast heartbeat, feeling weak, or have trouble walking or seeing clearly as it worsens[P2][P3]. Additional mild‑to‑moderate symptoms include feeling shaky or jittery, hungry, tired, light‑headed, confused, or having a headache[P1]. Severe low blood sugar can lead to loss of consciousness or seizures[P1].",
+   "raw": "Low blood sugar can cause shaking, sweating, nervousness or anxiety, irritability or confusion, dizziness, and hunger, and you may also feel a fast heartbeat, feeling weak, or have trouble walking or seeing clearly as it worsens[P2][P3]. Additional mild‑to‑moderate symptoms include feeling shaky or jittery, hungry, tired, light‑headed, confused, or having a headache[P1]. Severe low blood sugar can lead to loss of consciousness or seizures[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.360445743,
+    "completion_tokens": 149,
+    "completion_tokens_details": {
+     "reasoning_tokens": 34
+    },
+    "prompt_time": 0.331899885,
+    "prompt_tokens": 757,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.117791274,
+    "total_time": 0.692345628,
+    "total_tokens": 906
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Low blood sugar can cause shaking, sweating, nervousness or anxiety, irritability or confusion, dizziness, and hunger, and you may also feel a fast heartbeat, feeling weak, or have trouble walking or seeing clearly as it worsens[P2][P3].",
+      "cited": [
+       "P2",
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.6190476190476191,
+      "nli": 0.0016173849580809474,
+      "supported": false,
+      "reason": "nli"
+     },
+     {
+      "sentence": "Additional mild‑to‑moderate symptoms include feeling shaky or jittery, hungry, tired, light‑headed, confused, or having a headache[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7142857142857143,
+      "nli": 0.9964669942855835,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Severe low blood sugar can lead to loss of consciousness or seizures[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5,
+      "nli": 0.9976751208305359,
+      "supported": false,
+      "reason": "lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d40": {
+  "gate_score": 5.255952835083008,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0",
+   "niddk-managing-diabetes-what-special-situations-should-i-plan-for-0",
+   "cdc-managing-sick-days-key-points-0",
+   "cdc-flu-and-people-with-diabetes-other-preventive-actions-for-people-with--0"
+  ],
+  "extractive": {
+   "text": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1] If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1] Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9954649806022644,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9950191974639893,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Ask your health care team if you should adjust your meal plan, activity level, or medicines in special situations, such as when you are sick, fasting, at school, planning to travel, or experiencing an emergency or natural disaster. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9658275246620178,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Go to the emergency room right away if you have trouble breathing, have ketones in your urine, cannot keep any liquids down for more than 4 hours or food down for more than 24 hours, lose 5 pounds or more during the illness, have a blood sugar lower than 60 mg/dL, experience vomiting or severe diarrhea for more than 6 hours, or have a temperature over 101 °F for 24 hours[P1].",
+   "raw": "Go to the emergency room right away if you have trouble breathing, have ketones in your urine, cannot keep any liquids down for more than 4 hours or food down for more than 24 hours, lose 5 pounds or more during the illness, have a blood sugar lower than 60 mg/dL, experience vomiting or severe diarrhea for more than 6 hours, or have a temperature over 101 °F for 24 hours[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.283778691,
+    "completion_tokens": 126,
+    "completion_tokens_details": {
+     "reasoning_tokens": 17
+    },
+    "prompt_time": 0.021824836,
+    "prompt_tokens": 746,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.085492231,
+    "total_time": 0.305603527,
+    "total_tokens": 872
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Go to the emergency room right away if you have trouble breathing, have ketones in your urine, cannot keep any liquids down for more than 4 hours or food down for more than 24 hours, lose 5 pounds or more during the illness, have a blood sugar lower than 60 mg/dL, experience vomiting or severe diarrhea for more than 6 hours, or have a temperature over 101 °F for 24 hours[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.9333333333333333,
+      "nli": 0.9902423024177551,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d41": {
+  "gate_score": 4.088863849639893,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "medlineplus-hyperglycemia-what-are-the-symptoms-of-hyperglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-3"
+  ],
+  "extractive": {
+   "text": "Many things can cause high blood sugar (hyperglycemia), including: Being sick. [P1] High ketones can be an early sign of diabetic ketoacidosis (DKA). [P1] How you react to low blood sugar may not be the same as it is for others. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Many things can cause high blood sugar (hyperglycemia), including: Being sick. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.993184506893158,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "High ketones can be an early sign of diabetic ketoacidosis (DKA). [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9953723549842834,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "How you react to low blood sugar may not be the same as it is for others. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9981887936592102,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Feeling thirsty, feeling tired or weak, headaches, frequent urination, and blurred vision are warning signs of high blood sugar [P3].",
+   "raw": "Feeling thirsty, feeling tired or weak, headaches, frequent urination, and blurred vision are warning signs of high blood sugar [P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.120050947,
+    "completion_tokens": 58,
+    "completion_tokens_details": {
+     "reasoning_tokens": 21
+    },
+    "prompt_time": 0.118786453,
+    "prompt_tokens": 694,
+    "queue_time": 0.092246204,
+    "total_time": 0.2388374,
+    "total_tokens": 752
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Feeling thirsty, feeling tired or weak, headaches, frequent urination, and blurred vision are warning signs of high blood sugar [P3].",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.6428571428571429,
+      "nli": 0.0013253294164314866,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "d42": {
+  "gate_score": 5.575642108917236,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-low-blood-sugar-hypoglycemia-hypoglycemia-unawareness-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0",
+   "cdc-low-blood-sugar-hypoglycemia-nighttime-low-blood-sugar-0",
+   "cdc-treatment-of-low-blood-sugar-hypoglycemia-things-for-loved-ones-to-kno-0"
+  ],
+  "extractive": {
+   "text": "You may not have any symptoms when your blood sugar is low (hypoglycemia unawareness). [P1] Often have low blood sugar. [P1] Low blood sugar can happen at any time during the day. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You may not have any symptoms when your blood sugar is low (hypoglycemia unawareness). [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9967869520187378,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Often have low blood sugar. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9973467588424683,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Low blood sugar can happen at any time during the day. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9966551065444946,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Someone may not notice low blood sugar because they have hypoglycemia unawareness, a condition where symptoms are absent until glucose is very low[P1][P2].",
+   "raw": "Someone may not notice low blood sugar because they have hypoglycemia unawareness, a condition where symptoms are absent until glucose is very low[P1][P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.142258467,
+    "completion_tokens": 68,
+    "completion_tokens_details": {
+     "reasoning_tokens": 23
+    },
+    "prompt_time": 0.040905637,
+    "prompt_tokens": 896,
+    "queue_time": 0.03208536,
+    "total_time": 0.183164104,
+    "total_tokens": 964
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Someone may not notice low blood sugar because they have hypoglycemia unawareness, a condition where symptoms are absent until glucose is very low[P1][P2].",
+      "cited": [
+       "P1",
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8181818181818182,
+      "nli": 0.998112678527832,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t01": {
+  "gate_score": 8.807790756225586,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-insulin-medicines-other-diabetes-treatments-inhaler-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-way-0",
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-1",
+   "niddk-insulin-medicines-other-diabetes-treatments-needle-and-syringe-0"
+  ],
+  "extractive": {
+   "text": "You may want to use an insulin inhaler to avoid using needles. [P1] Taking insulin with an inhaler is less common than using a needle and syringe. [P1] Inhalers and insulin jet injectors are less common ways to take insulin. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "You may want to use an insulin inhaler to avoid using needles. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9962905645370483,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Taking insulin with an inhaler is less common than using a needle and syringe. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9968523383140564,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Inhalers and insulin jet injectors are less common ways to take insulin. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9964015483856201,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Yes, insulin can be taken with an inhaler device that delivers powdered insulin into the lungs, where it quickly enters the bloodstream [P1].",
+   "raw": "Yes, insulin can be taken with an inhaler device that delivers powdered insulin into the lungs, where it quickly enters the bloodstream [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.121422113,
+    "completion_tokens": 58,
+    "completion_tokens_details": {
+     "reasoning_tokens": 20
+    },
+    "prompt_time": 0.028115313,
+    "prompt_tokens": 847,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.065296042,
+    "total_time": 0.149537426,
+    "total_tokens": 905
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Yes, insulin can be taken with an inhaler device that delivers powdered insulin into the lungs, where it quickly enters the bloodstream [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.5454545454545454,
+      "nli": 0.9975409507751465,
+      "supported": false,
+      "reason": "lexical"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t04": {
+  "gate_score": 5.1507158279418945,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0",
+   "nhlbi-asthma-asthma-attack-when-to-go-to-the-er-0",
+   "niddk-managing-diabetes-checking-urine-for-ketones-0",
+   "niddk-symptoms-causes-of-diabetes-type-1-diabetes-symptoms-1"
+  ],
+  "extractive": {
+   "text": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1] If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1] You should go to the emergency room if your symptoms do not go away soon after taking your at-home medicines or if you have a serious asthma attack. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Go to the emergency room right away if any of the following occurs: You're having trouble breathing. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9954649806022644,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "If needed, have someone else call your doctor or take you to the emergency room to avoid unsafe driving. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9950191974639893,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "You should go to the emergency room if your symptoms do not go away soon after taking your at-home medicines or if you have a serious asthma attack. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9976710677146912,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Yes, if you have diabetes and are sick, trouble breathing is a sign that you should go to the emergency room right away [P1][P3].",
+   "raw": "Yes, if you have diabetes and are sick, trouble breathing is a sign that you should go to the emergency room right away [P1][P3].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.199003106,
+    "completion_tokens": 96,
+    "completion_tokens_details": {
+     "reasoning_tokens": 55
+    },
+    "prompt_time": 0.045185168,
+    "prompt_tokens": 868,
+    "queue_time": 0.233802378,
+    "total_time": 0.244188274,
+    "total_tokens": 964
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Yes, if you have diabetes and are sick, trouble breathing is a sign that you should go to the emergency room right away [P1][P3].",
+      "cited": [
+       "P1",
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8181818181818182,
+      "nli": 0.9587537050247192,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t06": {
+  "gate_score": 8.054296493530273,
+  "gate_abstained": false,
+  "shown": [
+   "niddk-diabetes-tests-diagnosis-glucose-challenge-test-0",
+   "niddk-diabetes-tests-diagnosis-oral-glucose-tolerance-test-0",
+   "niddk-the-a1c-test-diabetes-is-the-a1c-test-used-during-pregnancy-0",
+   "niddk-diabetes-tests-diagnosis-fasting-plasma-glucose-test-0"
+  ],
+  "extractive": {
+   "text": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test. [P1] However, the OGTT is a more expensive test than the FPG test and the glucose challenge test, and it is not as easy to give. [P2] The glucose challenge test or the oral glucose tolerance test (OGTT) are used to check for gestational diabetes, usually between 24 and 28 weeks of pregnancy. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "If you are pregnant, your doctor might test you for gestational diabetes with the glucose challenge test. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9947340488433838,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "However, the OGTT is a more expensive test than the FPG test and the glucose challenge test, and it is not as easy to give. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9978502988815308,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "The glucose challenge test or the oral glucose tolerance test (OGTT) are used to check for gestational diabetes, usually between 24 and 28 weeks of pregnancy. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9936548471450806,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "The glucose challenge test, also called the glucose screening test, measures your blood glucose level one hour after you drink a sweet liquid containing glucose and does not require fasting beforehand [P1].",
+   "raw": "The glucose challenge test, also called the glucose screening test, measures your blood glucose level one hour after you drink a sweet liquid containing glucose and does not require fasting beforehand [P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.131752511,
+    "completion_tokens": 62,
+    "completion_tokens_details": {
+     "reasoning_tokens": 16
+    },
+    "prompt_time": 0.038699105,
+    "prompt_tokens": 895,
+    "queue_time": 0.099708689,
+    "total_time": 0.170451616,
+    "total_tokens": 957
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "The glucose challenge test, also called the glucose screening test, measures your blood glucose level one hour after you drink a sweet liquid containing glucose and does not require fasting beforehand [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.75,
+      "nli": 0.9934452772140503,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t08": {
+  "gate_score": -0.5642450451850891,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0",
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0",
+   "cdc-controlling-asthma-common-asthma-triggers-3"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "t12": {
+  "gate_score": 4.9017109870910645,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-diagnosis-challenge-tests-0",
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0",
+   "nhlbi-asthma-diagnosis-lung-function-tests-0"
+  ],
+  "extractive": {
+   "text": "Challenge tests, also called bronchial provocation tests, assess how sensitive your airways are. [P1] Challenge agents are substances or activities that may tighten the muscles in your airways if they become irritated from being too sensitive, including: Inhaled medicines such as methacholine, mannitol, or histamine. [P1] A chest CT scan may show whether the walls of your airways are thicker. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Challenge tests, also called bronchial provocation tests, assess how sensitive your airways are. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9476224780082703,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Challenge agents are substances or activities that may tighten the muscles in your airways if they become irritated from being too sensitive, including: Inhaled medicines such as methacholine, mannitol, or histamine. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9731990694999695,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "A chest CT scan may show whether the walls of your airways are thicker. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.994562566280365,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "Challenge (bronchial provocation) tests assess airway sensitivity by comparing how fast you can blow air before and after inhaling agents that may tighten the airway muscles [P1]. Tests that measure how your airways react to specific exposures—such as inhaling different concentrations of allergens or medicines—also check for extra sensitivity [P2].",
+   "raw": "Challenge (bronchial provocation) tests assess airway sensitivity by comparing how fast you can blow air before and after inhaling agents that may tighten the airway muscles [P1]. Tests that measure how your airways react to specific exposures—such as inhaling different concentrations of allergens or medicines—also check for extra sensitivity [P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.327377748,
+    "completion_tokens": 159,
+    "completion_tokens_details": {
+     "reasoning_tokens": 81
+    },
+    "prompt_time": 0.241461335,
+    "prompt_tokens": 991,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.223318038,
+    "total_time": 0.568839083,
+    "total_tokens": 1150
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 2,
+    "n_supported": 1,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "Challenge (bronchial provocation) tests assess airway sensitivity by comparing how fast you can blow air before and after inhaling agents that may tighten the airway muscles [P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.8666666666666667,
+      "nli": 0.9979148507118225,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Tests that measure how your airways react to specific exposures—such as inhaling different concentrations of allergens or medicines—also check for extra sensitivity [P2].",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7857142857142857,
+      "nli": 0.0036344402469694614,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t14": {
+  "gate_score": 1.1469595432281494,
+  "gate_abstained": false,
+  "shown": [
+   "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0",
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "medlineplus-hypoglycemia-what-causes-hypoglycemia-1"
+  ],
+  "extractive": {
+   "text": "Acute illnesses like flu can make managing blood sugar levels harder. [P1] Flu may raise blood sugar levels and can also cause blood sugar levels to fall if you can't eat or drink as much as usual. [P1] Prediabetes usually happens when your body has a problem with insulin. [P3]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Acute illnesses like flu can make managing blood sugar levels harder. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9978169202804565,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Flu may raise blood sugar levels and can also cause blood sugar levels to fall if you can't eat or drink as much as usual. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9980924725532532,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Prediabetes usually happens when your body has a problem with insulin. [P3]",
+      "cited": [
+       "P3"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9979986548423767,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "When you get the flu, your blood sugar can become harder to manage and may rise because illness‑related hormones increase it, but it can also drop if you can’t eat or drink enough [P1][P2].",
+   "raw": "When you get the flu, your blood sugar can become harder to manage and may rise because illness‑related hormones increase it, but it can also drop if you can’t eat or drink enough [P1][P2].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.160960741,
+    "completion_tokens": 78,
+    "completion_tokens_details": {
+     "reasoning_tokens": 24
+    },
+    "prompt_time": 0.444828399,
+    "prompt_tokens": 798,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "queue_time": 0.131342461,
+    "total_time": 0.60578914,
+    "total_tokens": 876
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 0,
+    "fully_grounded": false,
+    "sentences": [
+     {
+      "sentence": "When you get the flu, your blood sugar can become harder to manage and may rise because illness‑related hormones increase it, but it can also drop if you can’t eat or drink enough [P1][P2].",
+      "cited": [
+       "P1",
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7333333333333333,
+      "nli": 0.007534155622124672,
+      "supported": false,
+      "reason": "nli"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "t18": {
+  "gate_score": 0.6773542165756226,
+  "gate_abstained": false,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0",
+   "cdc-about-asthma-symptom-management-0",
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0"
+  ],
+  "extractive": {
+   "text": "Over time, high doses can raise your risk of cataracts (clouding of the eye) or osteoporosis. [P1] Biologi medicines, such as benralizumab, may help with asthma that is difficult to control. [P1] Asthma medicines can have side effects. [P2]",
+   "abstained": false,
+   "grounding": {
+    "n_sentences": 3,
+    "n_supported": 3,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "Over time, high doses can raise your risk of cataracts (clouding of the eye) or osteoporosis. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9946572184562683,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Biologi medicines, such as benralizumab, may help with asthma that is difficult to control. [P1]",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.9956439733505249,
+      "supported": true,
+      "reason": "supported"
+     },
+     {
+      "sentence": "Asthma medicines can have side effects. [P2]",
+      "cited": [
+       "P2"
+      ],
+      "invalid_cites": [],
+      "lexical": 1.0,
+      "nli": 0.997933030128479,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  },
+  "llm": {
+   "text": "High‑dose inhaled corticosteroid controller medicines can increase the risk of cataracts and osteoporosis (weak bones) over time[P1].",
+   "raw": "High‑dose inhaled corticosteroid controller medicines can increase the risk of cataracts and osteoporosis (weak bones) over time[P1].",
+   "abstained": false,
+   "usage": {
+    "completion_time": 0.206709282,
+    "completion_tokens": 100,
+    "completion_tokens_details": {
+     "reasoning_tokens": 62
+    },
+    "prompt_time": 0.04312727,
+    "prompt_tokens": 954,
+    "queue_time": 0.131513249,
+    "total_time": 0.249836552,
+    "total_tokens": 1054
+   },
+   "cached": true,
+   "empty": false,
+   "grounding": {
+    "n_sentences": 1,
+    "n_supported": 1,
+    "fully_grounded": true,
+    "sentences": [
+     {
+      "sentence": "High‑dose inhaled corticosteroid controller medicines can increase the risk of cataracts and osteoporosis (weak bones) over time[P1].",
+      "cited": [
+       "P1"
+      ],
+      "invalid_cites": [],
+      "lexical": 0.7692307692307693,
+      "nli": 0.9907739758491516,
+      "supported": true,
+      "reason": "supported"
+     }
+    ],
+    "scope_notes": []
+   }
+  }
+ },
+ "u01": {
+  "gate_score": -9.987449645996094,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-2",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-1",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-typ-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u02": {
+  "gate_score": -1.136462926864624,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-1",
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "nhlbi-asthma-asthma-attack-have-a-plan-for-asthma-attacks-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u04": {
+  "gate_score": -1.4026832580566406,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "cdc-controlling-asthma-common-asthma-triggers-3"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u09": {
+  "gate_score": -7.4647417068481445,
+  "gate_abstained": true,
+  "shown": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0",
+   "nhlbi-asthma-treatment-and-action-plan-how-is-asthma-treated-0",
+   "cdc-respiratory-infections-and-asthma-other-steps-to-stay-healthy-0",
+   "medlineplus-asthma-what-are-the-treatments-for-asthma-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u10": {
+  "gate_score": 0.060869939625263214,
+  "gate_abstained": true,
+  "shown": [
+   "medlineplus-asthma-what-is-asthma-0",
+   "nhlbi-asthma-what-is-asthma-summary-0",
+   "medlineplus-asthma-what-causes-asthma-0",
+   "cdc-about-asthma-key-points-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u14": {
+  "gate_score": -4.863748073577881,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+   "medlineplus-hypoglycemia-can-hypoglycemia-be-prevented-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-2",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u18": {
+  "gate_score": -5.262143135070801,
+  "gate_abstained": true,
+  "shown": [
+   "niddk-low-blood-glucose-hypoglycemia-what-if-i-have-severe-low-blood-glucose-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-do-i-treat-low-blood-glucose-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u19": {
+  "gate_score": -6.04014778137207,
+  "gate_abstained": true,
+  "shown": [
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-1",
+   "nhlbi-asthma-causes-and-triggers-asthma-triggers-0",
+   "nhlbi-asthma-asthma-attack-summary-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ },
+ "u21": {
+  "gate_score": -0.39432293176651,
+  "gate_abstained": true,
+  "shown": [
+   "cdc-manage-blood-sugar-how-do-i-check-my-blood-sugar-0",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--0",
+   "niddk-diabetes-tests-diagnosis-fasting-plasma-glucose-test-0",
+   "medlineplus-prediabetes-how-is-prediabetes-diagnosed-0"
+  ],
+  "extractive": {
+   "text": "",
+   "abstained": true
+  },
+  "llm": {
+   "text": "",
+   "abstained": true,
+   "gate": true
+  }
+ }
+}

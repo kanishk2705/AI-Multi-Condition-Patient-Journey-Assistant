@@ -1,0 +1,22 @@
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+[0;93m2026-10-24 16:44:31.173494707 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+{
+ "split": "dev",
+ "embedding_cosine_passages_min": 0.9955973625183105,
+ "embedding_cosine_queries_min": 0.9952661395072937,
+ "reranker_score_correlation": 0.9992459466947773,
+ "selected_system_dev": {
+  "evaluated_mrr": 0.9246031746031745,
+  "live_mrr": 0.9246031746031745,
+  "evaluated_success5": 1.0,
+  "live_success5": 1.0,
+  "same_top4_share": 0.5490196078431373
+ },
+ "checker_agreement_live_vs_evaluated": {
+  "sentences": 126,
+  "agree": 116,
+  "rate": 0.9206349206349206
+ }
+}

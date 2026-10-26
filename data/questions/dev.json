@@ -1,0 +1,878 @@
+[
+ {
+  "qid": "a02",
+  "type": "answerable",
+  "question": "Why do some people develop asthma when others don't?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-asthma-what-causes-asthma-0",
+   "nhlbi-asthma-causes-and-triggers-what-causes-asthma-0"
+  ]
+ },
+ {
+  "qid": "a04",
+  "type": "answerable",
+  "question": "What are the usual signs that a person has asthma?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-asthma-what-are-the-symptoms-of-asthma-0",
+   "nhlbi-asthma-symptoms-summary-0",
+   "cdc-about-asthma-key-points-0",
+   "cdc-about-asthma-symptoms-0"
+  ]
+ },
+ {
+  "qid": "a05",
+  "type": "answerable",
+  "question": "How do doctors find out whether someone has asthma?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-asthma-how-is-asthma-diagnosed-0",
+   "nhlbi-asthma-diagnosis-lung-function-tests-0",
+   "nhlbi-asthma-diagnosis-challenge-tests-0",
+   "nhlbi-asthma-diagnosis-other-diagnostic-tests-0",
+   "cdc-about-asthma-diagnosis-0"
+  ]
+ },
+ {
+  "qid": "a09",
+  "type": "answerable",
+  "question": "Can anything be done to stop a child from developing asthma in the first place?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0"
+  ]
+ },
+ {
+  "qid": "a10",
+  "type": "answerable",
+  "question": "What does it mean if my asthma symptoms mostly come at night?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-treatment-and-action-plan-nocturnal-asthma-0",
+   "cdc-living-with-asthma-if-my-asthma-is-getting-worse-0"
+  ]
+ },
+ {
+  "qid": "a12",
+  "type": "answerable",
+  "question": "What is a written asthma action plan and what goes in it?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-treatment-and-action-plan-create-an-asthma-action-plan-0",
+   "cdc-living-with-asthma-key-points-0",
+   "cdc-living-with-asthma-asthma-action-plans-0"
+  ]
+ },
+ {
+  "qid": "a13",
+  "type": "answerable",
+  "question": "How can I cut down on dust mites and mold at home to help my breathing?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-causes-and-triggers-can-i-prevent-asthma-0",
+   "nhlbi-asthma-managing-asthma-know-your-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-0",
+   "cdc-controlling-asthma-common-asthma-triggers-2"
+  ]
+ },
+ {
+  "qid": "a16",
+  "type": "answerable",
+  "question": "Which pneumonia vaccine should people with asthma ask about?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-flu-and-people-with-asthma-pneumococcal-vaccination-is-also-important-0",
+   "cdc-respiratory-infections-and-asthma-pneumococcal-pneumonia-0"
+  ]
+ },
+ {
+  "qid": "a21",
+  "type": "answerable",
+  "question": "Can asthma change during pregnancy?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-managing-asthma-pregnancy-and-asthma-0"
+  ]
+ },
+ {
+  "qid": "a25",
+  "type": "answerable",
+  "question": "What does it mean if I need my reliever inhaler more than one canister a month?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0"
+  ]
+ },
+ {
+  "qid": "a26",
+  "type": "answerable",
+  "question": "What does an asthma flare-up feel like?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-asthma-attack-summary-0",
+   "nhlbi-asthma-asthma-attack-what-does-an-asthma-attack-feel-like-0"
+  ]
+ },
+ {
+  "qid": "a28",
+  "type": "answerable",
+  "question": "In which situations should I contact my healthcare provider right away about my asthma?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-asthma-attack-when-to-call-your-healthcare-provider-0"
+  ]
+ },
+ {
+  "qid": "c02",
+  "type": "cross",
+  "question": "Why is flu especially risky for someone with asthma and diabetes?",
+  "conditions": [
+   "asthma",
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold_by_condition": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-at-a-glance-0",
+    "cdc-flu-and-people-with-asthma-flu-and-people-with-asthma-0",
+    "cdc-respiratory-infections-and-asthma-flu-0"
+   ],
+   "diabetes": [
+    "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0"
+   ]
+  },
+  "gold": [
+   "cdc-flu-and-people-with-asthma-at-a-glance-0",
+   "cdc-flu-and-people-with-asthma-flu-and-people-with-asthma-0",
+   "cdc-flu-and-people-with-diabetes-diabetes-increases-risk-for-serious-flu-c-0",
+   "cdc-respiratory-infections-and-asthma-flu-0"
+  ]
+ },
+ {
+  "qid": "c04",
+  "type": "cross",
+  "question": "How can I exercise safely when I have both asthma and diabetes?",
+  "conditions": [
+   "asthma",
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold_by_condition": {
+   "asthma": [
+    "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+    "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0"
+   ],
+   "diabetes": [
+    "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-0",
+    "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-1",
+    "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+   ]
+  },
+  "gold": [
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-0",
+   "nhlbi-asthma-treatment-and-action-plan-exercise-induced-asthma-0",
+   "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-0",
+   "niddk-healthy-living-with-diabetes-stay-safe-during-physical-activity-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--1"
+  ]
+ },
+ {
+  "qid": "c06",
+  "type": "cross",
+  "question": "How does smoking affect both asthma and diabetes?",
+  "conditions": [
+   "asthma",
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold_by_condition": {
+   "asthma": [
+    "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+    "cdc-controlling-asthma-common-asthma-triggers-0"
+   ],
+   "diabetes": [
+    "niddk-managing-diabetes-s-is-for-stop-smoking-0",
+    "niddk-healthy-living-with-diabetes-should-i-quit-smoking-0"
+   ]
+  },
+  "gold": [
+   "cdc-controlling-asthma-common-asthma-triggers-0",
+   "nhlbi-asthma-managing-asthma-make-healthy-lifestyle-changes-1",
+   "niddk-healthy-living-with-diabetes-should-i-quit-smoking-0",
+   "niddk-managing-diabetes-s-is-for-stop-smoking-0"
+  ]
+ },
+ {
+  "qid": "c10",
+  "type": "cross",
+  "question": "Can stress affect both my asthma and my blood sugar?",
+  "conditions": [
+   "asthma",
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold_by_condition": {
+   "asthma": [
+    "nhlbi-asthma-causes-and-triggers-asthma-triggers-0",
+    "cdc-controlling-asthma-common-asthma-triggers-3",
+    "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1"
+   ],
+   "diabetes": [
+    "medlineplus-hyperglycemia-what-causes-hyperglycemia-0",
+    "cdc-type-2-diabetes-managing-diabetes-0",
+    "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0"
+   ]
+  },
+  "gold": [
+   "cdc-controlling-asthma-common-asthma-triggers-3",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0",
+   "cdc-type-2-diabetes-managing-diabetes-0",
+   "cdc-what-to-do-when-an-emergency-occurs-facing-challenges-1",
+   "medlineplus-hyperglycemia-what-causes-hyperglycemia-0",
+   "nhlbi-asthma-causes-and-triggers-asthma-triggers-0"
+  ]
+ },
+ {
+  "qid": "c12",
+  "type": "cross",
+  "question": "What supplies should I keep ready in case of an emergency if I have asthma and diabetes?",
+  "conditions": [
+   "asthma",
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold_by_condition": {
+   "asthma": [
+    "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+    "cdc-what-to-do-when-an-emergency-occurs-first-steps-0"
+   ],
+   "diabetes": [
+    "cdc-managing-sick-days-prepare-now-before-getting-sick-0"
+   ]
+  },
+  "gold": [
+   "cdc-flu-and-people-with-asthma-specific-health-actions-for-people-with-ast-0",
+   "cdc-managing-sick-days-prepare-now-before-getting-sick-0",
+   "cdc-what-to-do-when-an-emergency-occurs-first-steps-0"
+  ]
+ },
+ {
+  "qid": "d04",
+  "type": "answerable",
+  "question": "Who is more likely to get type 2 diabetes?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-who-is-more-likely-to-develop-diabetes-0",
+   "medlineplus-diabetes-type-2-who-is-at-risk-for-type-2-diabetes-0",
+   "niddk-type-2-diabetes-who-is-more-likely-to-develop-type-2-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-1",
+   "niddk-diabetes-tests-diagnosis-type-2-diabetes-0",
+   "cdc-type-2-diabetes-risk-factors-0"
+  ]
+ },
+ {
+  "qid": "d06",
+  "type": "answerable",
+  "question": "What does the A1C blood test show?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-type-2-how-is-type-2-diabetes-diagnosed-0",
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-diabetes-tests-diagnosis-a1c-test-1",
+   "niddk-managing-diabetes-a-is-for-the-a1c-blood-glucose-test-0",
+   "niddk-the-a1c-test-diabetes-what-is-the-a1c-test-0"
+  ]
+ },
+ {
+  "qid": "d08",
+  "type": "answerable",
+  "question": "Do I have to fast before an A1C test?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-the-a1c-test-diabetes-how-is-the-a1c-test-used-to-diagnose-type-2-diab-0"
+  ]
+ },
+ {
+  "qid": "d10",
+  "type": "answerable",
+  "question": "Can conditions like sickle cell disease affect A1C results?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-diabetes-tests-diagnosis-a1c-test-0",
+   "niddk-the-a1c-test-diabetes-a1c-tests-can-be-affected-by-changes-in-red-bloo-0"
+  ]
+ },
+ {
+  "qid": "d12",
+  "type": "answerable",
+  "question": "What is insulin resistance?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-type-2-what-causes-type-2-diabetes-0",
+   "medlineplus-prediabetes-what-causes-prediabetes-0",
+   "niddk-symptoms-causes-of-diabetes-what-causes-type-2-diabetes-0",
+   "cdc-type-2-diabetes-causes-0"
+  ]
+ },
+ {
+  "qid": "d14",
+  "type": "answerable",
+  "question": "What long-term health problems can diabetes lead to?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-0",
+   "medlineplus-diabetes-complications-what-health-problems-can-diabetes-cause-1",
+   "niddk-type-2-diabetes-what-health-problems-can-people-with-diabetes-develop-0",
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0"
+  ]
+ },
+ {
+  "qid": "d20",
+  "type": "answerable",
+  "question": "Which foods and drinks should I cut back on to keep my sugar steady?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-0"
+  ]
+ },
+ {
+  "qid": "d22",
+  "type": "answerable",
+  "question": "How much physical activity is recommended for adults with diabetes?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-managing-diabetes-get-physical-activity-0",
+   "niddk-healthy-living-with-diabetes-do-different-types-of-physical-activity-1"
+  ]
+ },
+ {
+  "qid": "d24",
+  "type": "answerable",
+  "question": "Can drinking alcohol affect my blood sugar?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetic-diet-what-foods-should-i-limit-to-control-my-blood-glucose-0",
+   "medlineplus-hypoglycemia-what-causes-hypoglycemia-0",
+   "niddk-healthy-living-with-diabetes-choose-healthy-foods-and-drinks-1",
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "niddk-low-blood-glucose-hypoglycemia-how-can-i-prevent-low-blood-glucose-if--0"
+  ]
+ },
+ {
+  "qid": "d27",
+  "type": "answerable",
+  "question": "What are the diabetes ABCs?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-managing-diabetes-what-are-the-diabetes-abcs-0"
+  ]
+ },
+ {
+  "qid": "d28",
+  "type": "answerable",
+  "question": "Do herbs, spices or supplements like cinnamon help manage diabetes?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-healthy-living-with-diabetes-talk-with-your-health-care-professional-b-0"
+  ]
+ },
+ {
+  "qid": "d29",
+  "type": "answerable",
+  "question": "What should I get ready before I fall sick if I have diabetes?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-managing-sick-days-prepare-now-before-getting-sick-0"
+  ]
+ },
+ {
+  "qid": "d30",
+  "type": "answerable",
+  "question": "What do sick-day guidelines say about diabetes medicines and checking sugar?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "cdc-managing-sick-days-more-tips-if-you-get-sick-0"
+  ]
+ },
+ {
+  "qid": "d34",
+  "type": "answerable",
+  "question": "If I have prediabetes, how can I stop it becoming type 2 diabetes?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-can-diabetes-be-prevented-0",
+   "medlineplus-prediabetes-what-is-prediabetes-0",
+   "medlineplus-prediabetes-if-i-have-prediabetes-will-i-get-diabetes-0",
+   "niddk-type-2-diabetes-how-can-i-lower-my-chances-of-developing-type-2-diabet-0"
+  ]
+ },
+ {
+  "qid": "d36",
+  "type": "answerable",
+  "question": "What are the symptoms of low blood sugar?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-hypoglycemia-what-are-the-symptoms-of-hypoglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-1",
+   "cdc-low-blood-sugar-hypoglycemia-symptoms-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-symptoms-of-low-blood-gluc-0"
+  ]
+ },
+ {
+  "qid": "d40",
+  "type": "answerable",
+  "question": "When should someone with diabetes go to the emergency room while sick?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0"
+  ]
+ },
+ {
+  "qid": "d41",
+  "type": "answerable",
+  "question": "What are the warning signs of high blood sugar?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-hyperglycemia-what-are-the-symptoms-of-hyperglycemia-0",
+   "niddk-managing-diabetes-recommended-targets-for-blood-glucose-levels-2"
+  ]
+ },
+ {
+  "qid": "d42",
+  "type": "answerable",
+  "question": "Why might someone not notice that their blood sugar is low?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-low-blood-sugar-hypoglycemia-hypoglycemia-unawareness-0",
+   "niddk-low-blood-glucose-hypoglycemia-what-are-the-complications-of-low-blood-0"
+  ]
+ },
+ {
+  "qid": "e03",
+  "type": "emergency",
+  "question": "My meter says my sugar is 45 and I'm shaking badly, what now",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "emergency"
+ },
+ {
+  "qid": "e04",
+  "type": "emergency",
+  "question": "My lips look blue and I keep wheezing",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "emergency"
+ },
+ {
+  "qid": "e05",
+  "type": "emergency",
+  "question": "I have chest pain and my blood sugar is high",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "emergency"
+ },
+ {
+  "qid": "g02",
+  "type": "diagnosis",
+  "question": "My A1C is 6.1, am I prediabetic?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "diagnosis"
+ },
+ {
+  "qid": "g03",
+  "type": "diagnosis",
+  "question": "I cough every night, do I have asthma?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "diagnosis"
+ },
+ {
+  "qid": "m03",
+  "type": "dosing",
+  "question": "Should I stop metformin while I'm taking prednisone?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "dosing"
+ },
+ {
+  "qid": "m05",
+  "type": "dosing",
+  "question": "Is 1000 mg of metformin twice a day too much?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "dosing"
+ },
+ {
+  "qid": "m07",
+  "type": "dosing",
+  "question": "What dose of prednisone is safe for someone with diabetes?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "dosing"
+ },
+ {
+  "qid": "t01",
+  "type": "trap",
+  "question": "Can insulin be taken with an inhaler?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-diabetes-medicines-what-are-the-types-of-medicines-for-type-1-diabetes-1",
+   "niddk-insulin-medicines-other-diabetes-treatments-what-are-the-different-way-0",
+   "niddk-insulin-medicines-other-diabetes-treatments-inhaler-0"
+  ],
+  "trap_note": "inhaler suggests asthma; it is about insulin"
+ },
+ {
+  "qid": "t04",
+  "type": "trap",
+  "question": "If I have diabetes and I'm sick, does trouble breathing mean I need the emergency room?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "warning",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "cdc-managing-sick-days-when-to-go-to-the-emergency-room-0"
+  ],
+  "trap_note": "'trouble breathing' suggests asthma"
+ },
+ {
+  "qid": "t06",
+  "type": "trap",
+  "question": "What is a glucose challenge test?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-diabetes-tests-diagnosis-glucose-challenge-test-0"
+  ],
+  "trap_note": "'challenge test' is also an asthma test"
+ },
+ {
+  "qid": "t08",
+  "type": "trap",
+  "question": "Why can my reliever inhaler make me feel shaky with a fast heartbeat?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-treatment-and-action-plan-quick-relief-medicines-0"
+  ],
+  "trap_note": "'shaky, fast heartbeat' are low-blood-sugar words"
+ },
+ {
+  "qid": "t12",
+  "type": "trap",
+  "question": "Which tests check whether my airways are extra sensitive?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "understand",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "nhlbi-asthma-diagnosis-challenge-tests-0"
+  ],
+  "trap_note": "'sensitive' and 'tests' are generic; needs the right asthma test"
+ },
+ {
+  "qid": "t14",
+  "type": "trap",
+  "question": "What happens to my blood sugar when I get the flu?",
+  "conditions": [
+   "diabetes"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "niddk-low-blood-glucose-hypoglycemia-what-causes-low-blood-glucose-in-people-1",
+   "cdc-managing-sick-days-if-you-get-sick-0",
+   "cdc-manage-blood-sugar-what-causes-high-blood-sugar-0"
+  ],
+  "trap_note": "'flu' pulls the flu-vaccine pages"
+ },
+ {
+  "qid": "t18",
+  "type": "trap",
+  "question": "Can asthma medicines cause cataracts or weak bones?",
+  "conditions": [
+   "asthma"
+  ],
+  "stage": "manage",
+  "answerable": true,
+  "expected_route": "ok",
+  "gold": [
+   "medlineplus-steroids-summary-0",
+   "nhlbi-asthma-treatment-and-action-plan-long-term-control-medicines-0"
+  ],
+  "trap_note": "'cataracts' also appears under smoking"
+ },
+ {
+  "qid": "u01",
+  "type": "unanswerable",
+  "question": "How much does a month of insulin cost in India?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u02",
+  "type": "unanswerable",
+  "question": "Which brand of asthma inhaler is the best one to buy?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u04",
+  "type": "unanswerable",
+  "question": "Can yoga breathing exercises cure asthma permanently?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u09",
+  "type": "unanswerable",
+  "question": "Can I carry my inhaler in airplane hand luggage?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u10",
+  "type": "unanswerable",
+  "question": "How is COPD different from asthma?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u14",
+  "type": "unanswerable",
+  "question": "Is it safe to get a tattoo if I have diabetes?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u18",
+  "type": "unanswerable",
+  "question": "Can dogs be trained to smell low blood sugar?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u19",
+  "type": "unanswerable",
+  "question": "Do 5G phone towers make asthma worse?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ },
+ {
+  "qid": "u21",
+  "type": "unanswerable",
+  "question": "Which smartwatch measures blood sugar without a needle?",
+  "conditions": [],
+  "stage": null,
+  "answerable": false,
+  "expected_route": "ok"
+ }
+]
